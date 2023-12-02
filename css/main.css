@@ -216,6 +216,12 @@ img {
   margin: 30px 0px 30px 0px;
   flex-wrap: wrap;
 }
+@media (max-width: 1900px) {
+  .header-list {
+    flex-wrap: nowrap;
+    margin: 30px 0px 30px 200px;
+  }
+}
 
 .heading {
   display: flex;
