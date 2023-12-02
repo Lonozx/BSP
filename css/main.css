@@ -257,6 +257,27 @@ a.menu {
   color: #00182A;
 }
 
-a.menu:hover {
+a.menu-header:hover {
   border-bottom: 2px solid #00182A;
+}
+
+.services__list {
+  list-style: none;
+  min-width: 470px;
+}
+.services__content {
+  margin: 30px -275px;
+  display: flex;
+  gap: 20px;
+  max-height: 195px;
+}
+
+.shield {
+  display: flex;
+  align-items: center;
+}
+
+.shield::before {
+  content: url("../components/images/shield.svg");
+  margin: 7px 20px 0px 0px;
 }/*# sourceMappingURL=main.css.map */
