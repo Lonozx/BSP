@@ -428,6 +428,9 @@ button{
 .data{
     border-bottom: 2px solid white;
     padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px
     // width: 50vw;
 }
 .menu-footer{
