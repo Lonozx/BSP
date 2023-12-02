@@ -163,6 +163,9 @@ gap: 20px;
     left: 180px;
     top: -27px;
     // margin: -5% -15%;
+    @media (max-width:1900px) {
+        left: 40px;
+    }
 }
 .parag{
     max-width: 450px;
