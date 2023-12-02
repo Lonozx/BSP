@@ -164,7 +164,7 @@ button.sub-form{
     // position: absolute;
     // bottom: 0;
     // margin: 10% -92%;
-    margin: 10% 0 0 -92%;
+    margin: 120px 0 0 -92%;
 display: flex;
 gap: 20px;
     &__article{
@@ -413,4 +413,46 @@ button{
     content:url('../components/images/shield.svg');
     margin: 7px 20px 0px 0px;
     // margin: 0 auto;
+}
+
+.foot{
+    width: 100vw;
+    height: 495px;
+    margin: 0 -33%;
+    background: #002F51;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.data{
+    border-bottom: 2px solid white;
+    padding: 30px 0;
+    // width: 50vw;
+}
+.menu-footer{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.bright{
+    color: white;
+    filter: brightness(50%);
+}
+.container__foot{
+     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    &-rules{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 255px;
+    }
+
 }
