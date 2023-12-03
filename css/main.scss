@@ -32,6 +32,7 @@
     line-height: 86px;
     font-size: 72px;
     letter-spacing: 1.5%;
+    font-weight: 400;
     }
 }
 .h3{      
@@ -139,10 +140,11 @@ button.sub-form{
 .check{
     display: flex;
     width: 270px;
-    gap: 33px;
+    gap: 15px;
     justify-content: center;
     align-items: center;
     margin: -10px 0;
+    
     &--box{
         width: 18px;
         height: 18px;
@@ -187,7 +189,7 @@ gap: 20px;
         }
         &-content{
             display: flex;
-            margin: 0 0 0 29%;
+            margin: 0 0 0 30%;
         }
     }
     &__right{
@@ -323,6 +325,9 @@ a.menu-header:hover{
         // margin: 30px 0;
         list-style: none;
         min-width: 470px;
+        display: flex;
+  flex-direction: column;
+  justify-content: space-between;
     }
     &__content{
         margin: 30px -280px;
@@ -342,6 +347,7 @@ a.menu-header:hover{
         justify-content: flex-start;
         flex-wrap: wrap;
         gap: 20px;
+        margin: 30px 0;
         &-item{
             width: 270px;
             height: 404px;
@@ -425,14 +431,18 @@ button{
     align-items: center;
    
 }
+.desc{
+    text-align: justify;
+}
 .data{
     border-bottom: 2px solid white;
-    padding: 30px 0;
+    padding: 10px 0;
     display: flex;
     flex-direction: column;
     gap: 30px
     // width: 50vw;
 }
+
 .menu-footer{
     color: white;
     text-decoration: none;
