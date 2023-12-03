@@ -399,13 +399,22 @@ button {
   background: url("../components/images/way.png");
 }
 
+svg {
+  width: 20px;
+  height: 30px;
+  margin: 0px 20px 0 10px;
+}
+
 .shield {
   display: flex;
   align-items: center;
 }
 
+li:hover svg path {
+  fill: black;
+}
+
 .shield::before {
-  content: url("../components/images/shield.svg");
   margin: 7px 20px 0px 0px;
 }
 
