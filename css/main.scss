@@ -116,7 +116,7 @@
         display: flex;
         gap: 30px;
   width: 65.5vw;
-  margin: 30px -25.4%;
+  margin: 30px -23.2%;
         &-item{
             width: 570px;
             display: flex;
@@ -153,6 +153,7 @@ button.sub-form{
     &--box{
         width: 18px;
         height: 18px;
+        accent-color: #002F51;
         border: 2px solid #002F51;
     }
 }
@@ -171,7 +172,7 @@ button.sub-form{
     // position: absolute;
     // bottom: 0;
     // margin: 10% -92%;
-    margin: 120px 0 0 -95.4%;
+    margin: 120px 0 0 -88.4%;
 display: flex;
 gap: 30px;
     &__article{
@@ -195,7 +196,7 @@ gap: 30px;
         }
         &-content{
             display: flex;
-            margin: 0 0 0 30%;
+            margin: 0 0 0 28%;
         }
     }
     &__right{
@@ -209,7 +210,7 @@ gap: 30px;
     // max-width: 100%;
     // width: 40%;
     float: left;
-    margin: -10% 30px;
+    margin: -10% 30px 0 0;
     // position: absolute;
     // left: 180px;
     // top: -27px;
@@ -281,7 +282,7 @@ img {
     display: flex;
     gap: 30px;
     list-style: none;
-    margin: 30px 0px 30px 37%;
+    margin: 30px 0px 30px 35.6%;
     flex-wrap: wrap;
     width: 100vw;
     border-bottom: 2px solid #002F51;
@@ -338,7 +339,7 @@ a.menu-header:hover{
   justify-content: space-between;
     }
     &__content{
-        margin: 30px -318px;
+        margin: 30px -291px;
         display: flex;
         gap: 30px;
         max-height: 195px;
@@ -346,7 +347,7 @@ a.menu-header:hover{
 }
 .advantage{
     width: 70vw;
-    margin: 120px 0 0px -43%;
+    margin: 120px 0 0px -38%;
     
     
     &__content{
@@ -391,7 +392,7 @@ button{
     bottom: 0;
 }
 .adv{
-    margin: 0 22.5%;
+    margin: 0 21%;
     width: 100vw;
     border-bottom: 2px solid #002F51;
     padding: 0 0px 25px 0;
