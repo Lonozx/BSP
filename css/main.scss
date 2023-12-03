@@ -49,11 +49,12 @@
     letter-spacing: 1.5%;
     }
     &--grey{
-        color: #00182A;
+        color: #808C95;
         font-size: 18px;
     font-family: 'Inter', sans-serif;
     line-height: 27px;
     letter-spacing: 1.5%;
+    font-weight: 400;
     }
     &--uppercase{
         text-transform: uppercase;
@@ -85,6 +86,7 @@
         font-size: 14px;
         line-height: 21px;
         letter-spacing: 1.5%;
+        font-weight:400;
     } 
     &--divider{
         color: #FFFFFF;
@@ -110,8 +112,8 @@
     &__content{
         display: flex;
         gap: 30px;
-  width: 59.5vw;
-  margin: 30px -24.6%;
+  width: 65.5vw;
+  margin: 30px -25.4%;
         &-item{
             width: 570px;
             display: flex;
@@ -166,9 +168,9 @@ button.sub-form{
     // position: absolute;
     // bottom: 0;
     // margin: 10% -92%;
-    margin: 120px 0 0 -92%;
+    margin: 120px 0 0 -95.4%;
 display: flex;
-gap: 20px;
+gap: 30px;
     &__article{
         display: flex;
         flex-direction: column;
@@ -176,6 +178,7 @@ gap: 20px;
         align-items: center;
         // margin: 0 0 0 25%;
         width: 100%;
+        margin: 0 25px;
     }
     &__left{
         height: 168px;
@@ -203,7 +206,7 @@ gap: 20px;
     // max-width: 100%;
     // width: 40%;
     float: left;
-    margin: -10% 20px;
+    margin: -10% 30px;
     // position: absolute;
     // left: 180px;
     // top: -27px;
@@ -229,14 +232,14 @@ gap: 20px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0 95px;
+    margin: 0 85px;
 }
 .article__images{
     &--block{
         display: flex;
         // flex-wrap: wrap;
         // max-width: 100%;
-        gap: 20px;
+        gap: 30px;
         width: 165%;
         height: auto;
     }
@@ -275,7 +278,7 @@ img {
     display: flex;
     gap: 30px;
     list-style: none;
-    margin: 30px 0px 30px 36%;
+    margin: 30px 0px 30px 37%;
     flex-wrap: wrap;
     width: 100vw;
     border-bottom: 2px solid #002F51;
@@ -330,15 +333,15 @@ a.menu-header:hover{
   justify-content: space-between;
     }
     &__content{
-        margin: 30px -280px;
+        margin: 30px -318px;
         display: flex;
-        gap: 20px;
+        gap: 30px;
         max-height: 195px;
         }
 }
 .advantage{
     width: 70vw;
-    margin: 120px 0 0px -37.3%;
+    margin: 120px 0 0px -43%;
     
     
     &__content{
@@ -346,7 +349,7 @@ a.menu-header:hover{
         align-items: flex-start;
         justify-content: flex-start;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 30px;
         margin: 30px 0;
         &-item{
             width: 270px;
@@ -383,14 +386,14 @@ button{
     bottom: 0;
 }
 .adv{
-    margin: 0 20%;
+    margin: 0 22.5%;
     width: 100vw;
     border-bottom: 2px solid #002F51;
     padding: 0 0px 25px 0;
 }
 .separated{
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin: 30px 0 0 0;
 }
 .anon{
@@ -433,7 +436,25 @@ li svg path{
 li:hover svg path{
     fill: black;
 }
-
+#myBtn {
+    // display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
 .shield::before{
     // content:url('../components/images/shield.svg');
     margin: 7px 20px 0px 0px;
@@ -469,6 +490,7 @@ li:hover svg path{
     gap: 30px;
     display: flex;
     flex-direction: column;
+    width: 270px;
 }
 .bright{
     color: white;
@@ -485,6 +507,7 @@ li:hover svg path{
         flex-direction: column;
         justify-content: space-between;
         height: 255px;
+        width: 270px;
     }
 
 }

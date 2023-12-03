@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BSP</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./script/index.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -41,7 +42,7 @@
     
     <aside class="aside-form">
     <div class="container__header-logo">
-        <a href="#"> 
+        <a href="#">
             <img class="logo" src="./components/images/header-image.png" alt="BSP-logo">
         </a>
        <form action="send-quote">
@@ -60,6 +61,8 @@
         </div>
     </aside>
     <section class="content">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+    
         <div class="heading">
             <div class="article">
                 <div class="parag">
@@ -93,7 +96,7 @@
             <div class="divider__right"></div>
         </div>
         <div class="services">
-            <h2 class="h1">НАШІ ПОСЛУГИ</h2>
+            <h2 class="h1" style="margin: 0 -8px;">НАШІ ПОСЛУГИ</h2>
             <div class="services__content">
             <img width="270px" height="195px" src="./components/images/services-1.jpg" alt="">
        
@@ -156,13 +159,13 @@
                     <p class="h3--uppercase">Персоналізований підхід до  кожного клієнта</p>
                 </div>
                 <div class="advantage__content-item readmore">
-                    <h2 class="h1">BUSINESS SUPPORT & PROTECTION</h2>    
+                    <h2 class="h1" style="text-align: justify;">BUSINESS SUPPORT & PROTECTION</h2>    
                     <button class="h3 showmore"><a class="button-text" href="#">Детальніше</a></button>
                 </div>
             </div>
         </div>
         <div class="about">
-            <h2 class="h1">ПРО КОМПАНІЮ</h2>
+            <h2 class="h1" style="margin: 0 -14px;">ПРО КОМПАНІЮ</h2>
             <div class="about__content">
                 <div class="about__content-item left">
                     <p class="h3" style="text-transform: uppercase; border-bottom: 2px solid #00182A; width: 270px;">Філософія</p>
@@ -183,6 +186,7 @@
             </div>
         </div>
     </section>
+    
     <footer class="foot">
         <div class="container__foot">
             <img src="./components/images/header-image.png" alt="">
@@ -209,21 +213,21 @@
             </ul>
             <div class="data">
                 <div class="data__phone">
-                    <p class="h3 bright">Phone</p>
+                    <p class="h3--grey">Phone</p>
                     <a class="h3 menu-footer" href="tel:+38(073)60-60-603">+38(073)60-60-603</a>
                 </div>
                 <div class="data__email">
-                    <p class="h3 bright">Mail</p>
-                    <a class="h3 menu-footer" href="mailto:business.sup.and.pro@ukr.net">mailto:business.sup.and.pro@ukr.net</a>
+                    <p class="h3--grey">Mail</p>
+                    <a class="h3 menu-footer" href="mailto:business.sup.and.pro@ukr.net">business.sup.and.pro@ukr.net</a>
                 </div>
                 <div class="data__instagram">
-                    <p class="h3 bright">Instagram</p>
+                    <p class="h3--grey">Instagram</p>
                     <a class="h3 menu-footer" href="@business_support_protection">@business_support_protection</a>
                 </div>
             </div>
         </div>
-       
-    </footer>
+        
+        </footer>
     </div>
 </body>
 </html>

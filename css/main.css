@@ -49,11 +49,12 @@ body {
   letter-spacing: 1.5%;
 }
 .h3--grey {
-  color: #00182A;
+  color: #808C95;
   font-size: 18px;
   font-family: "Inter", sans-serif;
   line-height: 27px;
   letter-spacing: 1.5%;
+  font-weight: 400;
 }
 .h3--uppercase {
   text-transform: uppercase;
@@ -86,6 +87,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 1.5%;
+  font-weight: 400;
 }
 .h4--divider {
   color: #FFFFFF;
@@ -114,8 +116,8 @@ body {
 .about__content {
   display: flex;
   gap: 30px;
-  width: 59.5vw;
-  margin: 30px -24.6%;
+  width: 65.5vw;
+  margin: 30px -25.4%;
 }
 .about__content-item {
   width: 570px;
@@ -167,9 +169,9 @@ button.sub-form {
 
 .divider {
   height: 168px;
-  margin: 120px 0 0 -92%;
+  margin: 120px 0 0 -95.4%;
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 .divider__article {
   display: flex;
@@ -177,6 +179,7 @@ button.sub-form {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: 0 25px;
 }
 .divider__left {
   height: 168px;
@@ -202,7 +205,7 @@ button.sub-form {
 .aside-form {
   width: 270px;
   float: left;
-  margin: -10% 20px;
+  margin: -10% 30px;
 }
 @media (max-width: 1900px) {
   .aside-form {
@@ -229,12 +232,12 @@ button.sub-form {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 0 95px;
+  margin: 0 85px;
 }
 
 .article__images--block {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   width: 165%;
   height: auto;
 }
@@ -255,7 +258,7 @@ img {
   display: flex;
   gap: 30px;
   list-style: none;
-  margin: 30px 0px 30px 36%;
+  margin: 30px 0px 30px 37%;
   flex-wrap: wrap;
   width: 100vw;
   border-bottom: 2px solid #002F51;
@@ -308,22 +311,22 @@ a.menu-header:hover {
   justify-content: space-between;
 }
 .services__content {
-  margin: 30px -280px;
+  margin: 30px -318px;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   max-height: 195px;
 }
 
 .advantage {
   width: 70vw;
-  margin: 120px 0 0px -37.3%;
+  margin: 120px 0 0px -43%;
 }
 .advantage__content {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   margin: 30px 0;
 }
 .advantage__content-item {
@@ -363,7 +366,7 @@ button {
 }
 
 .adv {
-  margin: 0 20%;
+  margin: 0 22.5%;
   width: 100vw;
   border-bottom: 2px solid #002F51;
   padding: 0 0px 25px 0;
@@ -371,7 +374,7 @@ button {
 
 .separated {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   margin: 30px 0 0 0;
 }
 
@@ -424,6 +427,25 @@ li:hover svg path {
   fill: black;
 }
 
+#myBtn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 .shield::before {
   margin: 7px 20px 0px 0px;
 }
@@ -457,6 +479,7 @@ li:hover svg path {
   gap: 30px;
   display: flex;
   flex-direction: column;
+  width: 270px;
 }
 
 .bright {
@@ -476,4 +499,5 @@ li:hover svg path {
   flex-direction: column;
   justify-content: space-between;
   height: 255px;
+  width: 270px;
 }/*# sourceMappingURL=main.css.map */
