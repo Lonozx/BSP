@@ -22,7 +22,7 @@ body {
 .wrapper {
   margin: 0% 375px 0px 375px;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .wrapper {
     margin: 0% 50px 0px 50px;
   }
@@ -128,7 +128,7 @@ body {
   width: 65.5vw;
   margin: 30px -23.2%;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .about__content {
     margin: 0px -53%;
   }
@@ -190,7 +190,7 @@ button.sub-form {
   display: flex;
   gap: 30px;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .divider {
     margin: 200px 0 0 -102.4%;
   }
@@ -209,7 +209,7 @@ button.sub-form {
   background: #8DC4EB;
   display: flex;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .divider__left {
     width: 81.8vw;
   }
@@ -223,7 +223,7 @@ button.sub-form {
   display: flex;
   margin: 0 0 0 28%;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .divider__left-content {
     margin: 0 0 0 0%;
   }
@@ -239,7 +239,7 @@ button.sub-form {
   float: left;
   margin: -10% 30px 0 0;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .aside-form {
     left: 40px;
   }
@@ -302,7 +302,7 @@ img {
   border-bottom: 2px solid #002F51;
   padding: 0 0px 25px 0;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .header-list {
     flex-wrap: wrap;
     margin: 30px 0px 30px 37%;
@@ -314,7 +314,7 @@ img {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .heading {
     height: 600px;
   }
@@ -361,7 +361,7 @@ a.menu-header:hover {
   gap: 30px;
   max-height: 195px;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .services__content {
     margin: 30px -345px;
   }
@@ -371,7 +371,7 @@ a.menu-header:hover {
   width: 70vw;
   margin: 120px 0 0px -38%;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .advantage {
     margin: 120px 0 0px -53%;
   }
@@ -516,7 +516,7 @@ li:hover svg path {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .foot {
     margin: 0 -7%;
   }
@@ -528,7 +528,7 @@ li:hover svg path {
 
 .data {
   border-bottom: 2px solid white;
-  padding: 10px 0;
+  padding: 0 0 20px 0px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -556,7 +556,7 @@ li:hover svg path {
   align-items: center;
   gap: 60px;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .container__foot {
     gap: 0;
   }

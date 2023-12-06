@@ -23,7 +23,7 @@
 .wrapper{
     margin: 0% 375px 0px 375px;
     // overflow-x: hidden;
-    @media(max-width: 1270px){
+    @media(max-width: 1280px){
         margin: 0% 50px 0px 50px;
     }
 }
@@ -120,7 +120,7 @@
         gap: 30px;
   width: 65.5vw;
   margin: 30px -23.2%;
-  @media (max-width:1270px) {
+  @media (max-width:1280px) {
     margin: 0px -53%;
   }
         &-item{
@@ -183,7 +183,7 @@ button.sub-form{
     margin: 120px 0 0 -88.4%;
 display: flex;
 gap: 30px;
-@media (max-width:1270px) {
+@media (max-width:1280px) {
     // margin: 200px 0 0 -55.4%;
     margin: 200px 0 0 -102.4%;
 }
@@ -201,7 +201,7 @@ gap: 30px;
         width: 70.8vw;
         background: #8DC4EB;
         display: flex;
-        @media (max-width:1270px) {
+        @media (max-width:1280px) {
             width: 81.8vw;
         }
         &-img{
@@ -212,7 +212,7 @@ gap: 30px;
         &-content{
             display: flex;
             margin: 0 0 0 28%;
-            @media (max-width:1270px) {
+            @media (max-width:1280px) {
                 margin: 0 0 0 0%;
             }
         }
@@ -233,7 +233,7 @@ gap: 30px;
     // left: 180px;
     // top: -27px;
     // margin: -5% -15%;
-    @media (max-width:1270px) {
+    @media (max-width:1280px) {
         left: 40px;
     }
 }
@@ -313,7 +313,7 @@ img {
     border-bottom: 2px solid #002F51;
     padding: 0 0px 25px 0;
   
-    @media (max-width:1270px) {
+    @media (max-width:1280px) {
         flex-wrap: wrap;
         // margin: 30px 0px 30px 200px;
         margin: 30px 0px 30px 37%;
@@ -324,7 +324,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width:1270px) {
+    @media (max-width:1280px) {
         height: 600px;
     }
 }
@@ -371,7 +371,7 @@ a.menu-header:hover{
         display: flex;
         gap: 30px;
         max-height: 195px;
-        @media(max-width:1270px){
+        @media(max-width:1280px){
             margin: 30px -345px;
         }
         }
@@ -379,7 +379,7 @@ a.menu-header:hover{
 .advantage{
     width: 70vw;
     margin: 120px 0 0px -38%;
-    @media (max-width:1270px) {
+    @media (max-width:1280px) {
         margin: 120px 0 0px -53%;
     }
     
@@ -511,7 +511,7 @@ li:hover svg path{
     display: flex;
     justify-content: center;
     align-items: center;
-   @media(max-width:1270px){
+   @media(max-width:1280px){
     margin: 0 -7%;
    }
 }
@@ -520,7 +520,7 @@ li:hover svg path{
 }
 .data{
     border-bottom: 2px solid white;
-    padding: 10px 0;
+    padding: 0 0 20px 0px;
     display: flex;
     flex-direction: column;
     gap: 30px
@@ -546,7 +546,7 @@ li:hover svg path{
     justify-content: center;
     align-items: center;
     gap: 60px;
-    @media (max-width:1270px) {
+    @media (max-width:1280px) {
         gap: 0;   
     }
     &-rules{
