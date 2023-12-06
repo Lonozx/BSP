@@ -23,6 +23,9 @@
 .wrapper{
     margin: 0% 375px 0px 375px;
     // overflow-x: hidden;
+    @media(max-width: 1270px){
+        margin: 0% 50px 0px 50px;
+    }
 }
 .h1{
     font-family: "DIN Condensed";
@@ -117,6 +120,9 @@
         gap: 30px;
   width: 65.5vw;
   margin: 30px -23.2%;
+  @media (max-width:1270px) {
+    margin: 0px -53%;
+  }
         &-item{
             width: 570px;
             display: flex;
@@ -177,6 +183,10 @@ button.sub-form{
     margin: 120px 0 0 -88.4%;
 display: flex;
 gap: 30px;
+@media (max-width:1270px) {
+    // margin: 200px 0 0 -55.4%;
+    margin: 200px 0 0 -102.4%;
+}
     &__article{
         display: flex;
         flex-direction: column;
@@ -191,6 +201,9 @@ gap: 30px;
         width: 70.8vw;
         background: #8DC4EB;
         display: flex;
+        @media (max-width:1270px) {
+            width: 81.8vw;
+        }
         &-img{
             width: 270px;
             height: 296px;
@@ -199,6 +212,9 @@ gap: 30px;
         &-content{
             display: flex;
             margin: 0 0 0 28%;
+            @media (max-width:1270px) {
+                margin: 0 0 0 0%;
+            }
         }
     }
     &__right{
@@ -217,7 +233,7 @@ gap: 30px;
     // left: 180px;
     // top: -27px;
     // margin: -5% -15%;
-    @media (max-width:1900px) {
+    @media (max-width:1270px) {
         left: 40px;
     }
 }
@@ -260,6 +276,13 @@ img {
     margin-bottom: 30px;
     margin-top: 60px;
 }
+.service{
+    &:after{
+        content:url('../components/images/arrow.png');
+        width: 16px;
+        height: 14px;
+        }
+}
 // .image-res{
 //     width: 100%;
 //     height: auto;
@@ -290,9 +313,10 @@ img {
     border-bottom: 2px solid #002F51;
     padding: 0 0px 25px 0;
   
-    @media (max-width:1900px) {
-        flex-wrap: nowrap;
-        margin: 30px 0px 30px 200px;
+    @media (max-width:1270px) {
+        flex-wrap: wrap;
+        // margin: 30px 0px 30px 200px;
+        margin: 30px 0px 30px 37%;
     }
 }
 
@@ -300,7 +324,9 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    @media (max-width:1270px) {
+        height: 600px;
+    }
 }
 .article{
     display: flex;
@@ -345,12 +371,17 @@ a.menu-header:hover{
         display: flex;
         gap: 30px;
         max-height: 195px;
+        @media(max-width:1270px){
+            margin: 30px -345px;
+        }
         }
 }
 .advantage{
     width: 70vw;
     margin: 120px 0 0px -38%;
-    
+    @media (max-width:1270px) {
+        margin: 120px 0 0px -53%;
+    }
     
     &__content{
         display: flex;
@@ -457,7 +488,9 @@ li:hover svg path{
     background-color:  #316488; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px;
+    padding: 5px;
+    
+    
   }
   
   #myBtn:hover {
@@ -478,7 +511,9 @@ li:hover svg path{
     display: flex;
     justify-content: center;
     align-items: center;
-   
+   @media(max-width:1270px){
+    margin: 0 -7%;
+   }
 }
 .desc{
     text-align: justify;
@@ -511,6 +546,9 @@ li:hover svg path{
     justify-content: center;
     align-items: center;
     gap: 60px;
+    @media (max-width:1270px) {
+        gap: 0;   
+    }
     &-rules{
         display: flex;
         flex-direction: column;
