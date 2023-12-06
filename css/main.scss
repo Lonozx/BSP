@@ -276,6 +276,16 @@ img {
     margin-bottom: 30px;
     margin-top: 60px;
 }
+.override{
+    @media (max-width:960px) {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.contents{
+    margin: -7% 5%;
+}
 .service{
     &:after{
         content:url('../components/images/arrow.png');
@@ -303,6 +313,12 @@ img {
 //     // background: url('../components/images/main-second.jpg');
 //     // background-size: contain;
 // }
+
+.menu{
+ position: relative;
+ border-bottom: 2px solid #002F51;
+
+}
 .header-list{
     display: flex;
     gap: 30px;
