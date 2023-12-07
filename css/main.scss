@@ -276,6 +276,11 @@ img {
     margin-bottom: 30px;
     margin-top: 60px;
 }
+.form{
+    @media (max-width:1290px) {
+        margin: 0px 30px 0 0% !important;
+    }
+}
 .override{
     @media (max-width:1290px) {
         margin: 0% !important;

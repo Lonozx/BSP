@@ -287,6 +287,12 @@ img {
 }
 
 @media (max-width: 1290px) {
+  .form {
+    margin: 0px 30px 0 0% !important;
+  }
+}
+
+@media (max-width: 1290px) {
   .override {
     margin: 0% !important;
   }
