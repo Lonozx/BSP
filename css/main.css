@@ -286,7 +286,7 @@ img {
   margin-top: 60px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .override {
     margin: 0% !important;
   }
