@@ -277,6 +277,9 @@ img {
     margin-top: 60px;
 }
 .override{
+    @media (max-width:768px) {
+        margin: 0% !important;
+    }
     @media (max-width:960px) {
         flex-wrap: wrap;
         display: flex;

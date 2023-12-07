@@ -286,6 +286,11 @@ img {
   margin-top: 60px;
 }
 
+@media (max-width: 768px) {
+  .override {
+    margin: 0% !important;
+  }
+}
 @media (max-width: 960px) {
   .override {
     flex-wrap: wrap;
