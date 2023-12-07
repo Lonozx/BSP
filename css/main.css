@@ -75,6 +75,16 @@ body {
   align-self: self-start;
   margin: 160px 25px;
 }
+.h3--uppercase--right {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  line-height: 27px;
+  letter-spacing: 1.5%;
+  align-self: self-start;
+  margin: 160px -230px;
+}
 
 .h4 {
   font-size: 14px;
@@ -239,6 +249,9 @@ button.sub-form {
   float: left;
   margin: -10% 30px 0 0;
 }
+.aside-form--cont {
+  margin: -7% 30px 0 14%;
+}
 @media (max-width: 1280px) {
   .aside-form {
     left: 40px;
@@ -292,6 +305,9 @@ img {
   }
 }
 
+.override:last-child {
+  padding-bottom: 120px;
+}
 @media (max-width: 1290px) {
   .override {
     margin: 0% !important;
@@ -316,10 +332,6 @@ img {
   align-items: center;
 }
 
-.contents {
-  margin: -7% 5%;
-}
-
 .service:after {
   content: url("../components/images/arrow.png");
   width: 16px;
@@ -340,6 +352,9 @@ img {
   width: 100vw;
   border-bottom: 2px solid #002F51;
   padding: 0 0px 25px 0;
+}
+.header-list--cont {
+  margin: 30px 0px 30px 29.6%;
 }
 @media (max-width: 1280px) {
   .header-list {

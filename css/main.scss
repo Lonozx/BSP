@@ -71,6 +71,16 @@
         letter-spacing: 1.5%;
         align-self: self-start;
         margin: 160px 25px;
+        &--right{
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-family: 'Inter', sans-serif;
+            line-height: 27px;
+            letter-spacing: 1.5%;
+            align-self: self-start;
+            margin: 160px -230px; 
+        }
     }
 }
 .h4{
@@ -233,6 +243,9 @@ gap: 30px;
     // left: 180px;
     // top: -27px;
     // margin: -5% -15%;
+    &--cont{
+        margin: -7% 30px 0 14%;
+    }
     @media (max-width:1280px) {
         left: 40px;
     }
@@ -282,6 +295,9 @@ img {
     }
 }
 .override{
+    &:last-child{
+        padding-bottom: 120px;
+    }
     @media (max-width:1290px) {
         margin: 0% !important;
     }
@@ -302,7 +318,7 @@ img {
   align-items: center;
 }
 .contents{
-    margin: -7% 5%;
+    // margin: -7% 5%;
 }
 .service{
     &:after{
@@ -346,7 +362,9 @@ img {
     width: 100vw;
     border-bottom: 2px solid #002F51;
     padding: 0 0px 25px 0;
-  
+    &--cont{
+        margin: 30px 0px 30px 29.6%;
+    }
     @media (max-width:1280px) {
         flex-wrap: wrap;
         // margin: 30px 0px 30px 200px;
