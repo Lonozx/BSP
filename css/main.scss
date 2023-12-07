@@ -283,6 +283,15 @@ img {
         flex-direction: column;
     }
 }
+.foot-add{
+    width: 100vw;
+  height: 495px;
+  margin: 0 0%;
+  background: #002F51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contents{
     margin: -7% 5%;
 }
@@ -407,7 +416,7 @@ a.menu-header:hover{
         gap: 30px;
         margin: 30px 0;
         &-item{
-            width: 270px;
+            width: 270px ;
             height: 404px;
             display: flex;
             justify-content: center;
@@ -452,7 +461,9 @@ button{
     margin: 30px 0 0 0;
 }
 .anon{
-    background:url('../components/images/anon.png')
+    background-image:url('../components/images/anon.png');
+    background-size: 100% 100%;
+    object-fit: cover;
 }
 .cval{
     background:url('../components/images/cval.png')

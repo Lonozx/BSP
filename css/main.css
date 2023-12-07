@@ -294,6 +294,16 @@ img {
   }
 }
 
+.foot-add {
+  width: 100vw;
+  height: 495px;
+  margin: 0 0%;
+  background: #002F51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contents {
   margin: -7% 5%;
 }
@@ -451,7 +461,10 @@ button {
 }
 
 .anon {
-  background: url("../components/images/anon.png");
+  background-image: url("../components/images/anon.png");
+  background-size: 100% 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cval {
