@@ -332,6 +332,16 @@ img {
   align-items: center;
 }
 
+.contents__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+.contents__item:last-child {
+  margin-bottom: 120px;
+}
+
 .service:after {
   content: url("../components/images/arrow.png");
   width: 16px;
@@ -425,6 +435,9 @@ a.menu {
   text-decoration: none;
   color: #00182A;
   border-bottom: 2px solid white;
+}
+a.menu--large {
+  max-width: 520px;
 }
 
 a.menu-header:hover {
@@ -566,6 +579,15 @@ li svg path {
 .shield {
   display: flex;
   align-items: center;
+}
+.shield--listed {
+  display: flex;
+  align-items: flex-start;
+}
+
+p.social {
+  display: flex;
+  justify-content: space-between;
 }
 
 li:hover svg path {
