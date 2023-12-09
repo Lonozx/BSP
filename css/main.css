@@ -23,7 +23,7 @@ body {
   margin: 0% 375px 0px 375px;
 }
 .wrapper-st {
-  margin: 0 0 0 5%;
+  margin: 0 0 0 8%;
 }
 @media (max-width: 1280px) {
   .wrapper {
@@ -191,7 +191,7 @@ button.sub-form {
 .phone {
   color: #00182A;
   text-decoration: none;
-  padding: 0 30px;
+  padding: 0 56px;
 }
 .phone:visited::focus::hover::active {
   color: #00182A;
@@ -328,11 +328,26 @@ img {
 .foot-add {
   width: 101vw;
   height: 495px;
-  margin: 0 -6%;
+  margin: 0 -9%;
   background: #002F51;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  min-width: 18px;
+  height: 18px;
+  border: 2px solid #002F51;
+  background-clip: content-box;
+  padding: 3px;
+}
+input[type=checkbox]:checked {
+  accent-color: #002F51;
+  background-color: #002F51;
 }
 
 .contents__item {
@@ -400,7 +415,7 @@ img {
   padding: 0 0px 25px 0;
 }
 .header-list--cont {
-  margin: 30px 0px 30px 29.6%;
+  margin: 30px 0px 30px 30.6%;
 }
 @media (max-width: 1280px) {
   .header-list {
@@ -434,6 +449,10 @@ img {
   position: relative;
   flex-shrink: 1;
 }
+a.non-hover {
+  cursor: unset;
+}
+
 a.menu {
   text-decoration: none;
   color: #00182A;
@@ -459,7 +478,6 @@ a.menu-header:hover {
   justify-content: space-between;
 }
 .services__content {
-  margin: 30px -291px;
   display: flex;
   gap: 30px;
   max-height: 195px;
@@ -567,16 +585,6 @@ svg {
   width: 20px;
   height: 30px;
   margin: 0px 20px 0 10px;
-  fill: none;
-  transition: fill 1s ease-in-out;
-}
-
-path {
-  transition: fill 0.2s ease-in-out;
-}
-
-li svg path {
-  fill: white;
 }
 
 .shield {
@@ -588,13 +596,13 @@ li svg path {
   align-items: flex-start;
 }
 
+.list-yur {
+  align-items: flex-start;
+}
+
 p.social {
   display: flex;
   justify-content: space-between;
-}
-
-li:hover svg path {
-  fill: black;
 }
 
 #myBtn {

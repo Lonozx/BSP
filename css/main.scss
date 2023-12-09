@@ -24,7 +24,7 @@
     margin: 0% 375px 0px 375px;
     // overflow-x: hidden;
     &-st{
-        margin: 0 0 0 5%;
+        margin: 0 0 0 8%;
     }
     @media(max-width: 1280px){
         margin: 0% 50px 0px 50px;
@@ -181,7 +181,7 @@ button.sub-form{
 .phone{
     color: #00182A;
     text-decoration: none;
-    padding: 0 30px;
+    padding: 0 56px;
     &:visited::focus::hover::active{
         color: #00182A;
     }
@@ -315,12 +315,34 @@ img {
 .foot-add{
     width: 101vw;
   height: 495px;
-  margin: 0 -6%;
+  margin: 0 -9%;
   background: #002F51;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+input[type="checkbox"] {
+//     -webkit-box-shadow: 0px 0px 0px 2px #002F51;
+// -moz-box-shadow: 0px 0px 0px 2px #002F51;
+// box-shadow: 0px 0px 0px 2px #002F51;
+//     -moz-appearance:none;
+// -webkit-appearance:none;
+// -o-appearance:none;
+// border: 2px solid #002F51;
+// min-width: 18px;
+// min-height: 18px;
+appearance: none;
+	min-width: 18px;
+	height: 18px;
+	border: 2px solid #002F51;
+	background-clip: content-box;
+	padding: 3px;
+&:checked{
+    accent-color: #002F51;
+    background-color:#002F51;
+}
+}
+
 .contents{
     // margin: -7% 5%;
     &__item{
@@ -399,7 +421,7 @@ img {
     border-bottom: 2px solid #002F51;
     padding: 0 0px 25px 0;
     &--cont{
-        margin: 30px 0px 30px 29.6%;
+        margin: 30px 0px 30px 30.6%;
     }
     @media (max-width:1280px) {
         flex-wrap: wrap;
@@ -435,6 +457,9 @@ img {
        
     }
 }
+a.non-hover{
+    cursor:unset;
+}
 a.menu{
     text-decoration: none;
     color: #00182A;
@@ -459,7 +484,7 @@ a.menu-header:hover{
   justify-content: space-between;
     }
     &__content{
-        margin: 30px -291px;
+        // margin: 30px -291px;
         display: flex;
         gap: 30px;
         max-height: 195px;
@@ -547,20 +572,11 @@ button{
 .way{
     background:url('../components/images/way.png')
 }
+
 svg{
     width: 20px;
     height: 30px;
     margin: 0px 20px 0 10px;
-    fill: none;
-    transition: fill 1s ease-in-out;
-   
-}
-path{
-    transition: fill .2s ease-in-out;
-   
-}
-li svg path{
-    fill: white;
 }
 .shield{
     display: flex;
@@ -570,13 +586,14 @@ li svg path{
         align-items: flex-start;
     }
 }
+.list-yur{
+    align-items: flex-start;
+}
 p.social{
     display: flex;
     justify-content: space-between;
 }
-li:hover svg path{
-    fill: black;
-}
+
 #myBtn {
     width: 50px;
     height: 50px;

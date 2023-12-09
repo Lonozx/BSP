@@ -1,0 +1,26 @@
+svg{
+    width: 20px;
+    height: 30px;
+    margin: 0px 20px 0 10px;
+    fill: none;
+    transition: fill 1s ease-in-out;
+   
+}
+path{
+    transition: fill .2s ease-in-out;
+   
+}
+li svg path{
+    fill: white;
+}
+li:hover svg path{
+    fill: black;
+}
+.shield{
+    display: flex;
+    align-items: center;
+    &--listed{
+        display: flex;
+        align-items: flex-start;
+    }
+}
