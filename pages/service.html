@@ -15,7 +15,14 @@
     <div class="wrapper-st">
         <header class="header">
             <div class="container__header">
-               
+                <div style="width: 100vw; height: 70px;">
+                    <button id="burger" class="container__header-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                       </button>
+                       <a class="phone h3 styling-mobile" style=" padding: 0; position: absolute; right: 0; margin: 15px" href="tel:+38(073)60-60-603">+38(073)60-60-603</a>
+                    </div>
                 <div class="container__header-list" style="padding: 0 0 0 20px;">
                 <ul class="header-list header-list--cont">
                     <li class="h3">
@@ -51,7 +58,7 @@
            
         </header>
         
-        <aside class="aside-form aside-form--cont">
+        <aside class="aside-form aside-form--cont desktop-only">
         <div class="container__header-logo">
             <a href="../index.html">
                 <img class="logo" src="../components/images/header-image.png" alt="BSP-logo">
@@ -75,7 +82,7 @@
           
         <div class="contents">
             
-            <h2 class="h1" style="margin-top: 30px; text-transform: uppercase; display: flex; justify-content: flex-start;">Переваги</h2>
+            <h2 class="h1 mobile-h" style="margin-top: 30px; text-transform: uppercase; display: flex; justify-content: flex-start;">Переваги</h2>
             <div class="override" style="display: flex;gap: 30px; margin: 0 21% 0 29%; justify-content: center; align-items: center;">
                 <!-- position: absolute; left: 29%; -->
             <!-- <img src="../components/images/anon.png" alt=""> -->
@@ -142,14 +149,28 @@
             <p class="h3" style="align-self: baseline; text-align: justify;padding-bottom: 147px; border-bottom:2px solid; margin: 7% 0">Наша команда прислухається до індивідуальних вимог та розробляє стратегії, які відображають унікальні особливості кожної ситуації. Ми прагнемо забезпечити високий рівень задоволення клієнтів, надаючи персоналізовані рішення та високоякісну підтримку на всіх етапах співпраці.</p>
             
         </div>
-        
+        <div class="contents__item" style="justify-content: center;">
+        <form action="send-quote" class="mobile-only">
+            <div class="contact-form">
+            <img class="form-img" src="../components/images/upper-form.jpg" alt="">
+            <input class="contact-form--input h3--grey" type="text" placeholder="Ім'я">
+            <input class="contact-form--input h3--grey" type="tel" placeholder="Номер телефону">
+            <button class="h3--white sub-form" type="submit">Замовити консультацію</button>
+            <div class="check h4--grey">
+            <input class="check--box" type="checkbox">
+            <p class="h4--grey">Ви даєте згоду на обробку персональних даних</p>
+            
+        </div>
+    </div>
+        </form>
+    </div>
         </div>
         <footer class="foot-add">
         <div class="container__foot">
             <img src="../components/images/header-image.png" alt="">
             <div class="container__foot-rules">
-                <h2 class="h1" style="width: 170px; color:white">BUSINESS SUPPORT & PROTECTION</h2>
-                <p class="h3--white">Політика конфіденційності</p>
+                <h2 class="h1 mobile-footer" >BUSINESS SUPPORT & PROTECTION</h2>
+                <p class="h3--white desktop-only">Політика конфіденційності</p>
             </div>
             <ul class="menu-footer">
                 <li>
@@ -170,22 +191,25 @@
             </ul>
             <div class="data">
                 <div class="data__phone">
-                    <p class="h3--grey">Phone</p>
+                    <p class="h3--grey just-centered-m">Phone</p>
                     <a class="h3 menu-footer" href="tel:+38(073)60-60-603">+38(073)60-60-603</a>
                 </div>
                 <div class="data__email">
-                    <p class="h3--grey">Mail</p>
+                    <p class="h3--grey just-centered-m">Mail</p>
                     <a class="h3 menu-footer" href="mailto:business.sup.and.pro@ukr.net">business.sup.and.pro@ukr.net</a>
                 </div>
                 <div class="data__instagram">
-                    <p class="h3--grey">Instagram</p>
+                    <p class="h3--grey just-centered-m">Instagram</p>
                     <a class="h3 menu-footer" href="@business_support_protection">@business_support_protection</a>
                 </div>
             </div>
+            <p class="h3--white mobile-only" style="margin-bottom: 120px; margin-top: 30px;">Політика конфіденційності</p>
+           
         </div>
         
         </footer>
     </div>
     <script src="../script/index.js"></script>
+    <script defer src="../script/hamburger.js"></script>
 </body>
 </html>
