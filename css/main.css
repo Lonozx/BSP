@@ -626,6 +626,14 @@ p.social {
   background-color: #002F51;
 }
 
+#myBtn svg.topButton {
+  fill: none;
+}
+
+#myBtn:hover svg.topButton {
+  fill: white;
+}
+
 .shield::before {
   margin: 7px 20px 0px 0px;
 }
