@@ -621,6 +621,26 @@ p.social {
   padding: 5px;
 }
 
+#myBtn svg {
+  width: 20px;
+  height: 30px;
+  margin: 0px 20px 0 10px;
+  fill: none;
+  transition: fill 1s ease-in-out;
+}
+
+path {
+  transition: fill 0.2s ease-in-out;
+}
+
+button svg path {
+  fill: black;
+}
+
+button:hover svg path {
+  fill: white;
+}
+
 #myBtn:hover {
   transition: 0.2s all ease-in-out;
   background-color: #002F51;
