@@ -31,6 +31,7 @@
         @media (max-width:1170px) {
             display: flex;
             flex-direction: column;
+            overflow-x: hidden;
         }
     }
     // @media(max-width: 1280px){
