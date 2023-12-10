@@ -167,7 +167,7 @@ button.sub-form{
     gap: 15px;
     justify-content: center;
     align-items: center;
-    margin: -10px 0;
+    margin: -20px 0;
     
     &--box{
         width: 18px;
@@ -181,7 +181,7 @@ button.sub-form{
 .phone{
     color: #00182A;
     text-decoration: none;
-    padding: 0 56px;
+    padding: 0 45px;
     &:visited::focus::hover::active{
         color: #00182A;
     }
@@ -592,7 +592,13 @@ svg{
 p.social{
     display: flex;
     justify-content: space-between;
+    &--contact{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;     
+    }
 }
+
 
 #myBtn {
     width: 50px;
