@@ -492,6 +492,8 @@ input[type=checkbox]:checked {
     justify-content: center;
     align-items: center;
     max-width: 396px;
+    justify-content: flex-start;
+    margin: 124px 0;
   }
 }
 @media (max-width: 1280px) {
@@ -506,6 +508,7 @@ input[type=checkbox]:checked {
 @media (max-width: 1170px) {
   .header.open .container__header-list {
     transform: translateX(100%);
+    height: 100vh;
   }
 }
 
@@ -594,7 +597,7 @@ input[type=checkbox]:checked {
   position: absolute;
   left: 5px;
   width: 30px;
-  height: 3px;
+  height: 2px;
   background: #000;
   transition: transform 0.2s, opacity 0.2s, background-color 0.2s;
 }
@@ -633,13 +636,19 @@ a.menu--large {
   }
 }
 
+@media (max-width: 1170px) {
+  a.menu-header {
+    border-bottom: 2px solid transparent;
+  }
+}
+
 a.menu-header:hover {
   transition: 0.2s all ease-in-out;
   border-bottom: 2px solid #00182A;
 }
 @media (max-width: 1170px) {
   a.menu-header:hover {
-    border-bottom: 0px;
+    border-bottom: 2px solid white;
   }
 }
 
