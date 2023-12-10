@@ -25,9 +25,9 @@ body {
 .wrapper-st {
   margin: 0 0 0 8%;
 }
-@media (max-width: 1280px) {
-  .wrapper {
-    margin: 0% 50px 0px 50px;
+@media (max-width: 1490px) {
+  .wrapper-st {
+    margin: 0 0 0 0%;
   }
 }
 
@@ -177,7 +177,7 @@ button.sub-form {
   gap: 15px;
   justify-content: center;
   align-items: center;
-  margin: -20px 0;
+  margin: -20px 0px 0px -4px;
 }
 .check--box {
   width: 18px;
@@ -688,6 +688,7 @@ button:hover svg path {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-right: 115px;
 }
 
 .menu-footer {

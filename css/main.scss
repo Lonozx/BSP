@@ -25,10 +25,14 @@
     // overflow-x: hidden;
     &-st{
         margin: 0 0 0 8%;
+        @media(max-width:1490px){
+            margin: 0 0 0 0%;
+        }
     }
-    @media(max-width: 1280px){
-        margin: 0% 50px 0px 50px;
-    }
+    // @media(max-width: 1280px){
+    //     margin: 0% 50px 0px 50px;
+    // }
+    
 }
 .h1{
     font-family: "DIN Condensed";
@@ -167,7 +171,7 @@ button.sub-form{
     gap: 15px;
     justify-content: center;
     align-items: center;
-    margin: -20px 0;
+    margin: -20px 0px 0px -4px;
     
     &--box{
         width: 18px;
@@ -671,8 +675,9 @@ button:hover svg path{
     padding: 0 0 20px 0px;
     display: flex;
     flex-direction: column;
-    gap: 30px
+    gap: 30px;
     // width: 50vw;
+    margin-right: 115px;
 }
 
 .menu-footer{
