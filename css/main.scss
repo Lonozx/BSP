@@ -429,6 +429,8 @@ appearance: none;
 .dropdown-content {
     display: none;
     position: absolute;
+    // top: 35px;
+    padding-top: 20px;
     background-color: #8DC4EB;
     min-width: 369px;
     border: 15px solid white;
@@ -459,9 +461,10 @@ appearance: none;
   }
   .dropdown-content a{
     background: #8DC4EB;
-    height: 74px;
+    // height: 74px;
+    height: 47px;
     display: flex;
-    // padding: 25px;
+    padding: 30px;
     justify-content: flex-start;
     align-items: center;
     @media (max-width:1170px) {

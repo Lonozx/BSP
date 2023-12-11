@@ -429,6 +429,7 @@ input[type=checkbox]:checked {
 .dropdown-content {
   display: none;
   position: absolute;
+  padding-top: 20px;
   background-color: #8DC4EB;
   min-width: 369px;
   border: 15px solid white;
@@ -462,8 +463,9 @@ input[type=text]:invalid ~ label {
 
 .dropdown-content a {
   background: #8DC4EB;
-  height: 74px;
+  height: 47px;
   display: flex;
+  padding: 30px;
   justify-content: flex-start;
   align-items: center;
 }
