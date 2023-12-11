@@ -481,6 +481,11 @@ input[type=checkbox]:checked {
   border-bottom: 2px solid #002F51;
   padding: 0 0px 25px 0;
 }
+@media (max-width: 1170px) {
+  .header-list {
+    flex-wrap: nowrap;
+  }
+}
 .header-list--cont {
   margin: 30px 0px 30px 30.6%;
 }

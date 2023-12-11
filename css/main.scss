@@ -468,6 +468,9 @@ appearance: none;
     width: 100vw;
     border-bottom: 2px solid #002F51;
     padding: 0 0px 25px 0;
+    @media (max-width:1170px) {
+        flex-wrap: nowrap;
+    }
     &--cont{
         margin: 30px 0px 30px 30.6%;
         @media (max-width:1170px) {
