@@ -66,11 +66,11 @@
            <form action="https://formsubmit.co/lonozx@gmail.com" method="POST">
                 <div class="contact-form">
                 <img class="form-img" src="../components/images/upper-form.jpg" alt="">
-                <input name="Name" class="contact-form--input h3--grey" type="text" placeholder="Ім'я" required>
-                <input name="Number" class="contact-form--input h3--grey" type="tel" placeholder="Номер телефону" required>
+                <input id="name" name="Name" class="contact-form--input h3--grey" type="text" placeholder="Ім'я" required>
+                <input id="tel" name="Number" class="contact-form--input h3--grey" type="tel" placeholder="Номер телефону" required>
                 <button class="h3--white sub-form" type="submit">Замовити консультацію</button>
                 <div class="check h4--grey">
-                <input class="check--box" type="checkbox" required>
+                <input id="check" class="check--box" type="checkbox" required>
                 <p class="h4--grey">Ви даєте згоду на обробку персональних даних</p>
                 
             </div>
@@ -124,7 +124,7 @@
           
             </div>
             
-            <p class="h3" style="align-self: baseline; text-align: justify;padding-bottom: 147px; border-bottom:2px solid; margin: 7% 0">Попередня експертна оцінка в справі дозволяє нашій фірмі здійснити аналіз ключових аспектів, оцінити можливі ризики та визначити оптимальні шляхи вирішення. Ви можете розраховувати на точні та зрозумілі результати попередньої експертної оцінки для ухвалення обґрунтованих рішень в справі.</p>
+            <p class="h3" style="align-self: baseline; text-align: justify;padding-bottom: 121px; border-bottom:2px solid; margin: 7% 0">Попередня експертна оцінка в справі дозволяє нашій фірмі здійснити аналіз ключових аспектів, оцінити можливі ризики та визначити оптимальні шляхи вирішення. Ви можете розраховувати на точні та зрозумілі результати попередньої експертної оцінки для ухвалення обґрунтованих рішень в справі.</p>
             
         </div>
             <div class="override" style="display: flex;gap: 30px; margin: 0 21% 0 29%; justify-content: center; align-items: center;">
@@ -150,19 +150,19 @@
             
         </div>
         <div class="contents__item" style="justify-content: center;">
-            <form action="send-quote">
-                <div class="contact-form">
-                <img class="form-img" src="../../components/images/upper-form.jpg" alt="">
-                <input class="contact-form--input h3--grey" id="name" type="text" placeholder="Ім'я">
-                <input class="contact-form--input h3--grey" id="tel" type="tel" placeholder="Номер телефону">
-                <button class="h3--white sub-form" id="submit" type="submit">Замовити консультацію</button>
-                <div class="check h4--grey">
-                <input class="check--box" id="check" type="checkbox">
-                <p class="h4--grey">Ви даєте згоду на обробку персональних даних</p>
-                
-            </div>
+        <form action="send-quote" class="mobile-only">
+            <div class="contact-form">
+            <img class="form-img" src="../components/images/upper-form.jpg" alt="">
+            <input class="contact-form--input h3--grey" type="text" placeholder="Ім'я">
+            <input class="contact-form--input h3--grey" type="tel" placeholder="Номер телефону">
+            <button class="h3--white sub-form" type="submit">Замовити консультацію</button>
+            <div class="check h4--grey">
+            <input class="check--box" type="checkbox">
+            <p class="h4--grey">Ви даєте згоду на обробку персональних даних</p>
+            
         </div>
-            </form>
+    </div>
+        </form>
     </div>
         </div>
         <footer class="foot-add">
@@ -189,7 +189,7 @@
                     <a href="./contact.html" class="h3 menu-footer">Контакти</a>
                 </li>
             </ul>
-            <div class="data">
+             <div class="data">
                 <div class="data__phone">
                     <p class="h3--grey">Phone</p>
                     <a class="h3 data-item" href="tel:+38(073)60-60-603">+38(073)60-60-603</a>
@@ -209,8 +209,8 @@
         
         </footer>
     </div>
-    <script src="../../script/validation.js"></script>
     <script src="../script/index.js"></script>
+    <script src="../script/validation.js"></script>
     <script defer src="../script/hamburger.js"></script>
 </body>
 </html>
