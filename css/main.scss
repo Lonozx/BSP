@@ -471,14 +471,14 @@ appearance: none;
     &--cont{
         margin: 30px 0px 30px 30.6%;
         @media (max-width:1170px) {
-            margin: 50px 0px;
+            // margin: 50px 0px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             max-width: 396px;
             justify-content: flex-start;
-    margin: 124px 0;
+    margin: 124px 0 0 0;
         }
     }
     @media (max-width:1280px) {
