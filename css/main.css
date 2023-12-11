@@ -896,7 +896,8 @@ button:hover svg path {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-right: 115px;
+  margin-right: 85px;
+  width: 270px;
 }
 @media (max-width: 1170px) {
   .data {
@@ -912,7 +913,7 @@ button:hover svg path {
   gap: 30px;
   display: flex;
   flex-direction: column;
-  width: 270px;
+  width: 127px;
 }
 @media (max-width: 1170px) {
   .menu-footer {
