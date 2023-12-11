@@ -429,10 +429,10 @@ appearance: none;
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #8DC4EB;
     min-width: 369px;
-   
-    padding: 15px;
+    border: 15px solid white;
+    // padding: 15px;
     // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     @media (max-width:1170px) {
@@ -453,7 +453,7 @@ appearance: none;
     background: #8DC4EB;
     height: 74px;
     display: flex;
-    padding: 25px;
+    // padding: 25px;
     justify-content: flex-start;
     align-items: center;
     @media (max-width:1170px) {
