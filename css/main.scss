@@ -453,7 +453,7 @@ appearance: none;
     background: #8DC4EB;
     height: 74px;
     display: flex;
-    padding: 15px;
+    padding: 25px;
     justify-content: flex-start;
     align-items: center;
     @media (max-width:1170px) {
@@ -468,9 +468,9 @@ appearance: none;
         border-bottom: 1px solid white;
     }
 }
-.dropdown-content a:hover:last-child{
+.dropdown-content a:last-child{
     // margin: 0px 0px 0px 0px;
-    padding-bottom: 15px;
+   margin-bottom: 25px;
 }
 .dropdown-content a:hover{
     transition: all .2s ease-in-out;
