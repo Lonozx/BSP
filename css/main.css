@@ -914,10 +914,12 @@ button:hover svg path {
   display: flex;
   flex-direction: column;
   width: 127px;
+  margin-right: 73px;
 }
 @media (max-width: 1170px) {
   .menu-footer {
     align-items: center;
+    margin-right: 0;
   }
 }
 
@@ -950,10 +952,12 @@ button:hover svg path {
   justify-content: space-between;
   height: 255px;
   width: 270px;
+  margin-left: -50px;
 }
 @media (max-width: 1170px) {
   .container__foot-rules {
     height: 100%;
+    margin-left: 0;
   }
 }
 
