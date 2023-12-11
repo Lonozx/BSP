@@ -455,6 +455,7 @@ input[type=checkbox]:checked {
   background: #8DC4EB;
   height: 74px;
   display: flex;
+  padding: 15px;
   justify-content: flex-start;
   align-items: center;
 }
@@ -473,6 +474,14 @@ input[type=checkbox]:checked {
     background-color: transparent;
     border-bottom: 1px solid white;
   }
+}
+
+.dropdown-content a:hover:last-child {
+  padding-bottom: 15px;
+}
+
+.dropdown-content a:hover {
+  transition: all 0.2s ease-in-out;
 }
 
 .dropdown:hover .dropdown-content {
