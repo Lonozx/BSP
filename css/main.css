@@ -430,8 +430,8 @@ input[type=checkbox]:checked {
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 300px;
-  padding: 10px;
+  min-width: 369px;
+  padding: 15px;
   z-index: 1;
 }
 @media (max-width: 1170px) {
