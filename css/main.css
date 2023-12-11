@@ -896,7 +896,7 @@ button:hover svg path {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-right: 46px;
+  margin-right: 50px;
   width: 270px;
 }
 @media (max-width: 1170px) {
@@ -922,7 +922,7 @@ button:hover svg path {
   display: flex;
   flex-direction: column;
   width: 127px;
-  margin-right: 115px;
+  margin-right: 140px;
 }
 @media (max-width: 1170px) {
   .menu-footer {
@@ -941,7 +941,7 @@ button:hover svg path {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 30px;
 }
 @media (max-width: 1280px) {
   .container__foot {
@@ -960,7 +960,7 @@ button:hover svg path {
   justify-content: space-between;
   height: 255px;
   width: 270px;
-  margin-left: -50px;
+  margin-left: 10px;
 }
 @media (max-width: 1170px) {
   .container__foot-rules {
