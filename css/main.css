@@ -451,6 +451,15 @@ input[type=checkbox]:checked {
   margin-top: 25px;
 }
 
+.contact-form input:invalid + b:before {
+  content: "Form is invalid";
+  color: red;
+}
+
+input[type=text]:invalid ~ label {
+  color: red;
+}
+
 .dropdown-content a {
   background: #8DC4EB;
   height: 74px;
