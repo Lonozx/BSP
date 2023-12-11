@@ -896,7 +896,7 @@ button:hover svg path {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-right: 85px;
+  margin-right: 46px;
   width: 270px;
 }
 @media (max-width: 1170px) {
@@ -904,6 +904,14 @@ button:hover svg path {
     margin-right: 0px;
     padding: 0 0 60px 0px;
   }
+}
+.data-item {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-footer {
@@ -914,7 +922,7 @@ button:hover svg path {
   display: flex;
   flex-direction: column;
   width: 127px;
-  margin-right: 73px;
+  margin-right: 115px;
 }
 @media (max-width: 1170px) {
   .menu-footer {
