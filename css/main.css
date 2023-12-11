@@ -429,11 +429,11 @@ input[type=checkbox]:checked {
 .dropdown-content {
   display: none;
   position: absolute;
-  padding-top: 20px;
   background-color: #8DC4EB;
   min-width: 369px;
   border: 15px solid white;
   z-index: 1;
+  border-top: 24px solid white;
 }
 @media (max-width: 1170px) {
   .dropdown-content {

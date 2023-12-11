@@ -68,8 +68,14 @@
             <form action="send-quote">
                 <div class="contact-form">
                 <img class="form-img" src="../../components/images/upper-form.jpg" alt="">
-                <input class="contact-form--input h3--grey" id="name" type="text" placeholder="Ім'я">
-                <input class="contact-form--input h3--grey" id="tel" type="tel" placeholder="Номер телефону">
+                <div>
+                <label class="h4" for="name" id="name-label">Ім'я</label>
+                <input class="contact-form--input h3" id="name" type="text" >
+            </div>
+            <div>
+                <label class="h4" for="name" id="phone-label">Номер телефону</label>
+                <input class="contact-form--input h3" id="tel" type="tel" >
+            </div>
                 <button class="h3--white sub-form" id="submit" type="submit">Замовити консультацію</button>
                 <div class="check h4--grey">
                 <input class="check--box" id="check" type="checkbox">
