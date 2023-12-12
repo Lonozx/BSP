@@ -135,6 +135,12 @@
     margin: 40px 0;
     max-width: 370px;
 }
+.about-theme{
+    margin-left: -163px;
+    @media (max-width:1170px) {
+        margin-left: 0;    
+    }
+}
 .about{
     margin: 120px 0 0 0;
     &__content{
@@ -144,12 +150,16 @@
   margin: 30px -23.2%;
   @media (max-width:1280px) {
     margin: 0px -53%;
+    flex-direction: column;
   }
         &-item{
             width: 570px;
             display: flex;
             flex-direction: column;
             gap: 28px;
+            @media (max-width:1170px) {
+                width:296px;
+            }
         }
     }
 }
@@ -164,6 +174,9 @@ button.sub-form{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    @media (max-width:1170px) {
+        margin: -90px 0;
+    }
     &--input{
         width: 270px;
         border: none;
@@ -279,6 +292,7 @@ gap: 30px;
     &--cont{
         margin: -7.1% 30px 0 12%;
         @media (max-width: 1170px) {
+            margin: 0 auto;
         }
     }
     @media (max-width:1280px) {
@@ -324,6 +338,10 @@ img {
     height: 174px;
     margin-bottom: 30px;
     margin-top: 60px;
+    @media (max-width:1170px) {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
 }
 .form{
     @media (max-width:1290px) {
@@ -698,7 +716,7 @@ a.menu-header:hover{
 .desktop-only{
     display: flex;
     @media(max-width:1170px){
-        display: none !im;
+        display: none !important;
     }
 }
 .photo-frame{
@@ -810,12 +828,19 @@ a.menu-header:hover{
             justify-content: center;
         }
         &-item{
-            width: 270px ;
+           
+            width: 270px;
             height: 404px;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
+            &:last-child{
+                @media (max-width:1170px) {
+                    height: 100px; 
+                    width: 296px;
+                }
+            }
             @media (max-width:1170px) {
                 width: 296px;
             }
@@ -1017,6 +1042,7 @@ button:hover svg path{
     @media (max-width:1170px) {
         margin-right: 0px;
         padding: 0 0 60px 0px;
+        text-align: center;
     }
     &-item{
         color: white;
