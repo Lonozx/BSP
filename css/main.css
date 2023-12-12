@@ -386,10 +386,13 @@ input[type=checkbox]:checked {
   margin-bottom: 120px;
 }
 
-.service:after {
-  content: url("../components/images/arrow.png");
-  width: 16px;
-  height: 14px;
+li.service:hover .arrow {
+  transform: rotate(180deg);
+  transition: all 0.2s ease;
+}
+
+li.service .arrow {
+  transition: all 0.2s ease;
 }
 
 .menu {
