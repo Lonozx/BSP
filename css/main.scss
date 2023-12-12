@@ -451,8 +451,11 @@ li.service .arrow{
     z-index: 1;
     border-top: 24px solid white;
     @media (max-width:1170px) {
+        border: none;
       position: static;
+      border-top: none;
       background: transparent;
+      background-color: transparent;
       color: white;
       box-shadow: none;
       display: none;
@@ -481,6 +484,8 @@ li.service .arrow{
     justify-content: flex-start;
     align-items: center;
     @media (max-width:1170px) {
+        background: transparent;
+        justify-content: center;
         border-bottom: 1px solid transparent;
     }
   }
