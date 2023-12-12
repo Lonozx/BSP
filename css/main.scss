@@ -187,6 +187,19 @@ button.sub-form{
     margin: 3px;
     }
 }
+.services-margin{
+    margin-left: 211px;
+    @media (max-width:1170px) {
+        margin-left: 0;
+    }
+}
+.dir-col{
+    @media (max-width:1170px) {
+        display: flex;
+    flex-direction: column;
+    }
+    
+}
 .phone{
     color: #00182A;
     text-decoration: none;
@@ -196,6 +209,11 @@ button.sub-form{
         @media (max-width:1170px) {
             display: none;
         }
+    }
+    &--ham{
+    color: #00182A;
+    text-decoration: none;
+    padding: 0 45px;
     }
 }
 .divider{
@@ -616,6 +634,7 @@ li.service .arrow{
     display: none;
     @media (max-width:1170px) {
         display: flex;
+        z-index: 1;
     }
 }
 .container__header-burger span{
@@ -634,6 +653,10 @@ li.service .arrow{
 }
 a.non-hover{
     cursor:unset;
+}
+.serv-list-item{
+    text-decoration: none;
+    color: #00182A;
 }
 a.menu{
     text-decoration: none;
@@ -673,10 +696,59 @@ a.menu-header:hover{
     }
 }
 .desktop-only{
-    display: block;
+    display: flex;
     @media(max-width:1170px){
-        display: none;
+        display: none !im;
     }
+}
+.photo-frame{
+    margin-top: 50px; 
+    max-width: 1245px; 
+    height: 476px; 
+    // display: flex; 
+    gap: 30px;
+}
+.blue-shield{
+    margin-top: 120px;
+    height: 434px;
+    width: 100%;
+    background: #8DC4EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    &--attitide{
+        // position: absolute;
+        // top: -105px;;
+        // bottom: 0;
+    }
+}
+.blue-shield p{
+    max-width: 262px;
+}
+.blue-shield h2{
+    max-width: 262px;
+}
+.upper-h1{
+    margin-top: 30px;
+    text-transform: uppercase;
+    // display: flex; 
+    justify-content: flex-start;
+
+}
+.sh{
+    @media (max-width:1170px) {
+        min-width: 18px;
+        min-height: 22px;
+    }
+}
+.image-section{
+    @media (max-width:1170px) {
+        width: 296px;
+    }
+    
 }
 .services{
     margin: 120px 0 0 0;
@@ -687,7 +759,12 @@ a.menu-header:hover{
         display: flex;
   flex-direction: column;
   justify-content: space-between;
-    }
+        @media (max-width:1170px) {
+            min-width: 296px;
+            margin: 50px;
+            max-width: 296px;
+        }
+}
     &__content{
         // margin: 30px -291px;
         display: flex;
@@ -697,6 +774,22 @@ a.menu-header:hover{
             margin: 30px -345px;
         }
         }
+}
+.advantage-name{
+    margin-right: -68%;
+    border-bottom: 2px solid #002F51;
+            width: 100vw;
+    @media (max-width:1170px) {
+        margin-right: -36%;
+    }
+}
+.services-name{
+    margin: 0;
+    text-transform: uppercase;
+    margin-right: 49%;
+    @media (max-width:1170px) {
+        margin-right: 26%;
+    }
 }
 .advantage{
     width: 70vw;
@@ -712,6 +805,10 @@ a.menu-header:hover{
         flex-wrap: wrap;
         gap: 30px;
         margin: 30px 0;
+        @media (max-width:1170px) {
+            align-items: center;
+            justify-content: center;
+        }
         &-item{
             width: 270px ;
             height: 404px;
@@ -719,7 +816,19 @@ a.menu-header:hover{
             justify-content: center;
             align-items: center;
             text-align: center;
+            @media (max-width:1170px) {
+                width: 296px;
+            }
         }
+    }
+}
+.adv-sep{
+    margin-top: 60px !important;
+}
+.advantage-main{
+    margin: 0 10% 0 12%;
+    @media (max-width:1170px) {
+        margin: 0;
     }
 }
 .button-text{
@@ -733,7 +842,9 @@ button{
     background: #002F51;
     color: white;
     border: none;
-    
+    @media (max-width:1170px) {
+        width: 296px;
+    }
 }
 .readmore{
     padding: 50px 0;
@@ -745,6 +856,10 @@ button{
 .showmore{
     position: absolute;
     bottom: 0;
+    @media (max-width:1170px) {
+        top: 0;
+        width: 296px;
+    }
 }
 .adv{
     margin: 0 22.4%;
@@ -761,21 +876,39 @@ button{
     background-image:url('../components/images/anon.png');
     background-size: 100% 100%;
     object-fit: cover;
+    @media (max-width:1170px) {
+        background-image: url('../components/images/adv-mob-1.png');
+    }
 }
 .cval{
-    background:url('../components/images/cval.png')
+    background:url('../components/images/cval.png');
+    @media (max-width:1170px) {
+        background-image: url('../components/images/adv-mob-2.png');
+    }
 }
 .info{
     background:url('../components/images/info.png');
+    @media (max-width:1170px) {
+        background-image: url('../components/images/adv-mob-3.png');
+    }
 }
 .expert{
-    background:url('../components/images/expert.png')
+    background:url('../components/images/expert.png');
+    @media (max-width:1170px) {
+        background-image: url('../components/images/adv-mob-4.png');
+    }
 }
 .methods{
-    background:url('../components/images/methods.png')
+    background:url('../components/images/methods.png');
+    @media (max-width:1170px) {
+        background-image: url('../components/images/adv-mob-5.png');
+    }
 }
 .way{
-    background:url('../components/images/way.png')
+    background:url('../components/images/way.png');
+    @media (max-width:1170px) {
+        background-image: url('../components/images/adv-mob-6.png');
+    }
 }
 
 svg{
@@ -940,6 +1073,14 @@ button:hover svg path{
         }
     }
 
+}
+.cnt-obj{
+    margin: 0 auto;
+}
+.cnt-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .just-centered-m{
     @media (max-width:1170px) {
