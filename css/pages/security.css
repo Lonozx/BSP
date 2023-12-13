@@ -1,3 +1,7 @@
+.security-camera {
+  margin-top: 30px;
+  margin-left: 30px;
+}
 @media (max-width: 1170px) {
   .security-camera {
     margin: 0;
