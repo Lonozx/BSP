@@ -24,7 +24,8 @@
     margin: 0% 375px 0px 375px;
     // overflow-x: hidden;
     &-st{
-        margin: 0 0 0 8%;
+        margin: 0 auto;
+        width: 1220px;
         @media(max-width:1490px){
             margin: 0 0 0 0%;
         }
@@ -32,6 +33,7 @@
             display: flex;
             flex-direction: column;
             overflow-x: hidden;
+            width: 360px;
         }
     }
     // @media(max-width: 1280px){
@@ -136,7 +138,7 @@
     max-width: 370px;
 }
 .about-theme{
-    margin-left: -163px;
+    // margin-left: -163px;
     @media (max-width:1170px) {
         margin-left: 0;    
     }
@@ -206,7 +208,16 @@ button.sub-form{
 .blue-shells{
     flex-direction: row;
      margin-top: 120px;
-     gap: 205px !important;
+}
+.rel-pos{
+    position: relative;
+}
+.full-width {
+// position: absolute;
+// position: static;
+//   width: 100vw;
+//   margin-left: 50%;
+//   transform: translate3d(-50%, 0, 0);
 }
 .services-margin{
     margin-left: 211px;
@@ -238,7 +249,8 @@ button.sub-form{
 .phone{
     color: #00182A;
     text-decoration: none;
-    padding: 0 45px;
+    // padding: 0 45px;
+    margin: 0 45px;
     &:visited::focus::hover::active{
         color: #00182A;
         @media (max-width:1170px) {
@@ -254,6 +266,12 @@ button.sub-form{
     position: absolute;
     right: 0; 
     margin: 40px;
+}
+.paragraph-article{
+    width: 570px;
+    @media (max-width:1170px) {
+        width: 100%;
+    }
 }
 .divider{
     height: 168px;
@@ -310,7 +328,7 @@ gap: 30px;
     // max-width: 100%;
     // width: 40%;
     float: left;
-    margin: -10% 30px 0 0;
+    // margin: -10% 30px 0 0;
     // position: absolute;
     // left: 180px;
     // top: -27px;
@@ -319,13 +337,14 @@ gap: 30px;
         // display: none;
     }
     &--cont{
-        margin: -7.1% 30px 0 12%;
+        // margin: -7.1% 30px 0 12%;
+        margin: -10.3% 30px 0 30px;
         @media (max-width: 1170px) {
             margin: 0 auto;
-            margin: -0 30px 0 15% !important;
+            // margin: -0 30px 0 15% !important;
         }
         @media(max-width:1490px){
-            margin: -7.1% 30px 0 5%;
+            // margin: -7.1% 30px 0 5%;
         }
     }
     @media (max-width:1280px) {
@@ -363,8 +382,8 @@ gap: 30px;
     }
 }
 img {
-    max-width: 100%;
-    height: auto;
+    // max-width: 100%;
+    // height: auto;
     }
 
 .huge-img{
@@ -406,7 +425,7 @@ img {
 .foot-add{
     width: 101vw;
   height: 495px;
-  margin: 0 -9%;
+//   margin: 0 -9%;
   background: #002F51;
   display: flex;
   justify-content: center;
@@ -438,6 +457,8 @@ appearance: none;
 }
 .contents{
     // margin: -7% 5%;
+    // display: flex;
+    flex-basis: 25% 58.33% 16.67%;
     @media (max-width:1170px) {
         flex-direction: column;
         margin: 32px;
@@ -497,7 +518,7 @@ li.service .arrow{
 // }
 
 .menu{
- position: relative;
+//  position: relative;
  border-bottom: 2px solid #002F51;
 
 }
@@ -529,13 +550,10 @@ li.service .arrow{
 .dropdown-content {
     display: none;
     position: absolute;
-    // top: 35px;
-    // padding-top: 35px;
+    left: -15px;
     background-color: #8DC4EB;
     min-width: 369px;
     border: 15px solid white;
-    // padding: 15px;
-    // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-top: 24px solid white;
     @media (max-width:1170px) {
@@ -600,16 +618,16 @@ li.service .arrow{
     display: flex;
     gap: 30px;
     list-style: none;
-    margin: 30px 0px 30px 35.6%;
+    margin: 30px 0px 30px 0;
     // flex-wrap: wrap;
-    width: 100vw;
-    border-bottom: 2px solid #002F51;
+    // width: 100vw;
+    // border-bottom: 2px solid #002F51;
     padding: 0 0px 25px 0;
     @media (max-width:1170px) {
         flex-wrap: nowrap;
     }
     &--cont{
-        margin: 30px 0px 30px 30.6%;
+        // margin: 30px 0px 30px 30.6%;
         @media (max-width:1170px) {
             margin: 50px 0px;
             display: flex;
@@ -858,7 +876,7 @@ a.menu-header:hover{
         }
 }
 .advantage-name{
-    margin-right: -68%;
+    margin-right: -112%;
     border-bottom: 2px solid #002F51;
             width: 100vw;
     @media (max-width:1170px) {
@@ -868,7 +886,7 @@ a.menu-header:hover{
 .services-name{
     margin: 0;
     text-transform: uppercase;
-    margin-right: 49%;
+    margin-right: 31%;
     @media (max-width:1170px) {
         margin-right: 26%;
     }
@@ -915,7 +933,7 @@ a.menu-header:hover{
     margin-top: 60px !important;
 }
 .advantage-main{
-    margin: 0 10% 0 12%;
+    // margin: 0 10% 0 12%;
     @media (max-width:1170px) {
         margin: 0;
     }

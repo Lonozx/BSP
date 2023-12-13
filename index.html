@@ -105,12 +105,12 @@
             <div class="contents__item desktop-only">
                 <p class="h3" style="max-width: 388px; margin-top: 30px;">Експерти з підтримки та безпеки бізнесу, повернення боргів, кредитування фізичних та юридичних осіб</p>
             </div>
-            <div class="desktop-only photo-frame">
+            <div class="desktop-only photo-frame" >
                 <img style="max-width: 670px;" src="./components/images/main-first.jpg" alt="">
-                <img style="max-width: 545px;" src="./components/images/main-second.jpg" alt="">
+                <img style="max-width: 545px; position: relative;" src="./components/images/main-second.jpg" alt="">
             </div>
-            <div class="desktop-only contents__item blue-shells">
-                <div style="position: relative; display: flex; height: 168px; min-width: 77.4%;;margin: 0 -10%; background:#8DC4EB">
+            <div class="desktop-only contents__item blue-shells full-width">
+                <!-- <div style="position: relative; display: flex; height: 168px; min-width: 77.4%;;margin: 0 -10%; background:#8DC4EB">
                     <div style="position: absolute; right: 700px; top: -60px">
                         
                         <img src="./components/images/header-image.png" alt="">
@@ -123,14 +123,21 @@
                 </div>
                 <div style="display: flex; height: 168px; width: 40%; background:#8DC4EB">
                 
-                </div>
-                
+                </div> -->
+                <div class="separated " style="position: relative; margin: 0px 0px 0px -28%;">
+                    <div style="display: flex; width:1345px; height: 195px; background:url('./components/images/rectangle-1.png')">
+                        <img style="position: absolute; left: 19.6%; top:-100px;" src="./components/images/header-image.png" alt="">
+                        <div style="position: absolute; right: 626px; top:30px; z-index: 1;">
+                            <h2 class="h1--white">ЗАХИЩАЄМО ВАШ БІЗНЕС</h2>
+                            <p class="h3--white" style="letter-spacing: .3em;">ВІДНОВЛЮЄМО ВАШУ ФІНАНСОВУ РІВНОВАГУ!</p>
+                        </div>
+                    </div>
+                <!-- <img style="width:1345px;" src="./components/images/rectangle-1.png" alt=""> -->
+                <img style="width: 545px; " src="./components/images/rectangle-2.png" alt="">
             </div>
-            <!-- <div class="separated" style="gap :30px">
-                <img src="./components/images/rectangle-1.png" alt="">
-                <img src="./components/images/rectangle-2.png" alt="">
-            </div> -->
-            <div class="contents__item mobile-only">
+            </div>
+            
+            <div class="contents__item mobile-only ">
                 
                 <div class="blue-shield">
                     <img class="blue-shield--attitide" src="./components/images/header-image.png" alt="">
@@ -138,7 +145,46 @@
                     <p class="h3" style="margin-bottom: 100px; color: white">ВІДНОВЛЮЄМО ВАШУ ФІНАНСОВУ РІВНОВАГУ!</p>
                 </div>
             </div>
-        <div class="contents__item services-margin" id="services" style=" flex-direction: column; justify-content: center; margin-top: 120px;">
+
+            <div class="contents__item" style="flex-direction: column; margin-top: 120px;">
+                <h2 class="h1 services-name" style="text-transform: uppercase;">Наші послуги</h2>
+                <div style="margin-left: 32%; display: flex; gap: 30px;">
+                    <img src="./components/images/services-1.jpg" alt="">
+                    <ul class="services__list" style="display: flex; gap: 11px;">
+                        <li class="h3 shield" >
+                            
+        <svg class="sh" width="18" height="23" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 10.375V4.62217C3.78926 4.55892 6.45646 3.43716 9 1.3454C11.5435 3.43716 14.2107 4.55892 17 4.62217V10.375C17 13.0034 16.3124 15.2361 14.9848 17.1055C13.6729 18.9529 11.6938 20.5042 9 21.7191C6.3063 20.5042 4.32719 18.9527 3.01521 17.1051C1.68754 15.2355 1 13.0028 1 10.375ZM9.13033 21.7773L9.1302 21.7773L9.13033 21.7773Z" stroke="#00182A" stroke-width="2"/>
+            </svg>
+            <a class="serv-list-item" href="./pages/services/service-security.html">Послуги охорони бізнесу</a></li>
+                        <li class="h3 shield" >
+                            <svg class="sh" width="18" height="23" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 10.375V4.62217C3.78926 4.55892 6.45646 3.43716 9 1.3454C11.5435 3.43716 14.2107 4.55892 17 4.62217V10.375C17 13.0034 16.3124 15.2361 14.9848 17.1055C13.6729 18.9529 11.6938 20.5042 9 21.7191C6.3063 20.5042 4.32719 18.9527 3.01521 17.1051C1.68754 15.2355 1 13.0028 1 10.375ZM9.13033 21.7773L9.1302 21.7773L9.13033 21.7773Z" stroke="#00182A" stroke-width="2"/>
+                                </svg>
+                            <a class="serv-list-item" href="./pages/services/service-dept.html">Робота з боржниками</a></li>
+                        <li class="h3 shield" >
+                            <svg class="sh" width="18" height="23" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 10.375V4.62217C3.78926 4.55892 6.45646 3.43716 9 1.3454C11.5435 3.43716 14.2107 4.55892 17 4.62217V10.375C17 13.0034 16.3124 15.2361 14.9848 17.1055C13.6729 18.9529 11.6938 20.5042 9 21.7191C6.3063 20.5042 4.32719 18.9527 3.01521 17.1051C1.68754 15.2355 1 13.0028 1 10.375ZM9.13033 21.7773L9.1302 21.7773L9.13033 21.7773Z" stroke="#00182A" stroke-width="2"/>
+                                </svg>
+                            <a class="serv-list-item" href="./pages/services/service-rep.html">Перевірка ділової репутації партнерів</a></li>
+                        <li class="h3 shield" >
+                            <svg class="sh" width="18" height="23" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 10.375V4.62217C3.78926 4.55892 6.45646 3.43716 9 1.3454C11.5435 3.43716 14.2107 4.55892 17 4.62217V10.375C17 13.0034 16.3124 15.2361 14.9848 17.1055C13.6729 18.9529 11.6938 20.5042 9 21.7191C6.3063 20.5042 4.32719 18.9527 3.01521 17.1051C1.68754 15.2355 1 13.0028 1 10.375ZM9.13033 21.7773L9.1302 21.7773L9.13033 21.7773Z" stroke="#00182A" stroke-width="2"/>
+                                </svg>
+                            <a class="serv-list-item" href="./pages/services/service-yur.html">Юридичні послуги</a></li>
+                        <li class="h3 shield" >
+                            <svg class="sh" width="18" height="23" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 10.375V4.62217C3.78926 4.55892 6.45646 3.43716 9 1.3454C11.5435 3.43716 14.2107 4.55892 17 4.62217V10.375C17 13.0034 16.3124 15.2361 14.9848 17.1055C13.6729 18.9529 11.6938 20.5042 9 21.7191C6.3063 20.5042 4.32719 18.9527 3.01521 17.1051C1.68754 15.2355 1 13.0028 1 10.375ZM9.13033 21.7773L9.1302 21.7773L9.13033 21.7773Z" stroke="#00182A" stroke-width="2"/>
+                                </svg>
+                            <a class="serv-list-item" href="./pages/services/service-credit.html">Кредитування фізичних та юридичних осіб</a></li>
+                    </ul>
+                    <div class="separated">
+                        <img src="./components/images/services-2.jpg" alt="">
+                        <img src="./components/images/services-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        <!-- <div class="contents__item services-margin" id="services" style=" flex-direction: column; justify-content: center; margin-top: 120px;">
             <h2 class="h1 services-name">Наші послуги</h2>
             <div class="dir-col" style="display: flex; gap: 30px; justify-content: center; align-items: center; margin-left: -26px;">
                 <img class="image-section" style="max-height: 195px; width: 296px;" src="./components/images/services-1.jpg" alt="">
@@ -176,10 +222,11 @@
             <img class="desktop-only" src="./components/images/services-3.jpg" alt="">
         </div>
     </div>
-        </div>
-        <div class="contents__item" style="margin-top: 120px; justify-content: center; flex-direction: column;">
+        </div> -->
+        
+        <div class="contents__item" style="margin-left: 2.7%; margin-top: 120px; justify-content: center; flex-direction: column;">
             <h2 class="h1 advantage-name">НАШІ ПЕРЕВАГИ</h2>
-            <div class="advantage__content advantage-main"> 
+            <div class="advantage__content advantage-main">
                 <div class="advantage__content-item  anon">
                     <p class="h3--uppercase">Анонімність та конфіденційність клієнта</p>
                 </div>

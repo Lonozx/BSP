@@ -23,7 +23,8 @@ body {
   margin: 0% 375px 0px 375px;
 }
 .wrapper-st {
-  margin: 0 0 0 8%;
+  margin: 0 auto;
+  width: 1220px;
 }
 @media (max-width: 1490px) {
   .wrapper-st {
@@ -35,6 +36,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    width: 360px;
   }
 }
 
@@ -139,9 +141,6 @@ body {
   max-width: 370px;
 }
 
-.about-theme {
-  margin-left: -163px;
-}
 @media (max-width: 1170px) {
   .about-theme {
     margin-left: 0;
@@ -223,7 +222,10 @@ button.sub-form {
 .blue-shells {
   flex-direction: row;
   margin-top: 120px;
-  gap: 205px !important;
+}
+
+.rel-pos {
+  position: relative;
 }
 
 .services-margin {
@@ -261,7 +263,7 @@ button.sub-form {
 .phone {
   color: #00182A;
   text-decoration: none;
-  padding: 0 45px;
+  margin: 0 45px;
 }
 .phone:visited::focus::hover::active {
   color: #00182A;
@@ -279,6 +281,15 @@ button.sub-form {
   position: absolute;
   right: 0;
   margin: 40px;
+}
+
+.paragraph-article {
+  width: 570px;
+}
+@media (max-width: 1170px) {
+  .paragraph-article {
+    width: 100%;
+  }
 }
 
 .divider {
@@ -334,20 +345,13 @@ button.sub-form {
 .aside-form {
   width: 270px;
   float: left;
-  margin: -10% 30px 0 0;
 }
 .aside-form--cont {
-  margin: -7.1% 30px 0 12%;
+  margin: -10.3% 30px 0 30px;
 }
 @media (max-width: 1170px) {
   .aside-form--cont {
     margin: 0 auto;
-    margin: 0 30px 0 15% !important;
-  }
-}
-@media (max-width: 1490px) {
-  .aside-form--cont {
-    margin: -7.1% 30px 0 5%;
   }
 }
 @media (max-width: 1280px) {
@@ -382,11 +386,6 @@ button.sub-form {
   display: flex;
   gap: 30px;
   width: 165%;
-  height: auto;
-}
-
-img {
-  max-width: 100%;
   height: auto;
 }
 
@@ -435,7 +434,6 @@ img {
 .foot-add {
   width: 101vw;
   height: 495px;
-  margin: 0 -9%;
   background: #002F51;
   display: flex;
   justify-content: center;
@@ -475,6 +473,9 @@ input[type=checkbox]:checked {
   margin-left: 32px;
 }
 
+.contents {
+  flex-basis: 25% 58.33% 16.67%;
+}
 @media (max-width: 1170px) {
   .contents {
     flex-direction: column;
@@ -506,7 +507,6 @@ li.service .arrow {
 }
 
 .menu {
-  position: relative;
   border-bottom: 2px solid #002F51;
 }
 
@@ -543,6 +543,7 @@ li.service .arrow {
 .dropdown-content {
   display: none;
   position: absolute;
+  left: -15px;
   background-color: #8DC4EB;
   min-width: 369px;
   border: 15px solid white;
@@ -625,18 +626,13 @@ input[type=text]:invalid ~ label {
   display: flex;
   gap: 30px;
   list-style: none;
-  margin: 30px 0px 30px 35.6%;
-  width: 100vw;
-  border-bottom: 2px solid #002F51;
+  margin: 30px 0px 30px 0;
   padding: 0 0px 25px 0;
 }
 @media (max-width: 1170px) {
   .header-list {
     flex-wrap: nowrap;
   }
-}
-.header-list--cont {
-  margin: 30px 0px 30px 30.6%;
 }
 @media (max-width: 1170px) {
   .header-list--cont {
@@ -920,7 +916,7 @@ a.menu-header:hover {
 }
 
 .advantage-name {
-  margin-right: -68%;
+  margin-right: -112%;
   border-bottom: 2px solid #002F51;
   width: 100vw;
 }
@@ -933,7 +929,7 @@ a.menu-header:hover {
 .services-name {
   margin: 0;
   text-transform: uppercase;
-  margin-right: 49%;
+  margin-right: 31%;
 }
 @media (max-width: 1170px) {
   .services-name {
@@ -988,9 +984,6 @@ a.menu-header:hover {
   margin-top: 60px !important;
 }
 
-.advantage-main {
-  margin: 0 10% 0 12%;
-}
 @media (max-width: 1170px) {
   .advantage-main {
     margin: 0;
