@@ -164,7 +164,6 @@ body {
 @media (max-width: 1280px) {
   .about__content {
     margin: 0px -53%;
-    flex-direction: column;
   }
 }
 .about__content-item {
@@ -263,7 +262,7 @@ button.sub-form {
 .phone {
   color: #00182A;
   text-decoration: none;
-  margin: 0 45px;
+  margin-left: 50px;
 }
 .phone:visited::focus::hover::active {
   color: #00182A;
@@ -916,9 +915,7 @@ a.menu-header:hover {
 }
 
 .advantage-name {
-  margin-right: -112%;
-  border-bottom: 2px solid #002F51;
-  width: 100vw;
+  margin-right: 33.5%;
 }
 @media (max-width: 1170px) {
   .advantage-name {

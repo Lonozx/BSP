@@ -155,7 +155,7 @@
   margin: 30px -23.2%;
   @media (max-width:1280px) {
     margin: 0px -53%;
-    flex-direction: column;
+    // flex-direction: column;
   }
         &-item{
             width: 570px;
@@ -250,7 +250,8 @@ button.sub-form{
     color: #00182A;
     text-decoration: none;
     // padding: 0 45px;
-    margin: 0 45px;
+    // margin: 0 45px;
+    margin-left: 50px;
     &:visited::focus::hover::active{
         color: #00182A;
         @media (max-width:1170px) {
@@ -876,9 +877,10 @@ a.menu-header:hover{
         }
 }
 .advantage-name{
-    margin-right: -112%;
-    border-bottom: 2px solid #002F51;
-            width: 100vw;
+    // margin-right: -112%;
+    margin-right: 33.5%;
+    // border-bottom: 2px solid #002F51;
+            // width: 100vw;
     @media (max-width:1170px) {
         margin-right: -36%;
     }
