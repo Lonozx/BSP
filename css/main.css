@@ -40,6 +40,11 @@ body {
   }
 }
 
+.policy {
+  color: white;
+  text-decoration: none;
+}
+
 .h1 {
   font-family: "DIN Condensed";
   font-weight: 400;
