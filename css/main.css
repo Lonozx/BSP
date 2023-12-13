@@ -434,6 +434,10 @@ img {
   }
 }
 
+.foot-str {
+  margin: 0 0% !important;
+}
+
 input[type=checkbox] {
   -webkit-appearance: none;
      -moz-appearance: none;
