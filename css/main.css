@@ -244,7 +244,8 @@ button.sub-form {
     display: none;
   }
 }
-.phone--ham {
+
+.phone-ham {
   color: #00182A;
   text-decoration: none;
   padding: 0 45px;
@@ -816,6 +817,10 @@ a.menu-header:hover {
   .image-section {
     width: 296px;
   }
+}
+
+.wht {
+  color: white !important;
 }
 
 .services {

@@ -223,11 +223,11 @@ button.sub-form{
             display: none;
         }
     }
-    &--ham{
+}
+.phone-ham{
     color: #00182A;
     text-decoration: none;
     padding: 0 45px;
-    }
 }
 .divider{
     height: 168px;
@@ -767,6 +767,9 @@ a.menu-header:hover{
         width: 296px;
     }
     
+}
+.wht{
+    color: white !important;
 }
 .services{
     margin: 120px 0 0 0;

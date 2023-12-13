@@ -23,7 +23,8 @@
                        <a class="menu menu-header" href="../index.html">Головна</a> 
                     </li>
                     <li class="h3 service dropdown">
-                        <a class="menu menu-header" href="">Послуги</a> 
+                        <a class="menu menu-header" href="">Послуги</a>
+                        <img class="arrow" src="../components/images/Arrow.svg" alt=""> 
                         <div class="dropdown-content">
                             <a href="./services/service-security.html">Послуги охорони бізнесу</a>
                             <a href="./services/service-dept.html">Робота з боржниками</a>
@@ -60,8 +61,14 @@
             <form action="send-quote">
                 <div class="contact-form">
                 <img class="form-img" src="../../components/images/upper-form.jpg" alt="">
-                <input class="contact-form--input h3--grey" id="name" type="text" placeholder="Ім'я">
-                <input class="contact-form--input h3--grey" id="tel" type="tel" placeholder="Номер телефону">
+                <div>
+                <label class="h4" for="name" id="name-label">Ім'я</label>
+                <input class="contact-form--input h3" id="name" type="text" >
+            </div>
+            <div>
+                <label class="h4" for="name" id="phone-label">Номер телефону</label>
+                <input class="contact-form--input h3" id="tel" type="tel" >
+            </div>
                 <button class="h3--white sub-form" id="submit" type="submit">Замовити консультацію</button>
                 <div class="check h4--grey">
                 <input class="check--box" id="check" type="checkbox">
@@ -99,17 +106,17 @@
                 <div style="min-width: 270px; display: flex; flex-direction: column; gap: 30px;">
                     <p class="h3" style="text-transform:uppercase;">Соц. Мережi</p> 
                      
-                    <a class="menu h3 social--contact contact-link" href="#">Viber
+                    <a class="menu h3 social--contact contact-link" href="+380736060603">Viber
                         <svg style="margin: 0; width: 11px; height: 12px;" width="11px" height="12px" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.642008 11.5L10.0668 2.09382V10.7647H11V0.5H0.735324V1.43315H9.40711L0 10.858L0.642008 11.5Z" fill="#00182A"/>
                         </svg>
                     </a>    
-                    <a class="menu h3 social--contact contact-link" href="#">Telegram
+                    <a class="menu h3 social--contact contact-link" href="@Bsp_ukr_1">Telegram
                         <svg style="margin: 0; width: 11px; height: 12px;" width="11px" height="12px" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.642008 11.5L10.0668 2.09382V10.7647H11V0.5H0.735324V1.43315H9.40711L0 10.858L0.642008 11.5Z" fill="#00182A"/>
                         </svg>
                     </a>    
-                    <a class="menu h3 social--contact contact-link" href="#">Instagram
+                    <a class="menu h3 social--contact contact-link" href="https://instagram.com/business_support_protection?igshid=OGQ5ZDc2ODk2ZA==">Instagram
                         <svg style="margin: 0; width: 11px; height: 12px;" width="11px" height="12px" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.642008 11.5L10.0668 2.09382V10.7647H11V0.5H0.735324V1.43315H9.40711L0 10.858L0.642008 11.5Z" fill="#00182A"/>
                         </svg>

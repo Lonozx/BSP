@@ -30,6 +30,7 @@
                     </li>
                     <li class="h3 service dropdown">
                         <a class="menu menu-header" href="">Послуги</a> 
+                        <img class="arrow" src="../components/images/Arrow.svg" alt="">
                         <div class="dropdown-content">
                             <a href="../pages/services/service-security.html">Послуги охорони бізнесу</a>
                             <a href="../pages/services/service-dept.html">Робота з боржниками</a>
@@ -63,14 +64,20 @@
             <a href="../index.html">
                 <img class="logo" src="../components/images/header-image.png" alt="BSP-logo">
             </a>
-           <form action="https://formsubmit.co/lonozx@gmail.com" method="POST">
+             <form action="send-quote">
                 <div class="contact-form">
-                <img class="form-img" src="../components/images/upper-form.jpg" alt="">
-                <input id="name" name="Name" class="contact-form--input h3--grey" type="text" placeholder="Ім'я" required>
-                <input id="tel" name="Number" class="contact-form--input h3--grey" type="tel" placeholder="Номер телефону" required>
-                <button class="h3--white sub-form" type="submit">Замовити консультацію</button>
+                <img class="form-img" src="../../components/images/upper-form.jpg" alt="">
+                <div>
+                <label class="h4" for="name" id="name-label">Ім'я</label>
+                <input class="contact-form--input h3" id="name" type="text" >
+            </div>
+            <div>
+                <label class="h4" for="name" id="phone-label">Номер телефону</label>
+                <input class="contact-form--input h3" id="tel" type="tel" >
+            </div>
+                <button class="h3--white sub-form" id="submit" type="submit">Замовити консультацію</button>
                 <div class="check h4--grey">
-                <input id="check" class="check--box" type="checkbox" required>
+                <input class="check--box" id="check" type="checkbox">
                 <p class="h4--grey">Ви даєте згоду на обробку персональних даних</p>
                 
             </div>
@@ -149,21 +156,28 @@
             <p class="h3" style="align-self: baseline; text-align: justify;padding-bottom: 147px; border-bottom:2px solid; margin: 7% 0">Наша команда прислухається до індивідуальних вимог та розробляє стратегії, які відображають унікальні особливості кожної ситуації. Ми прагнемо забезпечити високий рівень задоволення клієнтів, надаючи персоналізовані рішення та високоякісну підтримку на всіх етапах співпраці.</p>
             
         </div>
-        <div class="contents__item" style="justify-content: center;">
-        <form action="send-quote" class="mobile-only">
-            <div class="contact-form">
-            <img class="form-img" src="../components/images/upper-form.jpg" alt="">
-            <input class="contact-form--input h3--grey" type="text" placeholder="Ім'я">
-            <input class="contact-form--input h3--grey" type="tel" placeholder="Номер телефону">
-            <button class="h3--white sub-form" type="submit">Замовити консультацію</button>
-            <div class="check h4--grey">
-            <input class="check--box" type="checkbox">
-            <p class="h4--grey">Ви даєте згоду на обробку персональних даних</p>
-            
+        <div class="contents__item" style="justify-content: center; margin-top: 120px;">
+            <form action="send-quote" class="mobile-only" >
+                <div class="contact-form">
+                <img class="form-img" src="../../components/images/upper-form.jpg" alt="">
+                <div class="dir-col">
+                <label class="h4" for="name" id="name-label">Ім'я</label>
+                <input class="contact-form--input h3" id="name" type="text" >
+            </div>
+            <div class="dir-col">
+                <label class="h4" for="name" id="phone-label">Номер телефону</label>
+                <input class="contact-form--input h3" id="tel" type="tel" >
+            </div>
+                <button class="h3--white sub-form" id="submit" type="submit">Замовити консультацію</button>
+                <div class="check h4--grey">
+                <input class="check--box" id="check" type="checkbox">
+                <p class="h4--grey">Ви даєте згоду на обробку персональних даних</p>
+                
+            </div>
         </div>
+            </form>
     </div>
-        </form>
-    </div>
+        </div>
         </div>
         <footer class="foot-add">
         <div class="container__foot">
@@ -210,7 +224,7 @@
         </footer>
     </div>
     <script src="../script/index.js"></script>
-    <script src="../script/validation.js"></script>
+    <script defer src="../script/validation.js"></script>
     <script defer src="../script/hamburger.js"></script>
 </body>
 </html>
