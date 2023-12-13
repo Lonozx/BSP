@@ -22,7 +22,7 @@
                     <span></span>
                     <span></span>
                    </button>
-                   <a class="phone-ham h3 styling-mobile" style=" padding: 0; position: absolute; right: 0; margin: 15px" href="tel:+38(073)60-60-603">+38(073)60-60-603</a>
+                   <a class="phone-ham h3 styling-mobile" href="tel:+38(073)60-60-603">+38(073)60-60-603</a>
                 </div>
                 <div class="container__header-list" style="padding: 0 0 0 20px;">
                 <ul class="header-list header-list--cont">
@@ -73,20 +73,20 @@
                 <p class="h3 just-centered-m" style="max-width: 388px; margin-top: 30px;">Експерти з підтримки та безпеки бізнесу, повернення боргів, кредитування фізичних та юридичних осіб</p>
             </div>
         </div>
-            <form action="send-quote">
+            <form method="POST" action="contactform.php">
                 <div class="contact-form">
                 <img class="form-img" src="../../components/images/upper-form.jpg" alt="">
                 <div>
                 <label class="h4" for="name" id="name-label">Ім'я</label>
-                <input class="contact-form--input h3" id="name" type="text" >
+                <input name="name" class="contact-form--input h3" id="name" type="text" >
             </div>
             <div>
                 <label class="h4" for="name" id="phone-label">Номер телефону</label>
-                <input class="contact-form--input h3" id="tel" type="tel" >
+                <input name="tel" class="contact-form--input h3" id="tel" type="tel" >
             </div>
                 <button class="h3--white sub-form" id="submit" type="submit">Замовити консультацію</button>
                 <div class="check h4--grey">
-                <input class="check--box" id="check" type="checkbox">
+                <input class="check--box" name="check" id="check" type="checkbox">
                 <p class="h4--grey">Ви даєте згоду на обробку персональних даних</p>
                 
             </div>
@@ -96,6 +96,7 @@
         </aside>
           
         <div class="contents">
+           
             <img style="max-height: 256px; width: 100%; margin-top: 110px; object-fit: cover;" class="cnt-obj mobile-only" src="./components/images/mobile-main-1.jpg" alt="">
             <h2 class="h1 desktop-only upper-h1">BUSINESS SUPPORT & PROTECTION</h2>
             <div class="contents__item desktop-only">
@@ -131,7 +132,7 @@
         <div class="contents__item services-margin" id="services" style=" flex-direction: column; justify-content: center; margin-top: 120px;">
             <h2 class="h1 services-name">Наші послуги</h2>
             <div class="dir-col" style="display: flex; gap: 30px; justify-content: center; align-items: center;">
-                <img class="image-section" style="max-height: 195px;" src="./components/images/services-1.jpg" alt="">
+                <img class="image-section" style="max-height: 195px; width: 296px;" src="./components/images/services-1.jpg" alt="">
             <ul class="services__list" style="display: flex; gap: 11px;">
                 <li class="h3 shield" >
                     
@@ -267,5 +268,21 @@
     <script src="./script/index.js"></script>
     <script src="../../script/validation.js"></script>
     <script defer src="./script/hamburger.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "lonozx@gmail.com",
+    Password : "3816E752B329F3A7DCE9B7A24675B1C7CAB4",
+    To : 'lonozx@gmail.com',
+    From : "lonozx@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+    </script> -->
 </body>
 </html>

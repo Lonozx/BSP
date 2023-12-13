@@ -224,6 +224,17 @@ button.sub-form {
   }
 }
 
+.transition-text-div {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1170px) {
+  .transition-text-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 1170px) {
   .dir-col {
     display: flex;
@@ -248,7 +259,10 @@ button.sub-form {
 .phone-ham {
   color: #00182A;
   text-decoration: none;
-  padding: 0 45px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  margin: 40px;
 }
 
 .divider {
@@ -306,12 +320,22 @@ button.sub-form {
   float: left;
   margin: -10% 30px 0 0;
 }
+@media (max-width: 1170px) {
+  .aside-form {
+    display: none;
+  }
+}
 .aside-form--cont {
   margin: -7.1% 30px 0 12%;
 }
 @media (max-width: 1170px) {
   .aside-form--cont {
     margin: 0 auto;
+  }
+}
+@media (max-width: 1490px) {
+  .aside-form--cont {
+    margin: 0 30px 0 5%;
   }
 }
 @media (max-width: 1280px) {
@@ -429,11 +453,22 @@ input[type=checkbox]:checked {
   margin-left: 32px;
 }
 
+@media (max-width: 1170px) {
+  .contents {
+    flex-direction: column;
+    margin: 32px;
+  }
+}
 .contents__item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 30px;
+}
+@media (max-width: 1170px) {
+  .contents__item {
+    flex-direction: column;
+  }
 }
 .contents__item:last-child {
   margin-bottom: 120px;
@@ -596,16 +631,18 @@ input[type=text]:invalid ~ label {
 @media (max-width: 1280px) {
   .header-list {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    border-bottom: 0;
   }
 }
 
+.header.open .container__header-list {
+  overscroll-behavior: contain;
+}
 @media (max-width: 1170px) {
   .header.open .container__header-list {
     transform: translateX(100%);
-    height: 120vh;
+    height: 100vh;
+    overscroll-behavior: contain;
+    overflow-y: scroll;
   }
 }
 
@@ -815,12 +852,18 @@ a.menu-header:hover {
 
 @media (max-width: 1170px) {
   .image-section {
-    width: 296px;
+    width: 100%;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 }
 
 .wht {
   color: white !important;
+}
+
+.header.open .phone-ham {
+  color: white;
 }
 
 .services {

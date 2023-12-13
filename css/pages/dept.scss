@@ -1,0 +1,8 @@
+p.dept-sentance{
+    width: 670px; 
+    text-align: justify;
+    @media (max-width:1170px) {
+        width: 100%;
+        align-self: center;
+    }
+}

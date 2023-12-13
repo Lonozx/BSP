@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advantage</title>
     <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/pages/security.css">
 </head>
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top">
@@ -15,7 +16,14 @@
     <div class="wrapper-st">
         <header class="header">
             <div class="container__header">
-               
+                <div style="width: 100vw; height: 70px;">
+                    <button id="burger" class="container__header-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                       </button>
+                       <a class="phone-ham h3 styling-mobile" style=" padding: 0; position: absolute; right: 0; margin: 32px" href="tel:+38(073)60-60-603">+38(073)60-60-603</a>
+                    </div>
                 <div class="container__header-list" style="padding: 0 0 0 20px;">
                 <ul class="header-list header-list--cont">
                     <li class="h3">
@@ -52,12 +60,12 @@
            
         </header>
         
-        <aside class="aside-form aside-form--cont">
+        <aside class="aside-form aside-form--cont desktop-only">
         <div class="container__header-logo">
             <a href="../../index.html">
                 <img class="logo" src="../../components/images/header-image.png" alt="BSP-logo">
             </a>
-            <form action="send-quote">
+            <form action="send-quote" class="desktop-only">
                 <div class="contact-form">
                 <img class="form-img" src="../../components/images/upper-form.jpg" alt="">
                 <div>
@@ -83,73 +91,99 @@
             
             <h2 class="h1" style="text-transform: uppercase; display: flex; justify-content: flex-start; margin-top: 30px;">Послуги охорони бізнесу</h2>
             <div class="contents__item">
-                <div style="height: 315px; justify-content: space-between; margin-top: 30px; gap: 30px; display: flex; flex-direction: column;">
+                <img style="margin-top: 30px;" class="image-section mobile-only" src="../../components/images/sec-mob-1.jpg" alt="">
+                <div class="transition-text-div" style="height: 315px; justify-content: space-between; margin-top: 30px; gap: 30px; ">
                 <p class="h3" style="max-width: 570px; text-align: justify;">Охорона в Україні може бути ефективною та надійною, якщо звертатися до кваліфікованих фахівців у даній галузі. Наша компанія має значний досвід у сфері охорони об'єктів і суб'єктів, надаючи послуги охорони будь-якого рівня. За роки співпраці з надійними організаціями та зв'язками з державними структурами, ми забезпечуємо високий рівень послуг охорони.
                 <p class="h3" style="max-width: 570px; text-align: justify;">Основні послуги охорони включають встановлення технічних засобів та надання ефективної охорони для проведення різних операцій, нейтралізації загрозливих ситуацій та забезпечення загальної безпеки. 
                 </div>
                     <div class="separated">
-                        <img src="../../components/images/service-left.jpg" alt="">
-                        <img src="../../components/images/service-rigth.jpg" alt="">
+                        <img class="desktop-only" src="../../components/images/service-left.jpg" alt="">
+                        <img class="desktop-only" src="../../components/images/service-rigth.jpg" alt="">
                     </div>
                 </div>
                 <div class="contents__item">
-                <img src="../../components/images/keychain.jpg" alt="" style="margin:  30px 0;">
+                <img class="desktop-only" src="../../components/images/keychain.jpg" alt="" style="margin:  30px 0;">
             </div>
             <!-- margin: 0 14%; -->
             <!-- margin: 60px 45px; MEDIA-->
-                <div class="contents__item" style=" margin: 0 210px">
-                    <img src="../../components/images/cameras.jpg" alt="">
+                <div class="contents__item security-camera">
+                    <img class="desktop-only" src="../../components/images/cameras.jpg" alt="">
                     <div style=" gap: 30px; display: flex; flex-direction: column;">
-               
+                    <img class="mobile-only" src="../../components/images/sec-mob-2.jpg" alt="">
                     <p class="h3" style="max-width: 570px; text-align: justify;">Фахівці нашої компанії також допомагають у протидії рейдерським захопленням. Якщо ваше підприємство стикається з регулярними погрозами, які неможливо ігнорувати, і місцева влада не реагує на скарги, наша допомога є необхідною.</p>
                     <p class="h3" style="max-width: 570px; text-align: justify;">Дізнайтесь більше про охорону бізнесу, залишивши заявку на консультацію!</p>
                         </div>
                 </div>
+                <div class="contents__item" style="justify-content: center; margin-top: 120px;">
+                    <form action="send-quote" class="mobile-only" >
+                        <div class="contact-form">
+                        <img class="form-img" src="../../components/images/upper-form.jpg" alt="">
+                        <div class="dir-col">
+                        <label class="h4" for="name" id="name-label-mob">Ім'я</label>
+                        <input class="contact-form--input h3" id="name-mob" type="text" >
+                    </div>
+                    <div class="dir-col">
+                        <label class="h4" for="name" id="phone-label-mob">Номер телефону</label>
+                        <input class="contact-form--input h3" id="tel-mob" type="tel" >
+                    </div>
+                        <button class="h3--white sub-form" id="submit-mob" type="submit">Замовити консультацію</button>
+                        <div class="check h4--grey">
+                        <input class="check--box" id="check-mob" type="checkbox">
+                        <p class="h4--grey">Ви даєте згоду на обробку персональних даних</p>
+                        
+                    </div>
+                </div>
+                    </form>
             </div>
-        <footer class="foot-add">
-        <div class="container__foot">
-            <img src="../../components/images/header-image.png" alt="">
-            <div class="container__foot-rules">
-                <h2 class="h1" style="width: 170px; color:white">BUSINESS SUPPORT & PROTECTION</h2>
-                <p class="h3--white">Політика конфіденційності</p>
-            </div>
-            <ul class="menu-footer">
-                <li>
-                    <a href="../../index.html" class="h3 menu-footer">Головна</a>
-                </li>
-                <li>
-                    <a href="../../index.html#services" class="h3 menu-footer">Послуги</a>
-                </li>
-                <li>
-                    <a href="../service.html" class="h3 menu-footer">Переваги</a>
-                </li>
-                <li>
-                    <a href="../about-company.html" class="h3 menu-footer">Про компанію</a>
-                </li>
-                <li>
-                    <a href="../contact.html" class="h3 menu-footer">Контакти</a>
-                </li>
-            </ul>
-            <div class="data">
-                <div class="data__phone">
-                    <p class="h3--grey">Phone</p>
-                    <a class="h3 data-item" href="tel:+38(073)60-60-603">+38(073)60-60-603</a>
-                </div>
-                <div class="data__email">
-                    <p class="h3--grey ">Mail</p>
-                    <a class="h3 data-item" href="mailto:business.sup.and.pro@ukr.net">business.sup.and.pro@ukr.net</a>
-                </div>
-                <div class="data__instagram">
-                    <p class="h3--grey">Instagram</p>
-                    <a class="h3 data-item" href="@business_support_protection">@business_support_protection</a>
-                </div>
             </div>
         </div>
-        
-        </footer>
-    </div>
+            <footer class="foot-add">
+                <div class="container__foot">
+                    <img src="../../components/images/header-image.png" alt="">
+                    <div class="container__foot-rules">
+                        <h2 class="h1 mobile-footer" >BUSINESS SUPPORT & PROTECTION</h2>
+                        <p class="h3--white desktop-only">Політика конфіденційності</p>
+                    </div>
+                    <ul class="menu-footer">
+                        <li>
+                            <a href="../index.html" class="h3 menu-footer">Головна</a>
+                        </li>
+                        <li>
+                            <a href="../index.html#services" class="h3 menu-footer">Послуги</a>
+                        </li>
+                        <li>
+                            <a href="./service.html" class="h3 menu-footer">Переваги</a>
+                        </li>
+                        <li>
+                            <a href="./about-company.html" class="h3 menu-footer">Про компанію</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="h3 menu-footer">Контакти</a>
+                        </li>
+                    </ul>
+                     <div class="data">
+                        <div class="data__phone">
+                            <p class="h3--grey">Phone</p>
+                            <a class="h3 data-item" href="tel:+38(073)60-60-603">+38(073)60-60-603</a>
+                        </div>
+                        <div class="data__email">
+                            <p class="h3--grey ">Mail</p>
+                            <a class="h3 data-item" href="mailto:business.sup.and.pro@ukr.net">business.sup.and.pro@ukr.net</a>
+                        </div>
+                        <div class="data__instagram">
+                            <p class="h3--grey">Instagram</p>
+                            <a class="h3 data-item" href="@business_support_protection">@business_support_protection</a>
+                        </div>
+                    </div>
+                    <p class="h3--white mobile-only" style="margin-bottom: 120px; margin-top: 30px;">Політика конфіденційності</p>
+                   
+                </div>
+                
+                </footer>
+    
     <script src="../../script/index.js"></script>
     <script src="../../script/validation.js"></script>
+    <script src="../../script/hamburger.js"></script>
     
 </body>
 </html>
