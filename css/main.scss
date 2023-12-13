@@ -140,6 +140,9 @@
     @media (max-width:1170px) {
         margin-left: 0;    
     }
+    @media (max-width:1490px) {
+        margin-left: 0; 
+    }
 }
 .about{
     margin: 120px 0 0 0;
@@ -200,11 +203,21 @@ button.sub-form{
     margin: 3px;
     }
 }
+.blue-shells{
+    flex-direction: row;
+     margin-top: 120px;
+     gap: 205px !important;
+}
 .services-margin{
     margin-left: 211px;
+    @media (max-width:1490px) {
+        margin-left: 180px;
+    }
     @media (max-width:1170px) {
         margin-left: 0;
+
     }
+   
 }
 .transition-text-div{
     display: flex;
@@ -303,15 +316,16 @@ gap: 30px;
     // top: -27px;
     // margin: -5% -15%;
     @media (max-width:1170px) {
-        display: none;
+        // display: none;
     }
     &--cont{
         margin: -7.1% 30px 0 12%;
         @media (max-width: 1170px) {
             margin: 0 auto;
+            margin: -0 30px 0 15% !important;
         }
         @media(max-width:1490px){
-            margin: 0 30px 0 5%;
+            margin: -7.1% 30px 0 5%;
         }
     }
     @media (max-width:1280px) {
@@ -352,6 +366,13 @@ img {
     max-width: 100%;
     height: auto;
     }
+
+.huge-img{
+@media (max-width:1490px) {
+    margin: 0;
+}
+
+}
 .form-img{
     width: 270px;
     height: 174px;
@@ -483,6 +504,7 @@ li.service .arrow{
 .dropdown{
     position: relative;
   display: inline-block;
+  min-width: 100px;
   @media (max-width:1170px) {
     position: relative;
     display: inline-block;
@@ -579,7 +601,7 @@ li.service .arrow{
     gap: 30px;
     list-style: none;
     margin: 30px 0px 30px 35.6%;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     width: 100vw;
     border-bottom: 2px solid #002F51;
     padding: 0 0px 25px 0;
@@ -728,6 +750,7 @@ a.menu{
     }
 }
 a.menu-header{
+    min-width: 100px !important;
     @media (max-width:1170px) {
         border-bottom: 2px solid transparent;
     }
@@ -936,7 +959,7 @@ button{
 .separated{
     display: flex;
     gap: 30px;
-    margin: 30px 0 0 0;
+    margin: 0px 0 0 0;
 }
 .anon{
     background-image:url('../components/images/anon.png');

@@ -147,6 +147,11 @@ body {
     margin-left: 0;
   }
 }
+@media (max-width: 1490px) {
+  .about-theme {
+    margin-left: 0;
+  }
+}
 
 .about {
   margin: 120px 0 0 0;
@@ -215,8 +220,19 @@ button.sub-form {
   margin: 3px;
 }
 
+.blue-shells {
+  flex-direction: row;
+  margin-top: 120px;
+  gap: 205px !important;
+}
+
 .services-margin {
   margin-left: 211px;
+}
+@media (max-width: 1490px) {
+  .services-margin {
+    margin-left: 180px;
+  }
 }
 @media (max-width: 1170px) {
   .services-margin {
@@ -320,22 +336,18 @@ button.sub-form {
   float: left;
   margin: -10% 30px 0 0;
 }
-@media (max-width: 1170px) {
-  .aside-form {
-    display: none;
-  }
-}
 .aside-form--cont {
   margin: -7.1% 30px 0 12%;
 }
 @media (max-width: 1170px) {
   .aside-form--cont {
     margin: 0 auto;
+    margin: 0 30px 0 15% !important;
   }
 }
 @media (max-width: 1490px) {
   .aside-form--cont {
-    margin: 0 30px 0 5%;
+    margin: -7.1% 30px 0 5%;
   }
 }
 @media (max-width: 1280px) {
@@ -376,6 +388,12 @@ button.sub-form {
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media (max-width: 1490px) {
+  .huge-img {
+    margin: 0;
+  }
 }
 
 .form-img {
@@ -495,6 +513,7 @@ li.service .arrow {
 .dropdown {
   position: relative;
   display: inline-block;
+  min-width: 100px;
 }
 @media (max-width: 1170px) {
   .dropdown {
@@ -607,7 +626,6 @@ input[type=text]:invalid ~ label {
   gap: 30px;
   list-style: none;
   margin: 30px 0px 30px 35.6%;
-  flex-wrap: wrap;
   width: 100vw;
   border-bottom: 2px solid #002F51;
   padding: 0 0px 25px 0;
@@ -780,6 +798,9 @@ a.menu--large {
   }
 }
 
+a.menu-header {
+  min-width: 100px !important;
+}
 @media (max-width: 1170px) {
   a.menu-header {
     border-bottom: 2px solid transparent;
@@ -1024,7 +1045,7 @@ button {
 .separated {
   display: flex;
   gap: 30px;
-  margin: 30px 0 0 0;
+  margin: 0px 0 0 0;
 }
 
 .anon {
