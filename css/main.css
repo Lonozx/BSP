@@ -1031,7 +1031,7 @@ a.menu-header:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 32px 0 0 32px;
+    margin: 32px 0 0 22px;
     min-width: 296px;
     max-width: 100%;
   }
