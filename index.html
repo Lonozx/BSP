@@ -6,6 +6,8 @@
     <title>Головна</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/svg-main.css">
+    <link rel="stylesheet" href="/feedback/css/form-processing.css">
+
 </head>
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top">
@@ -76,8 +78,8 @@
             </div>
         </div>
         <form>
-            <!-- <form action="mailto:lonozx@gmail.com" method="POST" enctype="text/plain"> -->
-                <!-- <div class="contact-form-main">
+            <form id="form" action="feedback.php" enctype="multipart/form-data" method="post">
+                <div class="contact-form-main">
                 <img class="form-img" src="../../components/images/upper-form.jpg" alt="">
                 <div>
                 <label class="h4" for="name" id="name-label">Ім'я</label>
@@ -92,20 +94,13 @@
                 <input class="check--box" name="check" id="check" type="checkbox">
                 <p class="h4--grey">Ви даєте згоду на обробку персональних даних</p>
                 </div>
-            </div> -->
-        <!-- <input type="hidden" name="_thx" value="#modal"> -->
-    <!-- Hidden Required Fields -->
-		<input type="hidden" name="project_name" value="BSP">
-		<input type="hidden" name="admin_email" value="lonozx@gmail.com">
-		<input type="hidden" name="form_subject" value="Запит на консультацію">
-		<!-- END Hidden Required Fields -->
-
-		<input type="text" name="Name" placeholder="You name..." required><br>
-		<input type="text" name="E-mail" placeholder="You E-mail..." required><br>
-		<input type="text" name="Phone" placeholder="You phone..."><br>
-		<button>Send</button>       
+            </div>
+        <input type="hidden" name="_thx" value="#modal">
+    
     </form>
-         
+    <!-- <div class="form-success form-success_hide">
+        <div class="form-success__message">Форма успешно отправлена. Нажмите <button type="button" class="form-success__btn">здесь</button>, если нужно отправить ещё одну форму.</div>
+      </div> -->
         </aside>
         <div class="contents">
             <div class="modal" style="display: none;">
@@ -299,16 +294,19 @@
     <script src="./script/index.js"></script>
     <script src="../../script/validation.js"></script>
     <script defer src="./script/hamburger.js"></script>
-    <!-- Hidden Required Fields -->
-		<input type="hidden" name="project_name" value="Site Name">
-		<input type="hidden" name="admin_email" value="admin@mail.com">
-		<input type="hidden" name="form_subject" value="Form Subject">
-		<!-- END Hidden Required Fields -->
-
-		<input type="text" name="Name" placeholder="You name..." required><br>
-		<input type="text" name="E-mail" placeholder="You E-mail..." required><br>
-		<input type="text" name="Phone" placeholder="You phone..."><br>
-		<button>Send</button>
+    <script src="/feedback/js/form-processing.js">
+        document.addEventListener('itc.successSendForm', (e) => {
+  const el = e.target.closest('.form-container').querySelector('.form-success');
+  el.classList.remove('form-success_hide');
+});
+// при клике на .form-success__btn
+document.querySelector('.form-success__btn').addEventListener('click', (e) => {
+  const el = e.target.closest('.form-container').querySelector('form');
+  const form = ItcSubmitForm.getOrCreateInstance(el);
+  form.reset();
+  e.target.closest('.form-container').querySelector('.form-success').classList.add('form-success_hide');
+});
+    </script>
     <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function sendEmail(){
