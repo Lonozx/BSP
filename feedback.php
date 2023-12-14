@@ -1,16 +1,15 @@
 <?php 
 
- if(isset($_POST['submit'])){
-    http://businessuppro.com.ua/
     $name = $_POST['name'];
     $tel = $_POST['tel'];
-    $subj = $_POST['subject'];
+    $subj = "Повідомлення від БСП";
     $check = $_POST['check'];
-    $mailTo = "busine73@businessuppro.com.ua ";
+    $mailTo = "lonozx@gmail.com";
     $headers = "Від: Сайт БСП";
     $text = "Отриман запрос на косультацію від " .$name . " з номером " . $tel . '.';
 
-    mail($mailTo, $subj, $text, $headers);
-    header("Location: index.html?mailsend");
- }
+    if($tel!=NULL){
+        mail($mailTo, $subj, $text, $headers);
+    }
+    // header("Location:index.html/mailsend");
 ?>

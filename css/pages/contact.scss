@@ -42,10 +42,16 @@
   }
 }
 
-
+a.menu-soc p{
+    border-bottom: 2px solid white;
+}
+a.menu-soc:hover p{
+    border-bottom: 2px solid black;
+}
 a.menu-soc {
     text-decoration: none;
     color: black;
+    
   @media (max-width: 1170px) {
     text-decoration: none;
     color: black;

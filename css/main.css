@@ -171,6 +171,15 @@ body {
   }
 }
 
+.company-article {
+  max-height: 585px;
+}
+@media (max-width: 1170px) {
+  .company-article {
+    max-height: 100%;
+  }
+}
+
 .about {
   margin: 120px 0 0 0;
 }
@@ -180,7 +189,7 @@ body {
   width: 65.5vw;
   margin: 30px -23.2%;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1170px) {
   .about__content {
     flex-direction: column;
   }
@@ -479,7 +488,6 @@ button.sub-form {
 .form-img {
   width: 270px;
   height: 174px;
-  margin-bottom: 30px;
   margin-top: 60px;
 }
 @media (max-width: 1170px) {
@@ -522,13 +530,30 @@ button.sub-form {
 }
 @media (max-width: 1490px) {
   .foot-add {
-    margin: 0 0%;
+    margin: 0 -3.7%;
+    width: 105vw;
   }
 }
 @media (max-width: 1170px) {
   .foot-add {
     height: 100%;
   }
+}
+
+#name-label {
+  visibility: hidden;
+}
+
+input#name:hover #name-label {
+  visibility: visible !important;
+}
+
+#phone-label {
+  visibility: hidden;
+}
+
+#tel:focus + #phone-label {
+  visibility: visible;
 }
 
 .foot-str {
@@ -548,6 +573,23 @@ input[type=checkbox] {
 input[type=checkbox]:checked {
   accent-color: #002F51;
   background-color: #002F51;
+}
+
+.modal {
+  visibility: hidden;
+  position: absolute;
+}
+
+input:focus {
+  outline: none;
+}
+
+.modal .active {
+  visibility: visible;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 3;
 }
 
 .mobile-h {
@@ -926,7 +968,7 @@ a.menu-header:hover {
 }
 
 .services-li {
-  margin-left: 32%;
+  margin-left: 31%;
 }
 @media (max-width: 1170px) {
   .services-li {

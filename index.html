@@ -33,7 +33,7 @@
                        <a class="menu menu-header" href="../index.html">Головна</a> 
                     </li>
                     <li class="h3 service dropdown">
-                        <div style="display: flex;">
+                        <div style="display: flex; gap: 5px">
                         <a class="menu menu-header services-menu" href="">Послуги</a> 
                         <img class="arrow" src="./components/images/Arrow.svg" alt="">
                     </div>
@@ -77,17 +77,16 @@
                 <p class="h3 just-centered-m" style="max-width: 388px; margin-top: 30px;">Експерти з підтримки та безпеки бізнесу, повернення боргів, кредитування фізичних та юридичних осіб</p>
             </div>
         </div>
-        <form>
-            <form id="form" action="feedback.php" method="post">
+            <form id="form" action="/feedback.php" method="post">
                 <div class="contact-form-main">
                 <img class="form-img" src="../../components/images/upper-form.jpg" alt="">
                 <div>
                 <label class="h4" for="name" id="name-label">Ім'я</label>
-                <input name="name" class="contact-form--input h3" id="name" type="text" >
+                <input name="name" class="contact-form--input h3" id="name" type="text" placeholder="Ім'я" >
             </div>
             <div>
                 <label class="h4" for="tel" id="phone-label">Номер телефону</label>
-                <input name="tel" class="contact-form--input h3" id="tel" type="tel" >
+                <input name="tel" class="contact-form--input h3" id="tel" type="tel" placeholder="Номер телефону">
             </div>
                 <button class="h3--white sub-form" id="submit" type="submit" value="send">Замовити консультацію</button>
                 <div class="check h4--grey">
@@ -95,7 +94,7 @@
                 <p class="h4--grey">Ви даєте згоду на обробку персональних даних</p>
                 </div>
             </div>
-        <input type="hidden" name="_thx" value="#modal">
+        <!-- <input type="hidden" name="_thx" value="#modal"> -->
     
     </form>
     <!-- <div class="form-success form-success_hide">
@@ -103,7 +102,7 @@
       </div> -->
         </aside>
         <div class="contents">
-            <div class="modal" style="display: none;">
+            <div class="modal active">
                 <img src="./components/images/modal.png" alt="">
             </div>
             <img style="max-height: 256px; width: 100vw; margin-left: -32px; margin-top: 110px; object-fit: cover;" class="cnt-obj mobile-only" src="./components/images/mobile-main-1.jpg" alt="">
@@ -185,7 +184,7 @@
                             <a class="serv-list-item" href="./pages/services/service-credit.html">Кредитування фізичних та юридичних осіб</a></li>
                     </ul>
                     <img class="mobile-only" src="./components/images/main-notebook.jpg" alt="">
-                    <div class="separated ">
+                    <div class="separated " style="margin: 0 0 0 15px;">
                         <img class="desktop-only" src="./components/images/services-2.jpg" alt="">
                         <img class="desktop-only" src="./components/images/services-3.jpg" alt="">
                     </div>
