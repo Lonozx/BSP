@@ -553,7 +553,7 @@ input#name:hover #name-label {
 }
 
 .crop {
-  padding-left: 22%;
+  padding-left: 25%;
 }
 @media (max-width: 1170px) {
   .crop {
