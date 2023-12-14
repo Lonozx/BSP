@@ -530,6 +530,12 @@ input#name:hover #name-label{
     visibility: hidden;
   }
 
+  .crop{
+    padding-left: 22%;
+    @media (max-width:1170px) {
+        padding: 0;
+    }
+  }
   
   #tel:focus + #phone-label {
    visibility: visible;
