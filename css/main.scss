@@ -943,6 +943,11 @@ margin-left: 32%;
 .header.open .phone-ham{
     color: white;
 }
+.dis{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .services{
     margin: 120px 0 0 0;
     &__list{

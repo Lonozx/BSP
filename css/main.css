@@ -987,6 +987,12 @@ a.menu-header:hover {
   color: white;
 }
 
+.dis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .services {
   margin: 120px 0 0 0;
 }
