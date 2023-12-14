@@ -221,8 +221,8 @@ margin: 0 auto;
 }
 .border-b{
     padding-bottom: 65px;
-    border-bottom: 2px solid #002F51;
-    @media(max-height:1170px){
+    border-bottom: 2px solid #002F51 !important;
+    @media(max-width:1170px){
         border-bottom: none;
         padding-bottom: 0px;
     }
@@ -533,7 +533,7 @@ input#name:hover #name-label{
   .crop{
     padding-left: 22%;
     @media (max-width:1170px) {
-        padding: 0;
+        padding-left: 0;
     }
   }
   

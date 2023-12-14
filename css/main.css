@@ -239,9 +239,9 @@ button.sub-form {
 
 .border-b {
   padding-bottom: 65px;
-  border-bottom: 2px solid #002F51;
+  border-bottom: 2px solid #002F51 !important;
 }
-@media (max-height: 1170px) {
+@media (max-width: 1170px) {
   .border-b {
     border-bottom: none;
     padding-bottom: 0px;
@@ -550,6 +550,15 @@ input#name:hover #name-label {
 
 #phone-label {
   visibility: hidden;
+}
+
+.crop {
+  padding-left: 22%;
+}
+@media (max-width: 1170px) {
+  .crop {
+    padding-left: 0;
+  }
 }
 
 #tel:focus + #phone-label {
@@ -1416,6 +1425,7 @@ button:hover svg path {
   gap: 30px;
   margin-right: 50px;
   width: 270px;
+  margin-top: -10px;
 }
 @media (max-width: 1170px) {
   .data {
