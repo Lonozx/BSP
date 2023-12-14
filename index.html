@@ -75,8 +75,9 @@
                 <p class="h3 just-centered-m" style="max-width: 388px; margin-top: 30px;">Експерти з підтримки та безпеки бізнесу, повернення боргів, кредитування фізичних та юридичних осіб</p>
             </div>
         </div>
-            <form action="mailto:lonozx@gmail.com" method="POST" enctype="text/plain">
-                <div class="contact-form-main">
+        <form>
+            <!-- <form action="mailto:lonozx@gmail.com" method="POST" enctype="text/plain"> -->
+                <!-- <div class="contact-form-main">
                 <img class="form-img" src="../../components/images/upper-form.jpg" alt="">
                 <div>
                 <label class="h4" for="name" id="name-label">Ім'я</label>
@@ -91,13 +92,23 @@
                 <input class="check--box" name="check" id="check" type="checkbox">
                 <p class="h4--grey">Ви даєте згоду на обробку персональних даних</p>
                 </div>
-            </div>
+            </div> -->
         <!-- <input type="hidden" name="_thx" value="#modal"> -->
-            </form>
+    <!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="BSP">
+		<input type="hidden" name="admin_email" value="lonozx@gmail.com">
+		<input type="hidden" name="form_subject" value="Запит на консультацію">
+		<!-- END Hidden Required Fields -->
+
+		<input type="text" name="Name" placeholder="You name..." required><br>
+		<input type="text" name="E-mail" placeholder="You E-mail..." required><br>
+		<input type="text" name="Phone" placeholder="You phone..."><br>
+		<button>Send</button>       
+    </form>
          
         </aside>
         <div class="contents">
-            <div class="modal mobile-only" style="display: none;">
+            <div class="modal" style="display: none;">
                 <img src="./components/images/modal.png" alt="">
             </div>
             <img style="max-height: 256px; width: 100vw; margin-left: -32px; margin-top: 110px; object-fit: cover;" class="cnt-obj mobile-only" src="./components/images/mobile-main-1.jpg" alt="">
@@ -288,6 +299,16 @@
     <script src="./script/index.js"></script>
     <script src="../../script/validation.js"></script>
     <script defer src="./script/hamburger.js"></script>
+    <!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Site Name">
+		<input type="hidden" name="admin_email" value="admin@mail.com">
+		<input type="hidden" name="form_subject" value="Form Subject">
+		<!-- END Hidden Required Fields -->
+
+		<input type="text" name="Name" placeholder="You name..." required><br>
+		<input type="text" name="E-mail" placeholder="You E-mail..." required><br>
+		<input type="text" name="Phone" placeholder="You phone..."><br>
+		<button>Send</button>
     <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function sendEmail(){
