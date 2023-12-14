@@ -1008,6 +1008,16 @@ a.menu-header:hover {
     margin: 0% 0;
   }
 }
+.ov-lg {
+  padding-bottom: 150px;
+  margin: 7% 0;
+}
+@media (max-width: 1170px) {
+  .ov-lg {
+    padding-bottom: 30px;
+    margin: 0% 0;
+  }
+}
 
 .dis {
   display: flex;

@@ -963,6 +963,14 @@ margin-left: 32%;
         padding-bottom: 30px;
     margin: 0% 0;
     }
+    &-lg{
+        padding-bottom: 150px;
+    margin: 7% 0;
+    @media (max-width:1170px) {
+        padding-bottom: 30px;
+    margin: 0% 0;
+    }
+    }
 }
 .dis{
     display: flex;
