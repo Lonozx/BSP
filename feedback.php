@@ -11,5 +11,5 @@
     if($tel!=NULL){
         mail($mailTo, $subj, $text, $headers);
     }
-    // header("Location:index.html/mailsend");
+    header("Location:index.html");
 ?>
