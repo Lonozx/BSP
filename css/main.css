@@ -549,6 +549,7 @@ input[type=checkbox]:checked {
 }
 @media (max-width: 1170px) {
   .contents {
+    overflow-x: hidden;
     flex-direction: column;
     margin: 32px;
   }

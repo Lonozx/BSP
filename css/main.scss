@@ -529,6 +529,7 @@ appearance: none;
     // display: flex;
     flex-basis: 25% 58.33% 16.67%;
     @media (max-width:1170px) {
+        overflow-x: hidden;
         flex-direction: column;
         margin: 32px;
     }
