@@ -153,6 +153,12 @@
         margin-left: 0; 
     }
 }
+.m-top{
+    margin-top: 60px;
+    @media (max-width:1170px) {
+        margin-top: 30px;
+    }
+}
 .about{
     margin: 120px 0 0 0;
     &__content{
@@ -160,11 +166,11 @@
         gap: 30px;
   width: 65.5vw;
   margin: 30px -23.2%;
-  @media (max-width:1280px) {
-    margin: 0px -53%;
-    flex-direction: column;
-    // flex-direction: column;
-  }
+//   @media (max-width:1280px) {
+//     margin: 0px -53%;
+//     flex-direction: column;
+//     // flex-direction: column;
+//   }
         &-item{
             width: 570px;
             display: flex;
@@ -241,10 +247,13 @@ margin: 0 auto;
         border-bottom: 2px solid #002F51;
     }
     &-main{
-        display: flex;
+        @media (max-width:1170px) {
+            display: flex;
         flex-direction: column;
         gap: 30px;
         margin: -90px 0;
+        }
+        
     }
 }
 .check{
@@ -887,7 +896,7 @@ margin-left: 32%;
     margin: 0 auto;
 }
 .photo-frame{
-    margin-top: 80px; 
+    margin-top: 50px; 
     max-width: 1245px; 
     height: 476px; 
     // display: flex; 
@@ -917,10 +926,13 @@ margin-left: 32%;
     max-width: 262px;
 }
 .upper-h1{
-    margin-top: 30px;
+    margin-top: 60px;
     text-transform: uppercase;
     // display: flex; 
     justify-content: flex-start;
+    @media (max-width:1170px) {
+        margin-top: 30px
+    }
 
 }
 .sh{
@@ -942,6 +954,14 @@ margin-left: 32%;
 }
 .header.open .phone-ham{
     color: white;
+}
+.ov{
+    padding-bottom: 120px;
+    margin: 7% 0;
+    @media (max-width:1170px) {
+        padding-bottom: 30px;
+    margin: 0% 0;
+    }
 }
 .dis{
     display: flex;

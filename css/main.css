@@ -162,6 +162,15 @@ body {
   }
 }
 
+.m-top {
+  margin-top: 60px;
+}
+@media (max-width: 1170px) {
+  .m-top {
+    margin-top: 30px;
+  }
+}
+
 .about {
   margin: 120px 0 0 0;
 }
@@ -170,12 +179,6 @@ body {
   gap: 30px;
   width: 65.5vw;
   margin: 30px -23.2%;
-}
-@media (max-width: 1280px) {
-  .about__content {
-    margin: 0px -53%;
-    flex-direction: column;
-  }
 }
 .about__content-item {
   width: 570px;
@@ -261,11 +264,13 @@ button.sub-form {
   border: none;
   border-bottom: 2px solid #002F51;
 }
-.contact-form-main {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin: -90px 0;
+@media (max-width: 1170px) {
+  .contact-form-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: -90px 0;
+  }
 }
 
 .check {
@@ -932,7 +937,7 @@ a.menu-header:hover {
 }
 
 .photo-frame {
-  margin-top: 80px;
+  margin-top: 50px;
   max-width: 1245px;
   height: 476px;
   gap: 30px;
@@ -959,9 +964,14 @@ a.menu-header:hover {
 }
 
 .upper-h1 {
-  margin-top: 30px;
+  margin-top: 60px;
   text-transform: uppercase;
   justify-content: flex-start;
+}
+@media (max-width: 1170px) {
+  .upper-h1 {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 1170px) {
@@ -985,6 +995,17 @@ a.menu-header:hover {
 
 .header.open .phone-ham {
   color: white;
+}
+
+.ov {
+  padding-bottom: 120px;
+  margin: 7% 0;
+}
+@media (max-width: 1170px) {
+  .ov {
+    padding-bottom: 30px;
+    margin: 0% 0;
+  }
 }
 
 .dis {
