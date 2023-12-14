@@ -753,6 +753,11 @@ input[type=text]:invalid ~ label {
   transform: translateY(0) rotate(-45deg);
 }
 
+.open body {
+  overflow: hidden;
+  position: fixed;
+}
+
 .heading {
   display: flex;
   justify-content: center;
