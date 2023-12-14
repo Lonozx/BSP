@@ -59,7 +59,7 @@
             <img class="desktop-only" style="margin-left: 27%; margin-bottom: 30px;" src="../components/images/row-blue.png" alt="">
         </header>
         
-        <aside class="aside-form aside-form--cont">
+        <aside class="desktop-only aside-form aside-form--cont">
         <div class="container__header-logo">
             <a href="../index.html">
                 <img class="logo" src="../../components/images/header-image.png" alt="BSP-logo">
@@ -90,28 +90,49 @@
             
             <h2 class="h1" style="text-transform: uppercase; display: flex; justify-content: flex-start; margin-top: 30px;">Про компанiю</h2>
             <div class="contents__item" style="margin-top: 30px;">
-                <div style="max-width: 270px; display: flex; flex-direction: column; gap: 30px;">
+                <div class="rep-art" style="display: flex; flex-direction: column; gap: 30px;">
                     <p class="h3" style="text-align: justify;">У світі, де все швидко змінюється, наша компанія не просто надає допомогу, вона стає вашим другом і захисником. Ми хочемо, щоб ви почувалися не лише захищеними, але й впевненими в завтрашньому дні для вашого бізнесу!</p>
                     <p class="h3" style="text-align: justify;">Наша висококваліфікована команда експертів є головним рушієм успіху. Адже це досвідчені фахівці, які мають значний стаж у силових структурах, юридичних сферах та журналістиці. Кожен експерт пройшов строгий відбір та тривалий тренінг, гарантуючи найвищий рівень професіоналізму.</p>
                 </div>
-                <div style="align-self: baseline; padding-bottom: 65px; border-bottom:2px solid #002F51; max-width: 270px; display: flex; flex-direction: column; gap: 30px;">
-                    <p class="h3" style="text-align: justify;">Їх завдання включає виявлення всіх можливих ризиків, що можуть становити загрозу бізнес-процесам клієнтів.</p>
-                    <p class="h3" style="text-align: justify;">Це включає в себе аналіз документації, вивчення юридичних аспектів та виявлення потенційних вразливостей у сфері безпеки.</p>
-                    <p class="h3" style="text-align: justify;">Ми прагнемо не лише реагувати на події, але й передбачати їх, забезпечуючи наших клієнтів комплексним та передовим підходом до безпеки та захисту.</p>
+                <img class="mobile-only art-img" src="../components/images/about-mob-1.jpg" alt="">
+                <div class="rep-art border-b" style="align-self: baseline; display: flex; flex-direction: column; gap: 30px;">
+                    <p class="h3 justify ">Їх завдання включає виявлення всіх можливих ризиків, що можуть становити загрозу бізнес-процесам клієнтів.</p>
+                    <p class="h3 justify" >Це включає в себе аналіз документації, вивчення юридичних аспектів та виявлення потенційних вразливостей у сфері безпеки.</p>
+                    <p class="h3 justify">Ми прагнемо не лише реагувати на події, але й передбачати їх, забезпечуючи наших клієнтів комплексним та передовим підходом до безпеки та захисту.</p>
                 </div>
                 <div style="display: flex; flex-direction: column; gap: 30px; margin-bottom: 10px;">
-                    <p class="h3" style="max-width: 270px; text-align: justify;">Залишайте заявку на консультацію, щоб розпочати співпрацю та вирішити всі турбуючі вас питання якнайвидше!</p>
+                    <p class="h3 rep-art">Залишайте заявку на консультацію, щоб розпочати співпрацю та вирішити всі турбуючі вас питання якнайвидше!</p>
                     <div class="separated" style="margin: 0;">
-                        <img src="../components/images/about-left.jpg" alt="">
-                        <img src="../components/images/about-right.jpg" alt="">
+                        <img class="desktop-only" src="../components/images/about-left.jpg" alt="">
+                        <img class="desktop-only" src="../components/images/about-right.jpg" alt="">
                     </div>
                 </div>
             </div>
-            <div class="contents__item" style=" margin-top: 90px; display: flex; justify-content: center; margin-bottom: 120px;">
-                <img src="../components/images/about-bottom.jpg" alt="">
-                <img src="../components/images/about-hummer.jpg" alt="">
+            <div class="contents__item desktop-only" style=" margin-top: 90px; display: flex; justify-content: center; margin-bottom: 120px;">
+                <img class="desktop-only" src="../components/images/about-bottom.jpg" alt="">
+                <img class="desktop-only" src="../components/images/about-hummer.jpg" alt="">
             </div>
-           
+            <div class="contents__item mobile-only" style="justify-content: center; margin-top: 90px;">
+                <form action="send-quote" class="mobile-only" >
+                    <div class="contact-form">
+                    <img class="form-img" src="../../components/images/upper-form.jpg" alt="">
+                    <div class="dir-col">
+                    <label class="h4" for="name" id="name-label-mob">Ім'я</label>
+                    <input class="contact-form--input h3" id="name-mob" type="text" >
+                </div>
+                <div class="dir-col">
+                    <label class="h4" for="name" id="phone-label-mob">Номер телефону</label>
+                    <input class="contact-form--input h3" id="tel-mob" type="tel" >
+                </div>
+                    <button class="h3--white sub-form" id="submit-mob" type="submit">Замовити консультацію</button>
+                    <div class="check h4--grey">
+                    <input class="check--box" id="check-mob" type="checkbox">
+                    <p class="h4--grey">Ви даєте згоду на обробку персональних даних</p>
+                    
+                </div>
+            </div>
+                </form>
+        </div>
     </div>
     </div> <footer class="foot-add">
         <div class="container__foot">

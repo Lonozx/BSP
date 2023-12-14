@@ -4,7 +4,9 @@
 }
 @media (max-width: 1170px) {
   .security-camera {
-    margin: 0;
+    margin: 0 !important;
+    margin-top: 0px;
+    margin-left: 0px;
     margin-top: 150px;
   }
 }

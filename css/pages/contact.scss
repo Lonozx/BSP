@@ -43,8 +43,9 @@
 }
 
 
-a.menu {
+a.menu-soc {
   @media (max-width: 1170px) {
+    text-decoration: none;
     color: black;
     border-bottom: 0px;
     display: flex;

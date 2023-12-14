@@ -145,6 +145,11 @@ body {
   margin: 40px 0;
   max-width: 370px;
 }
+@media (max-width: 1170px) {
+  .right {
+    max-width: 570px;
+  }
+}
 
 @media (max-width: 1170px) {
   .about-theme {
@@ -169,6 +174,7 @@ body {
 @media (max-width: 1280px) {
   .about__content {
     margin: 0px -53%;
+    flex-direction: column;
   }
 }
 .about__content-item {
@@ -179,7 +185,8 @@ body {
 }
 @media (max-width: 1170px) {
   .about__content-item {
-    width: 296px;
+    width: 90%;
+    margin-left: 32px;
   }
 }
 
@@ -190,6 +197,56 @@ button.sub-form {
   height: 57px;
 }
 
+@media (max-width: 1170px) {
+  .rep-mob {
+    flex-direction: column;
+  }
+}
+
+.art-img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.st-padding {
+  margin: -11px 0px 120px 8%;
+}
+@media (max-width: 1170px) {
+  .st-padding {
+    margin: 0;
+  }
+}
+
+.border-b {
+  padding-bottom: 65px;
+  border-bottom: 2px solid #002F51;
+}
+@media (max-height: 1170px) {
+  .border-b {
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+}
+
+.rep-art {
+  width: 270px;
+  text-align: justify;
+}
+@media (max-width: 1170px) {
+  .rep-art {
+    width: 100%;
+  }
+}
+@media (max-width: 1170px) {
+  .rep-art-exept {
+    width: 100%;
+  }
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -197,7 +254,7 @@ button.sub-form {
 }
 @media (max-width: 1170px) {
   .contact-form {
-    margin: -90px 0;
+    margin: -90px 15%;
   }
 }
 .contact-form--input {
@@ -648,6 +705,7 @@ input[type=text]:invalid ~ label {
     max-width: 396px;
     justify-content: flex-start;
     margin: 124px 0;
+    width: 100vw;
   }
 }
 @media (max-width: 1280px) {
@@ -798,9 +856,6 @@ a.menu--large {
   }
 }
 
-a.menu-header {
-  min-width: 100px !important;
-}
 @media (max-width: 1170px) {
   a.menu-header {
     border-bottom: 2px solid transparent;
@@ -833,6 +888,42 @@ a.menu-header:hover {
   .desktop-only {
     display: none !important;
   }
+}
+
+.services-flex {
+  margin-left: 32%;
+}
+@media (max-width: 1170px) {
+  .services-flex {
+    margin: 0;
+  }
+}
+
+.services-li {
+  margin-left: 32%;
+}
+@media (max-width: 1170px) {
+  .services-li {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1170px) {
+  .rel-ph {
+    width: 296px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .rules-mob-serv {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+.ph-mob {
+  width: 296px;
+  margin: 0 auto;
 }
 
 .photo-frame {
@@ -904,8 +995,7 @@ a.menu-header:hover {
 @media (max-width: 1170px) {
   .services__list {
     min-width: 296px;
-    margin: 50px;
-    max-width: 296px;
+    max-width: 100%;
   }
 }
 .services__content {
@@ -924,7 +1014,7 @@ a.menu-header:hover {
 }
 @media (max-width: 1170px) {
   .advantage-name {
-    margin-right: -36%;
+    margin-right: 25%;
   }
 }
 
