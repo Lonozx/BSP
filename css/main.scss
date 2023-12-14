@@ -171,8 +171,8 @@
             flex-direction: column;
             gap: 28px;
             @media (max-width:1170px) {
-                width:90%;
-                margin-left: 32px;
+                width:100%;
+                // margin-left: 32px;
             }
         }
     }
@@ -952,9 +952,23 @@ margin-left: 32%;
         display: flex;
   flex-direction: column;
   justify-content: space-between;
+  &-main{
+    @media (max-width:1170px) {
+        list-style: none;
+        min-width: 470px;
+        display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    margin: 32px 0 0 32px;
+    min-width: 296px;
+            max-width: 100%;
+    }
+    
+  }
         @media (max-width:1170px) {
             min-width: 296px;
             max-width: 100%;
+            
     // margin: 0 32px 0 32px;
             // margin: 50px;
             // max-width: 296px;
@@ -970,6 +984,10 @@ margin-left: 32%;
         }
         }
 }
+.serv-div{
+    justify-content: center;
+    align-items: center;
+}
 .advantage-name{
     // margin-right: -112%;
     margin-right: 33.5%;
@@ -984,7 +1002,7 @@ margin-left: 32%;
     text-transform: uppercase;
     margin-right: 31%;
     @media (max-width:1170px) {
-        margin-right: 26%;
+        margin-right: 50%;
     }
 }
 .advantage{

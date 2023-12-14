@@ -185,8 +185,7 @@ body {
 }
 @media (max-width: 1170px) {
   .about__content-item {
-    width: 90%;
-    margin-left: 32px;
+    width: 100%;
   }
 }
 
@@ -999,6 +998,18 @@ a.menu-header:hover {
   justify-content: space-between;
 }
 @media (max-width: 1170px) {
+  .services__list-main {
+    list-style: none;
+    min-width: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 32px 0 0 32px;
+    min-width: 296px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 1170px) {
   .services__list {
     min-width: 296px;
     max-width: 100%;
@@ -1013,6 +1024,11 @@ a.menu-header:hover {
   .services__content {
     margin: 30px -345px;
   }
+}
+
+.serv-div {
+  justify-content: center;
+  align-items: center;
 }
 
 .advantage-name {
@@ -1031,7 +1047,7 @@ a.menu-header:hover {
 }
 @media (max-width: 1170px) {
   .services-name {
-    margin-right: 26%;
+    margin-right: 50%;
   }
 }
 
