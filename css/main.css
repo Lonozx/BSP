@@ -1547,18 +1547,6 @@ button:hover svg path {
   text-align: justify;
 }
 
-.telp {
-  order: 1;
-}
-
-.post {
-  order: 2;
-}
-
-.address {
-  order: 3;
-}
-
 .data {
   border-bottom: 2px solid white;
   padding: 0 0 30px 0px;
