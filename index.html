@@ -111,6 +111,14 @@
             <button id="close" class="close d-n" style="width: 15px; height: 15px; position: absolute; z-index: 4; left: 536px; top: 79px;"></button>
         </div>
         <script>
+            const form = document.getElementById('form');
+            const names = document.getElementById('name');
+            const tel = document.getElementById('tel');
+            form.addEventListener('submit', e=>{
+                e.preventDefault();
+            })
+        </script>
+        <script>
             document.querySelector('#sub').addEventListener("click", ()=>{
                 if(document.querySelector('.nm')!=null && document.querySelector('.ph')!=null)
             {
