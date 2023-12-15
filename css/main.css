@@ -1543,6 +1543,20 @@ button:hover svg path {
   }
 }
 
+.c-foot {
+  margin-left: 13px;
+}
+@media (max-width: 1280px) {
+  .c-foot {
+    margin-left: 25px !important;
+  }
+}
+@media (max-width: 1452px) {
+  .c-foot {
+    margin-left: -170px;
+  }
+}
+
 .desc {
   text-align: justify;
 }
@@ -1551,6 +1565,12 @@ button:hover svg path {
   .c-f {
     width: 270px;
   }
+}
+
+.input-control .error {
+  color: red;
+  font-size: 9px;
+  height: 13px;
 }
 
 .data {
