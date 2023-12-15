@@ -525,6 +525,11 @@ button.sub-form {
   }
 }
 
+.header.open .container__header-list body {
+  overflow: hidden;
+  position: static;
+}
+
 @media (max-width: 1290px) {
   .form {
     margin: 0px 30px 0 0% !important;

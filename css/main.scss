@@ -504,6 +504,10 @@ img {
         margin-top: 0;
     }
 }
+.header.open .container__header-list body{
+    overflow: hidden;
+    position: static;
+}
 .form{
     @media (max-width:1290px) {
         margin: 0px 30px 0 0% !important;
