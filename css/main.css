@@ -1547,6 +1547,12 @@ button:hover svg path {
   text-align: justify;
 }
 
+@media (max-width: 1170px) {
+  .c-f {
+    width: 270px;
+  }
+}
+
 .data {
   border-bottom: 2px solid white;
   padding: 0 0 30px 0px;

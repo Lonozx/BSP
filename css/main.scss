@@ -1435,6 +1435,11 @@ button:hover svg path{
 .desc{
     text-align: justify;
 }
+.c-f{
+    @media (max-width:1170px) {
+        width: 270px;
+    }
+}
 // .telp{
 //     order: 1;
 //     // @media (max-width:1170px) {
