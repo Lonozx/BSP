@@ -1548,12 +1548,17 @@ button:hover svg path {
 }
 @media (max-width: 1280px) {
   .c-foot {
-    margin-left: 25px !important;
+    margin-left: -42px !important;
   }
 }
 @media (max-width: 1452px) {
   .c-foot {
     margin-left: -170px;
+  }
+}
+@media (max-width: 1215px) {
+  .c-foot {
+    margin-left: 22px !important;
   }
 }
 

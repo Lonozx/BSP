@@ -111,14 +111,6 @@
             <button id="close" class="close d-n" style="width: 15px; height: 15px; position: absolute; z-index: 4; left: 536px; top: 79px;"></button>
         </div>
         <script>
-            const form = document.getElementById('form');
-            const names = document.getElementById('name');
-            const tel = document.getElementById('tel');
-            form.addEventListener('submit', e=>{
-                e.preventDefault();
-            })
-        </script>
-        <script>
             document.querySelector('#sub').addEventListener("click", ()=>{
                 if(document.querySelector('.nm')!=null && document.querySelector('.ph')!=null)
             {
@@ -352,6 +344,36 @@ $("#submit-button").submit(function(e){
 
     </script>
     <script>
+        const form = document.getElementById('form');
+            form.addEventListener('submit', e=>{
+                e.preventDefault();
+                validateInputs();
+            });
+            const setError = (element, message)=>{
+                const inputControl = element.parentElement;
+                const errorDisplay = inputControl.querySelector('.error');
+                errorDisplay.innerText = message;
+            }
+            const setSuccess = element =>{
+                const inputControl = element.parentElement;
+                const errorDisplay = inputControl.querySelector('.error');
+
+                errorDisplay.innerText = '';
+            }
+            const validateInputs = () =>{
+                const usernameValue = name.value.trim();
+                const telValue = tel.value.trim();
+                if(usernameValue===''){
+                    setError(name, 'Ім\'я')
+                }else{
+                    setSuccess(name);
+                }
+                if(telValue===''){
+                    setError(tel, 'Номер телефону')
+                }else{
+                    setSuccess(tel);
+                }
+            }
         var btn = document.getElementById('sub');
         btn.addEventListener('click', function(e){
             e.preventDefault();
