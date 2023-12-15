@@ -43,6 +43,11 @@ body {
 .policy {
   color: white;
   text-decoration: none;
+  border-bottom: 2px solid #002F51;
+}
+.policy:hover {
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid white;
 }
 
 .h1 {
@@ -91,6 +96,11 @@ body {
   letter-spacing: 1.5%;
   align-self: self-start;
   margin: 160px 25px;
+}
+@media (max-width: 1170px) {
+  .h3--uppercase {
+    margin: 160px 38px;
+  }
 }
 .h3--uppercase--right {
   text-transform: uppercase;
@@ -177,6 +187,24 @@ body {
 @media (max-width: 1170px) {
   .company-article {
     max-height: 100%;
+  }
+}
+
+.mg-t-h {
+  margin-top: 30px;
+}
+@media (max-width: 1170px) {
+  .mg-t-h {
+    margin-top: 0px;
+  }
+}
+
+.mg-t {
+  margin-top: 150px;
+}
+@media (max-width: 1170px) {
+  .mg-t {
+    margin-top: 0px;
   }
 }
 
@@ -530,8 +558,7 @@ button.sub-form {
 }
 @media (max-width: 1490px) {
   .foot-add {
-    margin: 0 -3.7%;
-    width: 105vw;
+    width: 100vw;
   }
 }
 @media (max-width: 1170px) {
@@ -569,6 +596,14 @@ button.sub-form {
   margin: 0 0% !important;
 }
 
+.menu-footer li a {
+  border-bottom: 2px solid #002F51;
+}
+.menu-footer li a:hover {
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid white;
+}
+
 input[type=checkbox] {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -584,8 +619,15 @@ input[type=checkbox]:checked {
   background-color: #002F51;
 }
 
+.d-n {
+  display: none;
+}
+
 .modal {
+  top: 50%;
+  left: 40%;
   position: absolute;
+  z-index: 3;
 }
 
 input:focus {
@@ -604,14 +646,13 @@ input:focus {
   margin-left: 32px;
 }
 
-.contents {
-  flex-basis: 25% 58.33% 16.67%;
-}
 @media (max-width: 1170px) {
   .contents {
+    width: 100%;
     overflow-x: hidden;
     flex-direction: column;
-    margin: 32px;
+    padding: 32px;
+    margin: 0 auto;
   }
 }
 .contents__item {
@@ -701,6 +742,11 @@ li.service .arrow {
 .dropdown-content a:first-child {
   margin-top: 25px;
 }
+@media (max-width: 1170px) {
+  .dropdown-content a:first-child {
+    margin-top: 0px;
+  }
+}
 
 .contact-form input:invalid + b:before {
   content: "Form is invalid";
@@ -723,7 +769,22 @@ input[type=text]:invalid ~ label {
   .dropdown-content a {
     background: transparent;
     justify-content: center;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
+  }
+}
+
+@media (max-width: 1170px) {
+  .dropdown-content a p {
+    border-bottom: 2px solid transparent;
+  }
+}
+
+.form-n {
+  margin-top: 60px;
+}
+@media (max-width: 1170px) {
+  .form-n {
+    margin-top: 30px;
   }
 }
 
@@ -734,12 +795,26 @@ input[type=text]:invalid ~ label {
 @media (max-width: 1170px) {
   .dropdown-content a:hover {
     background-color: transparent;
-    border-bottom: 1px solid white;
+    color: white;
+  }
+}
+
+@media (max-width: 1170px) {
+  .dropdown-content a:hover p {
+    color: white;
+    transition: all 0.2s ease-in-out;
+    background-color: transparent;
+    border-bottom: 2px solid white;
   }
 }
 
 .dropdown-content a:last-child {
   margin-bottom: 25px;
+}
+@media (max-width: 1170px) {
+  .dropdown-content a:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 .dropdown-content a:hover {
@@ -814,8 +889,8 @@ input[type=text]:invalid ~ label {
 }
 
 .header.open body {
-  overflow: hidden;
-  position: fixed;
+  overflow: hidden !important;
+  position: fixed !important;
 }
 
 .heading {
@@ -1107,7 +1182,7 @@ a.menu-header:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 32px 0 0 22px;
+    margin: 0 0px 0 36px;
     min-width: 296px;
     max-width: 100%;
   }

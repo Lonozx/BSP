@@ -36,14 +36,15 @@
                     <li class="h3 service dropdown">
                         <div style="display: flex; gap: 5px">
                         <a class="menu menu-header services-menu" href="">Послуги</a> 
-                        <img class="arrow" src="./components/images/Arrow.svg" alt="">
+                        <img class="desktop-only arrow" src="./components/images/Arrow.svg" alt="">
+                        <img class="mobile-only arrow" src="./components/images/arrow-mob.svg" alt="">
                     </div>
                         <div class="dropdown-content">
-                            <a href="../pages/services/service-security.html">Послуги охорони бізнесу</a>
-                            <a href="../pages/services/service-dept.html">Робота з боржниками</a>
-                            <a href="../pages/services/service-rep.html">Перевірка ділової репутації партнерів</a>
-                            <a href="../pages/services/service-yur.html">Юридичні послуги</a>
-                            <a href="../pages/services/service-credit.html">Кредитування фізичних та юридичних осіб</a>
+                            <a href="../pages/services/service-security.html"><p>Послуги охорони бізнесу</p> </a>
+                            <a href="../pages/services/service-dept.html"><p>Робота з боржниками</p></a>
+                            <a href="../pages/services/service-rep.html"><p>Перевірка ділової репутації партнерів</p></a>
+                            <a href="../pages/services/service-yur.html"><p>Юридичні послуги</p></a>
+                            <a href="../pages/services/service-credit.html"><p>Кредитування фізичних та юридичних осіб</p></a>
                           </div>
                     </li>
                     <li class="h3">
@@ -71,8 +72,16 @@
             <a href="#">
                 <img class="logo" src="../components/images/header-image.png" alt="BSP-logo">
             </a>
-            <form style="margin-top: 60px; display: flex; flex-direction: column; gap: 30px" id="form" action="https://getform.io/f/3d32effb-06aa-4cd0-8092-056e975f4283" method="POST">
+            <div class="mobile-only">
+                <h2 class="h1 just-centered-m" style="margin-top: 30px; text-transform: uppercase; display: flex; justify-content: flex-start;">BUSINESS SUPPORT & PROTECTION</h2>
+                <div class="contents__item" style="margin-bottom: 0;">
+                    <p class="h3 just-centered-m" style="margin-left: -10px;
+                    margin-right: -10px; max-width: 388px; margin-top: 30px;">Експерти з підтримки та безпеки бізнесу, повернення боргів, кредитування фізичних та юридичних осіб</p>
+                </div>
+            </div>
+            <form class="form-n" style= "display: flex; flex-direction: column; gap: 30px" id="form" action="https://getform.io/f/3d32effb-06aa-4cd0-8092-056e975f4283" method="POST">
                 <img src="../components/images/upper-form.jpg" alt="">
+                
                 <div>
                 <label for="name" class="h4" id="name-label">Ім'я</label>
                 <input id="name" class="contact-form--input h3" type="text" name="name" placeholder="Ім'я" required>
@@ -83,7 +92,7 @@
             </div>
                 <button type="submit" id="sub"><p class="h3--white">Замовити консультацію</p></button>
                 <div style="display: flex; gap: 10px; margin-top: -12px;">
-                <input id="check" type="checkbox" required name="check" value="yes" checked>
+                <input id="check" type="checkbox" required name="check" value="yes">
                 <p class="h4--grey" style="margin-top: -5px;"> Ви даєте згоду на обробку персональних даних</p>
             </div>
             </form>
@@ -103,19 +112,31 @@
             } else console.log('non');
         }
         </script> -->
-            <div class="mobile-only">
-            <h2 class="h1 just-centered-m" style="margin-top: 30px; text-transform: uppercase; display: flex; justify-content: flex-start;">BUSINESS SUPPORT & PROTECTION</h2>
-            <div class="contents__item">
-                <p class="h3 just-centered-m" style="max-width: 388px; margin-top: 30px;">Експерти з підтримки та безпеки бізнесу, повернення боргів, кредитування фізичних та юридичних осіб</p>
-            </div>
-        </div>
+            
             
     <!-- <div class="form-success form-success_hide">
         <div class="form-success__message">Форма успешно отправлена. Нажмите <button type="button" class="form-success__btn">здесь</button>, если нужно отправить ещё одну форму.</div>
       </div> -->
         </aside>
         <div class="contents">
-               
+            <div>
+            <img class="modal d-n" id="modal" src="./components/images/modal.png" alt="">
+                <button id="close" style="width: 15px; height: 15px; position: absolute; z-index: 4; left: 68.2%; top: 58.5%;"></button>
+        </div>
+        <script>
+            document.querySelector('#sub').addEventListener("click", ()=>{
+                if(document.querySelector('input#name')!=null && document.querySelector('input#tel')!=null)
+            {
+                document.querySelector('.modal').classList.remove('d-n');
+            }
+            else console.log('no need to')
+            })
+            
+            let close = document.querySelector("#close").addEventListener("click",()=>{
+                document.querySelector("#modal").style.display = "none";
+                document.querySelector("#close").style.display = "none";
+            })
+        </script>
             <img style="max-height: 256px; width: 100vw; margin-left: -32px; margin-top: 110px; object-fit: cover;" class="cnt-obj mobile-only" src="./components/images/mobile-main-1.jpg" alt="">
             <h2 class="h1 desktop-only upper-h1">BUSINESS SUPPORT & PROTECTION</h2>
             <div class="contents__item desktop-only">
@@ -230,12 +251,11 @@
                 </div>
                 <div class="advantage__content-item readmore">
                     <h2 class="h1 desktop-only" style="text-align: justify;">BUSINESS SUPPORT & PROTECTION</h2>    
-                    <button class="h3 showmore"><a class="button-text" href="#">Детальніше</a></button>
+                    <button class="h3 showmore"><a class="button-text" href="./pages/service.html">Детальніше</a></button>
                 </div>
             </div>
         </div>
-        <img class="modal" id="modal" src="./components/images/modal.png" alt="">
-                
+             
         <div class="contents__item about-theme" style="margin-bottom: 60px; margin-top: 120px; flex-direction: column;">
             <h2 class="h1" style="margin: 0 -14px;">ПРО КОМПАНІЮ</h2>
             <div class="about__content" style="width: auto; margin: 0;">

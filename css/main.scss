@@ -45,6 +45,11 @@
 .policy{
     color: white;
     text-decoration: none;
+    border-bottom: 2px solid #002F51;
+    &:hover{
+        transition: all .2s ease-in-out;
+        border-bottom:2px solid white;
+    }
 }
 .h1{
     font-family: "DIN Condensed";
@@ -90,6 +95,9 @@
         letter-spacing: 1.5%;
         align-self: self-start;
         margin: 160px 25px;
+        @media (max-width:1170px) {
+            margin: 160px 38px;
+        }
         &--right{
             text-transform: uppercase;
             color: #FFFFFF;
@@ -164,6 +172,18 @@
     max-height: 585px;
     @media (max-width:1170px) {
         max-height: 100%;
+    }
+}
+.mg-t-h{
+    margin-top: 30px;
+    @media (max-width:1170px) {
+        margin-top: 0px;
+    }
+}
+.mg-t{
+    margin-top: 150px;
+    @media (max-width:1170px) {
+        margin-top: 0px;
     }
 }
 .about{
@@ -513,8 +533,8 @@ img {
   justify-content: center;
   align-items: center;
   @media(max-width:1490px){
-    margin: 0 -3.7%;
-    width: 105vw;
+    // margin: 0 -3.7%;
+    width: 100vw;
   }
   @media (max-width:1170px) {
     height: 100%;
@@ -545,6 +565,14 @@ img {
 .foot-str{
     margin: 0 -0% !important;
 }
+.menu-footer li a {
+    border-bottom:2px solid #002F51;
+    &:hover{
+        transition: all .2s ease-in-out;
+        border-bottom:2px solid white;
+
+    }
+}
 input[type="checkbox"] {
 appearance: none;
 	min-width: 18px;
@@ -557,9 +585,15 @@ appearance: none;
     background-color:#002F51;
 }
 }
+.d-n{
+    display: none;
+}
 .modal{
 //    display: none;
+top:50%;
+left: 40%;
    position: absolute;
+   z-index: 3;
 }
 input:focus {
     outline: none;
@@ -577,11 +611,15 @@ input:focus {
 .contents{
     // margin: -7% 5%;
     // display: flex;
-    flex-basis: 25% 58.33% 16.67%;
+    // flex-basis: 25% 58.33% 16.67%;
     @media (max-width:1170px) {
+        width: 100%;
         overflow-x: hidden;
         flex-direction: column;
-        margin: 32px;
+        // margin: 32px;
+        padding: 32px;
+        margin: 0 auto;
+        
     }
     &__item{
         display: flex;
@@ -692,6 +730,9 @@ li.service .arrow{
   }
   .dropdown-content a:first-child{
     margin-top: 25px;
+    @media (max-width:1170px) {
+        margin-top: 0px;
+    }
   }
   .contact-form input:invalid+b:before {
     content: "Form is invalid";
@@ -712,20 +753,45 @@ li.service .arrow{
     @media (max-width:1170px) {
         background: transparent;
         justify-content: center;
-        border-bottom: 1px solid transparent;
+        border-bottom: 2px solid transparent;
     }
   }
-  .dropdown-content a:hover 
-  {background-color: white;
+  .dropdown-content a p{
+    @media (max-width:1170px) {
+        border-bottom: 2px solid transparent;
+    }
+    
+  }
+  .form-n{
+    margin-top: 60px;
+    @media (max-width:1170px) {
+        margin-top: 30px;
+    }
+  }
+  .dropdown-content a:hover{
+    background-color: white;
     color: black;
-    @media (max-width: 1170px) {
+    @media (max-width:1170px) {
         background-color: transparent;
-        border-bottom: 1px solid white;
+        color: white;
+    }
+  }
+  .dropdown-content a:hover p
+  {
+    
+    @media (max-width: 1170px) {
+        color: white;
+        transition: all .2s ease-in-out;
+        background-color: transparent;
+        border-bottom: 2px solid white;
     }
 }
 .dropdown-content a:last-child{
     // margin: 0px 0px 0px 0px;
    margin-bottom: 25px;
+   @media (max-width:1170px) {
+    margin-bottom: 0px;
+   }
 }
 .dropdown-content a:hover{
     transition: all .2s ease-in-out;
@@ -792,8 +858,8 @@ li.service .arrow{
     transform: translateY(0) rotate(-45deg);
 }
 .header.open body{
-        overflow: hidden;
-        position: fixed;
+        overflow: hidden !important;
+        position: fixed !important;
 }
 .heading{
     display: flex;
@@ -1047,7 +1113,8 @@ margin-left: 32%;
         display: flex;
   flex-direction: column;
   justify-content: space-between;
-    margin: 32px 0 0 22px;
+    // margin: 32px 0 0 22px;
+    margin: 0 0px 0 36px;
     min-width: 296px;
             max-width: 100%;
     }
