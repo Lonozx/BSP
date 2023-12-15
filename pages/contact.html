@@ -67,24 +67,21 @@
             <a href="../index.html">
                 <img class="logo" src="../../components/images/header-image.png" alt="BSP-logo">
             </a>
-            <form action="send-quote">
-                <div class="contact-form">
-                <img class="form-img" src="../../components/images/upper-form.jpg" alt="">
+            <form style="margin-top: 60px; display: flex; flex-direction: column; gap: 30px" id="form" action="https://getform.io/f/3d32effb-06aa-4cd0-8092-056e975f4283" method="POST">
+                <img src="../components/images/upper-form.jpg" alt="">
                 <div>
-                <label class="h4" for="name" id="name-label">Ім'я</label>
-                <input class="contact-form--input h3" id="name" type="text" >
+                <label for="name" class="h4" id="name-label">Ім'я</label>
+                <input id="name" class="contact-form--input h3" type="text" name="name" placeholder="Ім'я" required>
             </div>
             <div>
-                <label class="h4" for="name" id="phone-label">Номер телефону</label>
-                <input class="contact-form--input h3" id="tel" type="tel" >
+                <label for="name" class="h4" id="phone-label">Номер телефону</label>
+                <input id="tel" class="contact-form--input h3" type="tel" name="tel" placeholder="Номер телефону" required>
             </div>
-                <button class="h3--white sub-form" id="submit" type="submit">Замовити консультацію</button>
-                <div class="check h4--grey">
-                <input class="check--box" id="check" type="checkbox">
-                <p class="h4--grey">Ви даєте згоду на обробку персональних даних</p>
-                
+                <button type="submit" id="sub"><p class="h3--white">Замовити консультацію</p></button>
+                <div style="display: flex; gap: 10px; align-items: baseline; margin-top: -12px;">
+                <input id="check" type="checkbox" required name="check" value="yes" checked>
+                <p class="h4--grey" style="margin-top: -5px;"> Ви даєте згоду на обробку персональних даних</p>
             </div>
-        </div>
             </form>
            </div>
         </aside>

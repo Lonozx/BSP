@@ -527,7 +527,7 @@ input#name:hover #name-label{
     visibility: visible !important;
 }
 #phone-label {
-    visibility: hidden;
+    display: none;
   }
 
   .crop{
@@ -537,8 +537,8 @@ input#name:hover #name-label{
     }
   }
   
-  #tel:focus + #phone-label {
-   visibility: visible;
+  #tel:focus #phone-label {
+   display: block;
   }
 .foot-str{
     margin: 0 -0% !important;

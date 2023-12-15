@@ -46,7 +46,7 @@
                           </div>
                     </li>
                     <li class="h3">
-                        <a class="menu menu-header" href="./pages/service.html">Переваги</a> 
+                        <a class="menu menu-header" href="./pages/service.html">Переваги</a>
                     </li>
                     <li class="h3" style="min-width: 125px;">
                         <a class="menu menu-header " href="./pages/about-company.html">Про компанію</a> 
@@ -70,19 +70,35 @@
             <a href="#">
                 <img class="logo" src="../components/images/header-image.png" alt="BSP-logo">
             </a>
-            <form id="form" action="https://getform.io/f/3d32effb-06aa-4cd0-8092-056e975f4283" method="POST">
+            <form style="margin-top: 60px; display: flex; flex-direction: column; gap: 30px" id="form" action="https://getform.io/f/3d32effb-06aa-4cd0-8092-056e975f4283" method="POST">
+                <img src="./components/images/upper-form.jpg" alt="">
                 <div>
-                <label for="name" class="h3">Ім'я</label>
-                <input type="text" name="name" placeholder="Ім'я">
+                <label for="name" class="h4" id="name-label">Ім'я</label>
+                <input id="name" class="contact-form--input h3" type="text" name="name" placeholder="Ім'я" required>
             </div>
             <div>
-                <label for="name" class="h3" >Номер телефону</label>
-                <input class="contact-form--input" type="tel" name="tel" placeholder="Номер телефону">
+                <label for="name" class="h4" id="phone-label">Номер телефону</label>
+                <input id="tel" class="contact-form--input h3" type="tel" name="tel" placeholder="Номер телефону" required>
             </div>
-                <button type="submit"><p class="h3--white">Замовити консультацію</p></button>
-                <input class="contact-form--input" type="checkbox"><p class="h3--grey">Ви даєте згоду на обробку персональних даних</p>
+                <button type="submit" id="sub"><p class="h3--white">Замовити консультацію</p></button>
+                <div style="display: flex; gap: 10px; margin-top: -12px;">
+                <input id="check" type="checkbox" required name="check" value="yes" checked>
+                <p class="h4--grey" style="margin-top: -5px;"> Ви даєте згоду на обробку персональних даних</p>
+            </div>
             </form>
         </div>
+        <script>
+            let sub = document.querySelector("#sub");
+            let name = document.querySelector("#name");
+            let tel = document.querySelector("#tel");
+            let check = document.querySelector("#check");
+            let modal = document.querySelector(".modal");
+
+            if(name!=null && tel!=null && check==checked){
+                modal.classList.remove('modal');
+                modal.classList.toggle('active');
+            }
+        </script>
             <div class="mobile-only">
             <h2 class="h1 just-centered-m" style="margin-top: 30px; text-transform: uppercase; display: flex; justify-content: flex-start;">BUSINESS SUPPORT & PROTECTION</h2>
             <div class="contents__item">
@@ -102,7 +118,7 @@
             <div class="contents__item desktop-only">
                 <p class="h3" style="max-width: 388px; margin-top: 30px;">Експерти з підтримки та безпеки бізнесу, повернення боргів, кредитування фізичних та юридичних осіб</p>
             </div>
-            <div class="desktop-only photo-frame" >
+            <div class="desktop-only photo-frame">
                 <img style="max-width: 670px;" src="./components/images/main-first.jpg" alt="">
                 <img style="max-width: 545px; position: relative;" src="./components/images/main-second.jpg" alt="">
             </div>
