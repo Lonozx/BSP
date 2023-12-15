@@ -608,10 +608,31 @@ button.sub-form {
   margin: 0 0% !important;
 }
 
-.menu-footer li a {
-  border-bottom: 2px solid #002F51;
+.selector a p {
+  border-bottom: 2px solid transparent;
 }
-.menu-footer li a:hover {
+
+.selector a .main {
+  width: 58%;
+}
+
+.selector a .serv {
+  width: 58%;
+}
+
+.selector a .ad {
+  width: 68%;
+}
+
+.selector a .ab {
+  width: 100%;
+}
+
+.selector a .cont {
+  width: 66%;
+}
+
+.selector a:hover p {
   transition: all 0.2s ease-in-out;
   border-bottom: 2px solid white;
 }
