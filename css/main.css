@@ -381,7 +381,7 @@ button.sub-form {
 .phone {
   color: #00182A;
   text-decoration: none;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 .phone:visited::focus::hover::active {
   color: #00182A;
@@ -843,7 +843,7 @@ input[type=text]:invalid ~ label {
   display: flex;
   gap: 30px;
   list-style: none;
-  margin: 30px 0px 0px 0;
+  margin: 30px 10px 0px 0;
   padding: 0 0px 25px 0;
 }
 @media (max-width: 1170px) {
@@ -1282,12 +1282,12 @@ a.menu-header:hover {
 @media (max-width: 1170px) {
   .advantage__content-item:last-child {
     height: 100px;
-    width: 296px;
+    width: 100%;
   }
 }
 @media (max-width: 1170px) {
   .advantage__content-item {
-    width: 296px;
+    width: 100%;
   }
 }
 
@@ -1513,11 +1513,6 @@ button:hover svg path {
 .telp {
   order: 1;
 }
-@media (max-width: 1170px) {
-  .telp {
-    order: 3;
-  }
-}
 
 .post {
   order: 2;
@@ -1525,11 +1520,6 @@ button:hover svg path {
 
 .address {
   order: 3;
-}
-@media (max-width: 1170px) {
-  .address {
-    order: 1;
-  }
 }
 
 .data {
@@ -1596,6 +1586,7 @@ button:hover svg path {
   .container__foot {
     flex-direction: column;
     gap: 30px;
+    margin-top: 60px;
   }
 }
 .container__foot-rules {

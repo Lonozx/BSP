@@ -352,7 +352,7 @@ margin: 0 auto;
     text-decoration: none;
     // padding: 0 45px;
     // margin: 0 45px;
-    margin-left: 50px;
+    margin-left: 40px;
     &:visited::focus::hover::active{
         color: #00182A;
         @media (max-width:1170px) {
@@ -817,7 +817,7 @@ li.service .arrow{
     display: flex;
     gap: 30px;
     list-style: none;
-    margin: 30px 0px 0px 0;
+    margin: 30px 10px 0px 0;
     // flex-wrap: wrap;
     // width: 100vw;
     // border-bottom: 2px solid #002F51;
@@ -1208,11 +1208,13 @@ margin-left: 32%;
             &:last-child{
                 @media (max-width:1170px) {
                     height: 100px; 
-                    width: 296px;
+                    // width: 296px;
+                    width: 100%;
                 }
             }
             @media (max-width:1170px) {
-                width: 296px;
+                // width: 296px;
+                width: 100%;
             }
         }
     }
@@ -1401,18 +1403,18 @@ button:hover svg path{
 }
 .telp{
     order: 1;
-    @media (max-width:1170px) {
-        order: 3;
-    }
+    // @media (max-width:1170px) {
+    //     order: 3;
+    // }
 }
 .post{
 order: 2;
 }
 .address{
     order: 3;
-    @media (max-width:1170px) {
-        order: 1;
-    }
+    // @media (max-width:1170px) {
+    //     order: 1;
+    // }
 }
 .data{
     border-bottom: 2px solid white;
@@ -1471,6 +1473,7 @@ order: 2;
     @media (max-width: 1170px) {
         flex-direction: column;
         gap: 30px;
+        margin-top: 60px;
     }
     &-rules{
         display: flex;

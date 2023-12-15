@@ -22,7 +22,7 @@
                         <span></span>
                         <span></span>
                        </button>
-                       <a class="phone-ham h3 styling-mobile" style=" padding: 0; position: absolute; right: 0; margin: 32px" href="tel:+38(073)60-60-603">+38(073)60-60-603</a>
+                       <a class="phone-ham h3 styling-mobile" href="tel:+38(073)60-60-603">+38(073)60-60-603</a>
                     </div>
                 <div class="container__header-list" style="padding: 0 0 0 20px;">
                 <ul class="header-list header-list--cont">
@@ -63,29 +63,40 @@
             <img class="desktop-only" style="margin-left: 27%; margin-bottom: 30px;" src="../components/images/row-blue.png" alt="">
         </header>
         
-        <aside class="aside-form aside-form--cont desktop-only">
-        <div class="container__header-logo">
-            <a href="../index.html">
-                <img class="logo" src="../../components/images/header-image.png" alt="BSP-logo">
-            </a>
-            <form style="margin-top: 60px; display: flex; flex-direction: column; gap: 30px" id="form" action="https://getform.io/f/3d32effb-06aa-4cd0-8092-056e975f4283" method="POST">
-                <img src="../components/images/upper-form.jpg" alt="">
+        <aside class="aside-form aside-form--cont">
+            <div class="container__header-logo">
+                <a href="#">
+                    <img class="logo" src="../components/images/header-image.png" alt="BSP-logo">
+                </a>
+                <div class="mobile-only">
+                    <h2 class="h1 just-centered-m" style="margin-top: 30px; text-transform: uppercase; display: flex; justify-content: flex-start;">BUSINESS SUPPORT & PROTECTION</h2>
+                    <div class="contents__item" style="margin-bottom: 0;">
+                        <p class="h3 just-centered-m" style="margin-left: -10px;
+                        margin-right: -10px; max-width: 388px; margin-top: 30px;">Експерти з підтримки та безпеки бізнесу, повернення боргів, кредитування фізичних та юридичних осіб</p>
+                    </div>
+               </div>
+                     <!-- action="https://getform.io/f/3d32effb-06aa-4cd0-8092-056e975f4283" -->
+                <form class="form-n" style= "display: flex; flex-direction: column; gap: 30px" id="form"  method="POST">
+                    <img src="../components/images/upper-form.jpg" alt="">
+                    
+                    <div>
+                    <label for="name" class="h4" id="name-label">Ім'я</label>
+                    <input id="name" class="contact-form--input h3 nm" type="text" name="name" placeholder="Ім'я" required>
+                </div>
                 <div>
-                <label for="name" class="h4" id="name-label">Ім'я</label>
-                <input id="name" class="contact-form--input h3" type="text" name="name" placeholder="Ім'я" required>
+                    <label for="name" class="h4" id="phone-label">Номер телефону</label>
+                    <input id="tel" class="contact-form--input h3 ph" type="tel" name="tel" placeholder="Номер телефону" required>
+                </div>
+                    <button type="submit" id="sub"><p class="h3--white">Замовити консультацію</p></button>
+                    <div style="display: flex; gap: 10px; margin-top: -12px;">
+                    <input id="check" type="checkbox" required name="check" value="yes">
+                    <p class="h4--grey" style="margin-top: -5px;"> Ви даєте згоду на обробку персональних даних</p>
+                </div>
+                </form>
             </div>
-            <div>
-                <label for="name" class="h4" id="phone-label">Номер телефону</label>
-                <input id="tel" class="contact-form--input h3" type="tel" name="tel" placeholder="Номер телефону" required>
-            </div>
-                <button type="submit" id="sub"><p class="h3--white">Замовити консультацію</p></button>
-                <div style="display: flex; gap: 10px; align-items: baseline; margin-top: -12px;">
-                <input id="check" type="checkbox" required name="check" value="yes">
-                <p class="h4--grey" style="margin-top: -5px;"> Ви даєте згоду на обробку персональних даних</p>
-            </div>
-            </form>
-           </div>
-        </aside>
+           
+            
+            </aside>
           
         <div class="contents art-img">
             
