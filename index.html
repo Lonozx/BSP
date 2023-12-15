@@ -318,7 +318,7 @@ $("#submit-button").submit(function(e){
                 </div>
                 <ul class="menu-footer">
                     <li>
-                        <a href="../index.html" class="h3 menu-footer">Головна</a>
+                        <a href="../index.html" class="h3 menu-footer"> <p>Головна</p> </a>
                     </li>
                     <li>
                         <a href="../index.html#services" class="h3 menu-footer">Послуги</a>
@@ -370,6 +370,8 @@ $("#submit-button").submit(function(e){
             var body = 'Як звуть: ' + name + '<br/> Номер телефону:' + tel + '<br>' + 'Хоче отримати консультацію.';
             console.log('asdas');
             if(name!=null && tel!=null && check){
+                document.querySelector('.modal').classList.toggle('d-n');
+                document.querySelector('.close').classList.toggle('d-n');
                 Email.send({
     SecureToken : "6af3ce50-0a93-4c96-b1e3-a10bf08fb316",
     To : 'testregistrationframesi@ukr.net',
@@ -379,6 +381,7 @@ $("#submit-button").submit(function(e){
 }).then(
   message => alert(message)
 );
+                
             }
             else{
                 document.getElementById('name-label').style.color='red';
@@ -393,7 +396,9 @@ $("#submit-button").submit(function(e){
         })
     </script>
     <script>
-        var name = document.querySelector('#name')
+        var name = document.querySelector('#name').onfocus = function(){
+            
+        }
     </script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
