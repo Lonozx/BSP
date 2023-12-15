@@ -239,7 +239,7 @@ button.sub-form {
 
 .border-b {
   padding-bottom: 65px;
-  border-bottom: 2px solid #002F51 !important;
+  border-bottom: 2px solid #002F51;
 }
 @media (max-width: 1170px) {
   .border-b {
@@ -544,12 +544,12 @@ button.sub-form {
   visibility: hidden;
 }
 
-input#name:hover #name-label {
-  visibility: visible !important;
+#phone-label {
+  visibility: hidden;
 }
 
-#phone-label {
-  display: none;
+.show {
+  display: block !important;
 }
 
 .crop {
@@ -561,8 +561,8 @@ input#name:hover #name-label {
   }
 }
 
-#tel:focus #phone-label {
-  display: block;
+#registration {
+  display: none;
 }
 
 .foot-str {
@@ -585,7 +585,6 @@ input[type=checkbox]:checked {
 }
 
 .modal {
-  visibility: hidden;
   position: absolute;
 }
 

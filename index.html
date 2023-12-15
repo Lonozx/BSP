@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/svg-main.css">
     <link rel="stylesheet" href="/feedback/css/form-processing.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" /> -->
 </head>
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top">
@@ -71,7 +72,7 @@
                 <img class="logo" src="../components/images/header-image.png" alt="BSP-logo">
             </a>
             <form style="margin-top: 60px; display: flex; flex-direction: column; gap: 30px" id="form" action="https://getform.io/f/3d32effb-06aa-4cd0-8092-056e975f4283" method="POST">
-                <img src="./components/images/upper-form.jpg" alt="">
+                <img src="../components/images/upper-form.jpg" alt="">
                 <div>
                 <label for="name" class="h4" id="name-label">Ім'я</label>
                 <input id="name" class="contact-form--input h3" type="text" name="name" placeholder="Ім'я" required>
@@ -87,18 +88,21 @@
             </div>
             </form>
         </div>
-        <script>
-            let sub = document.querySelector("#sub");
-            let name = document.querySelector("#name");
+       
+        <!-- <script>
+            let sub = document.querySelector("#submit");
+            let namein = document.querySelector("#name");
             let tel = document.querySelector("#tel");
             let check = document.querySelector("#check");
             let modal = document.querySelector(".modal");
-
-            if(name!=null && tel!=null && check==checked){
-                modal.classList.remove('modal');
-                modal.classList.toggle('active');
-            }
-        </script>
+            sub.addEventListener.onclick(checking());
+            function checking(){
+            if(namein!=null && tel!=null){
+                modal.style.display='block';
+                console.log('test');
+            } else console.log('non');
+        }
+        </script> -->
             <div class="mobile-only">
             <h2 class="h1 just-centered-m" style="margin-top: 30px; text-transform: uppercase; display: flex; justify-content: flex-start;">BUSINESS SUPPORT & PROTECTION</h2>
             <div class="contents__item">
@@ -111,8 +115,7 @@
       </div> -->
         </aside>
         <div class="contents">
-                <img class="modal" src="./components/images/modal.png" alt="">
-                
+               
             <img style="max-height: 256px; width: 100vw; margin-left: -32px; margin-top: 110px; object-fit: cover;" class="cnt-obj mobile-only" src="./components/images/mobile-main-1.jpg" alt="">
             <h2 class="h1 desktop-only upper-h1">BUSINESS SUPPORT & PROTECTION</h2>
             <div class="contents__item desktop-only">
@@ -231,6 +234,8 @@
                 </div>
             </div>
         </div>
+        <img class="modal" id="modal" src="./components/images/modal.png" alt="">
+                
         <div class="contents__item about-theme" style="margin-bottom: 60px; margin-top: 120px; flex-direction: column;">
             <h2 class="h1" style="margin: 0 -14px;">ПРО КОМПАНІЮ</h2>
             <div class="about__content" style="width: auto; margin: 0;">
@@ -254,6 +259,27 @@
         </div>
         </div>
     </div>
+    <!-- <div>
+        <img id="registration" src="./components/images/modal.png" alt="">
+    </div>
+    <form id="">
+        <button type="submit" id="submit-button"></button>
+    </form>
+    <script>
+        //trigger when form is submitted
+$("#submit-button").submit(function(e){
+    $('#registration').modal('show');
+    return false;
+});
+    </script> -->
+    <!-- <script>
+        $(document).ready(function() {
+  $('#submit-button').on('submit', function(e){
+      $('#registration').modal('show');
+      e.preventDefault();
+  });
+});
+    </script> -->
         <footer class="foot-add" style="margin: 0;">
             <div class="container__foot">
                 <img src="../components/images/header-image.png" alt="">
@@ -301,22 +327,10 @@
     <script src="./script/index.js"></script>
     <script src="../../script/validation.js"></script>
     <script defer src="./script/hamburger.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
    
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-    Host : "smtp.gmail.com",
-    Username : "lonozx@gmail.com",
-    Password : "lonozx575",
-    To : 'lonozx@gmail.com',
-    From : "lonozx@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
-        }
-    </script> -->
+    
 </body>
 </html>

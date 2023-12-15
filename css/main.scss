@@ -221,7 +221,7 @@ margin: 0 auto;
 }
 .border-b{
     padding-bottom: 65px;
-    border-bottom: 2px solid #002F51 !important;
+    border-bottom: 2px solid #002F51;
     @media(max-width:1170px){
         border-bottom: none;
         padding-bottom: 0px;
@@ -523,23 +523,25 @@ img {
 #name-label{
     visibility: hidden;
 }
-input#name:hover #name-label{
-    visibility: visible !important;
-}
+// input#name:hover #name-label{
+//     visibility: visible !important;
+// }
 #phone-label {
-    display: none;
+    visibility: hidden;
   }
-
+  .show{display:block!important}
   .crop{
     padding-left: 25%;
     @media (max-width:1170px) {
         padding-left: 0;
     }
   }
-  
-  #tel:focus #phone-label {
-   display: block;
+  #registration{
+    display: none;
   }
+//   #tel:focus #phone-label {
+//    display: block;
+//   }
 .foot-str{
     margin: 0 -0% !important;
 }
@@ -556,7 +558,7 @@ appearance: none;
 }
 }
 .modal{
-   visibility: hidden;
+//    display: none;
    position: absolute;
 }
 input:focus {
