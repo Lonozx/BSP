@@ -363,16 +363,11 @@ $("#submit-button").submit(function(e){
             const validateInputs = () =>{
                 const usernameValue = name.value.trim();
                 const telValue = tel.value.trim();
-                if(usernameValue===''){
-                    setError(name, 'Ім\'я')
-                }else{
-                    setSuccess(name);
-                }
-                if(telValue===''){
-                    setError(tel, 'Номер телефону')
-                }else{
-                    setSuccess(tel);
-                }
+                if(usernameValue==='' && telValue===''){
+                    setError(name, 'Ім\'я');
+                    setError(tel, 'Номер телефону');
+            }
+            
             }
         var btn = document.getElementById('sub');
         btn.addEventListener('click', function(e){
