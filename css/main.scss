@@ -520,7 +520,7 @@ img {
         flex-wrap: wrap;
         display: flex;
         flex-direction: column;
-        margin: 0 32px !important;
+        margin: 0 0px !important;
     }
 }
 
@@ -1092,6 +1092,12 @@ margin-left: 32%;
     }
     }
 }
+.ds-m{
+    margin-bottom: 120px;
+    @media (max-width:1170px) {
+        margin-bottom: 0;
+    }
+}
 .dis{
     display: flex;
   justify-content: center;
@@ -1114,7 +1120,7 @@ margin-left: 32%;
   flex-direction: column;
   justify-content: space-between;
     // margin: 32px 0 0 22px;
-    margin: 0 0px 0 36px;
+    margin: 0 0px 0 0px;
     min-width: 296px;
             max-width: 100%;
     }

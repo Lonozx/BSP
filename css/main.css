@@ -544,7 +544,7 @@ button.sub-form {
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    margin: 0 32px !important;
+    margin: 0 0px !important;
   }
 }
 
@@ -1159,6 +1159,15 @@ a.menu-header:hover {
   }
 }
 
+.ds-m {
+  margin-bottom: 120px;
+}
+@media (max-width: 1170px) {
+  .ds-m {
+    margin-bottom: 0;
+  }
+}
+
 .dis {
   display: flex;
   justify-content: center;
@@ -1182,7 +1191,7 @@ a.menu-header:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 0px 0 36px;
+    margin: 0 0px 0 0px;
     min-width: 296px;
     max-width: 100%;
   }
