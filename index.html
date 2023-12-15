@@ -78,17 +78,18 @@
                     <p class="h3 just-centered-m" style="margin-left: -10px;
                     margin-right: -10px; max-width: 388px; margin-top: 30px;">Експерти з підтримки та безпеки бізнесу, повернення боргів, кредитування фізичних та юридичних осіб</p>
                 </div>
-            </div>
-            <form class="form-n" style= "display: flex; flex-direction: column; gap: 30px" id="form" action="https://getform.io/f/3d32effb-06aa-4cd0-8092-056e975f4283" method="POST">
+           </div>
+                 <!-- action="https://getform.io/f/3d32effb-06aa-4cd0-8092-056e975f4283" -->
+            <form class="form-n" style= "display: flex; flex-direction: column; gap: 30px" id="form"  method="POST">
                 <img src="../components/images/upper-form.jpg" alt="">
                 
                 <div>
                 <label for="name" class="h4" id="name-label">Ім'я</label>
-                <input id="name" class="contact-form--input h3" type="text" name="name" placeholder="Ім'я" required>
+                <input id="name" class="contact-form--input h3 nm" type="text" name="name" placeholder="Ім'я" required>
             </div>
             <div>
                 <label for="name" class="h4" id="phone-label">Номер телефону</label>
-                <input id="tel" class="contact-form--input h3" type="tel" name="tel" placeholder="Номер телефону" required>
+                <input id="tel" class="contact-form--input h3 ph" type="tel" name="tel" placeholder="Номер телефону" required>
             </div>
                 <button type="submit" id="sub"><p class="h3--white">Замовити консультацію</p></button>
                 <div style="display: flex; gap: 10px; margin-top: -12px;">
@@ -119,17 +120,25 @@
       </div> -->
         </aside>
         <div class="contents">
-            <div>
+            <div style="position: absolute;
+            left: 50%;
+            top: 50%;"> 
             <img class="modal d-n" id="modal" src="./components/images/modal.png" alt="">
-                <button id="close" style="width: 15px; height: 15px; position: absolute; z-index: 4; left: 68.2%; top: 58.5%;"></button>
+            <button id="close" class="close d-n" style="width: 15px; height: 15px; position: absolute; z-index: 4; left: 536px; top: 79px;"></button>
         </div>
         <script>
             document.querySelector('#sub').addEventListener("click", ()=>{
-                if(document.querySelector('input#name')!=null && document.querySelector('input#tel')!=null)
+                if(document.querySelector('.nm')!=null && document.querySelector('.ph')!=null)
             {
-                document.querySelector('.modal').classList.remove('d-n');
+                document.querySelector('.modal').classList.toggle('d-n');
+                document.querySelector('.close').classList.toggle('d-n');
             }
-            else console.log('no need to')
+            else
+             console.log('no need to')
+            })
+            document.querySelector(".close").addEventListener("click", ()=>{
+                document.querySelector('.modal').classList.toggle('d-n');
+                document.querySelector('.close').classList.toggle('d-n');
             })
             
             let close = document.querySelector("#close").addEventListener("click",()=>{
@@ -347,6 +356,45 @@ $("#submit-button").submit(function(e){
     <script src="./script/index.js"></script>
     <script src="../../script/validation.js"></script>
     <script defer src="./script/hamburger.js"></script>
+    <script defer src="https://smtpjs.com/v3/smtp.js">
+
+    </script>
+    <script>
+        var btn = document.getElementById('sub');
+        btn.addEventListener('click', function(e){
+            e.preventDefault();
+            
+            var name = document.getElementById('name').value;
+            var tel = document.getElementById('tel').value;
+            var check = document.getElementById('check').value;
+            var body = 'Як звуть: ' + name + '<br/> Номер телефону:' + tel + '<br>' + 'Хоче отримати консультацію.';
+            console.log('asdas');
+            if(name!=null && tel!=null && check){
+                Email.send({
+    SecureToken : "6af3ce50-0a93-4c96-b1e3-a10bf08fb316",
+    To : 'testregistrationframesi@ukr.net',
+    From : "lonozx@gmail.com",
+    Subject : "Лист для консультації",
+    Body : body
+}).then(
+  message => alert(message)
+);
+            }
+            else{
+                document.getElementById('name-label').style.color='red';
+                document.getElementById('phone-label').style.color='red';
+               
+                check.style.border = '2px solid';
+                check.style.borderColor = 'red';
+            }
+            
+            
+            
+        })
+    </script>
+    <script>
+        var name = document.querySelector('#name')
+    </script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->

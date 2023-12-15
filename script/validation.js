@@ -1,4 +1,4 @@
-const submitButton = document.getElementById('submit');
+const submitButton = document.getElementById('sub');
 const name = document.querySelector('#name');
 const tel = document.querySelector('#tel');
 const check = document.querySelector('#check');
