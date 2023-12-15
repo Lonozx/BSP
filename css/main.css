@@ -1386,46 +1386,62 @@ button {
 }
 
 .cval {
-  background: url("../components/images/cval.png");
+  background-image: url("../components/images/cval.png");
 }
 @media (max-width: 1170px) {
   .cval {
+    background-size: 100% 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
     background-image: url("../components/images/adv-mob-2.png");
   }
 }
 
 .info {
-  background: url("../components/images/info.png");
+  background-image: url("../components/images/info.png");
 }
 @media (max-width: 1170px) {
   .info {
+    background-size: 100% 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
     background-image: url("../components/images/adv-mob-3.png");
   }
 }
 
 .expert {
-  background: url("../components/images/expert.png");
+  background-image: url("../components/images/expert.png");
 }
 @media (max-width: 1170px) {
   .expert {
+    background-size: 100% 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
     background-image: url("../components/images/adv-mob-4.png");
+    background-repeat: no-repeat;
   }
 }
 
 .methods {
-  background: url("../components/images/methods.png");
+  background-image: url("../components/images/methods.png");
 }
 @media (max-width: 1170px) {
   .methods {
+    background-size: 100% 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
     background-image: url("../components/images/adv-mob-5.png");
   }
 }
 
 .way {
-  background: url("../components/images/way.png");
+  background-image: url("../components/images/way.png");
 }
 @media (max-width: 1170px) {
   .way {
+    background-size: 100% 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
     background-image: url("../components/images/adv-mob-6.png");
   }
 }
