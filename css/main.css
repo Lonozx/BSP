@@ -667,6 +667,12 @@ input[type=checkbox]:checked {
   position: absolute;
   z-index: 100;
 }
+@media (max-width: 1170px) {
+  .modal {
+    width: 360px;
+    height: 200px;
+  }
+}
 
 input:focus {
   outline: none;
@@ -957,6 +963,22 @@ input[type=text]:invalid ~ label {
   position: absolute;
 }
 
+.close-bt {
+  background: transparent;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  z-index: 101;
+  left: 735px;
+  top: 79px;
+}
+@media (max-width: 1170px) {
+  .close-bt {
+    left: 340px;
+    top: 47px;
+  }
+}
+
 .non-closed {
   position: fixed;
   left: 35%;
@@ -964,6 +986,12 @@ input[type=text]:invalid ~ label {
   z-index: 10;
   filter: brightness(100%);
   transition: all 0.2s ease-in-out 0s;
+}
+@media (max-width: 1170px) {
+  .non-closed {
+    left: 9%;
+    top: 34%;
+  }
 }
 
 .container__header {

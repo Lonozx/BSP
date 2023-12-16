@@ -652,6 +652,11 @@ top:45%;
 left: 35%;
    position: absolute;
    z-index: 100;
+   @media (max-width:1170px) {
+    
+    width: 360px;
+    height: 200px;
+   }
 }
 input:focus {
     outline: none;
@@ -945,6 +950,19 @@ transition: all .2s ease-in-out;
 z-index: 2;
   position: absolute;
 }
+.close-bt{
+    background:transparent;
+    width: 15px; 
+    height: 15px; 
+    position: absolute; 
+    z-index: 101; 
+    left: 735px; 
+    top: 79px;
+    @media (max-width:1170px) {
+        left: 340px;
+        top: 47px;
+    }
+}
 .non-closed{
     position: fixed;
   left: 35%;
@@ -952,6 +970,10 @@ z-index: 2;
   z-index: 10;
   filter: brightness(100%);
   transition: all 0.2s ease-in-out 0s;
+  @media (max-width:1170px) {
+    left: 9%;
+  top: 34%;
+  }
 }
 .container__header{
     display: flex;
