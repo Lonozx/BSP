@@ -6,23 +6,47 @@ const nameLabel = document.querySelector('#name-label');
 const phoneLabel = document.querySelector('#phone-label');
 
 
-function nameValidation() {
+function nameValidation(nm) {
   if (!name.value) {
+    // nameLabel.classList.toggle('vis');
+    // nameLabel.style.visibility = 'visible';
+    // nameLabel.style.color = 'black';
+    nameLabel.style.visibility = 'visible';
     nameLabel.style.color = 'red';
+    name.placeholder = '';
+    setTimeout(function(){
+      nameLabel.style.visibility = 'visible';
+      nameLabel.style.color = 'black';
+ }, 2000);
+  } else {
+    nameLabel.style.visibility = 'hidden';
+    nameLabel.style.color = 'transparent';
   }
 }
 
 function telValidation() {
   if (!tel.value) {
+    phoneLabel.style.visibility = 'visible';
     phoneLabel.style.color = 'red';
-    
+    tel.placeholder = '';
+    setTimeout(function(){
+      phoneLabel.style.visibility = 'visible';
+      phoneLabel.style.color = 'black';
+ }, 2000);
+  }
+  else {
+    phoneLabel.style.visibility = 'hidden';
+    phoneLabel.style.color = 'transparent';
   }
 }
 function checkValidation() {
   if (!check.checked) {
     check.style.border = '2px solid';
     check.style.borderColor = 'red';
-
+    setTimeout(function(){
+      check.style.border = '2px solid';
+    check.style.borderColor = '#002F51';
+ }, 2000);
   }
 }
 

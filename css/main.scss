@@ -551,13 +551,23 @@ img {
   }
 }
 #name-label{
+    // visibility: hidden;
+}
+.vis{
+    visibility: visible !important;
+    color: red;
+}
+.phoneL{
     visibility: hidden;
+}
+input:focus{
+    border: 1px solid grey;
 }
 // input#name:hover #name-label{
 //     visibility: visible !important;
 // }
 #phone-label {
-    visibility: hidden;
+    // visibility: hidden;
   }
 
 
