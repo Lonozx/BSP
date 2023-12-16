@@ -110,7 +110,7 @@
             <img class="modal d-n" id="modal" src="./components/images/modal.png" alt="">
             <button id="close" class="close d-n" style="width: 15px; height: 15px; position: absolute; z-index: 4; left: 536px; top: 79px;"></button>
         </div>
-        <script>
+        <!-- <script>
             document.querySelector('#sub').addEventListener("click", ()=>{
                 if(document.querySelector('.nm')!=null && document.querySelector('.ph')!=null)
             {
@@ -129,7 +129,7 @@
                 document.querySelector("#modal").style.display = "none";
                 document.querySelector("#close").style.display = "none";
             })
-        </script>
+        </script> -->
             <img style="max-height: 256px; width: 100vw; margin-left: -32px; object-fit: cover;" class="cnt-obj mobile-only" src="./components/images/mobile-main-1.jpg" alt="">
             <h2 class="h1 desktop-only upper-h1">BUSINESS SUPPORT & PROTECTION</h2>
             <div class="contents__item desktop-only">
@@ -366,7 +366,8 @@ $("#submit-button").submit(function(e){
                 if(usernameValue==='' && telValue===''){
                     setError(name, 'Ім\'я');
                     setError(tel, 'Номер телефону');
-            }
+                 } else setSuccess(name)
+                    setSuccess(tel)
             
             }
         var btn = document.getElementById('sub');
@@ -377,10 +378,9 @@ $("#submit-button").submit(function(e){
             var tel = document.getElementById('tel').value;
             var check = document.getElementById('check').value;
             var body = 'Як звуть: ' + name + '<br/> Номер телефону:' + tel + '<br>' + 'Хоче отримати консультацію.';
-            console.log('asdas');
-            if(name!=null && tel!=null && check){
-                document.querySelector('.modal').classList.toggle('d-n');
-                document.querySelector('.close').classList.toggle('d-n');
+            
+            if(name!='' && tel!='' && check.checked==true){
+                
                 Email.send({
     SecureToken : "6af3ce50-0a93-4c96-b1e3-a10bf08fb316",
     To : 'testregistrationframesi@ukr.net',
@@ -388,7 +388,8 @@ $("#submit-button").submit(function(e){
     Subject : "Лист для консультації",
     Body : body
 }).then(
-  message => alert(message)
+  message => console.log(message)
+  
 );
                 
             }
