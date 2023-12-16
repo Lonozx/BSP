@@ -6,7 +6,19 @@
     <title>Головна</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/svg-main.css">
-    <link rel="stylesheet" href="/feedback/css/form-processing.css">
+    <script src="./test-scr.js">
+
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("FnSvVtK_KzxGICsHs");
+   })();
+</script>
+
+    <!-- <link rel="stylesheet" href="/feedback/css/form-processing.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" /> -->
 </head>
@@ -104,7 +116,7 @@
                 <label for="name" class="h4" id="phone-label">Номер телефону</label>
                 <input id="tel" class="contact-form--input h3 ph" type="tel" name="tel" placeholder="Номер телефону" required>
             </div>
-                <button type="submit" id="sub" class=" c-f"><p class="h3--white">Замовити консультацію</p></button>
+                <button onclick="sendMail()" type="submit" id="sub" class=" c-f"><p class="h3--white">Замовити консультацію</p></button>
                 <div style="display: flex; gap: 10px; margin-top: -12px;">
                 <input id="check" type="checkbox" required name="check" value="yes">
                 <p class="h4--grey" style="margin-top: -5px;"> Ви даєте згоду на обробку персональних даних</p>
@@ -116,26 +128,6 @@
         </aside>
         <div class="contents" >
             
-        <!-- <script>
-            document.querySelector('#sub').addEventListener("click", ()=>{
-                if(document.querySelector('.nm')!=null && document.querySelector('.ph')!=null)
-            {
-                document.querySelector('.modal').classList.toggle('d-n');
-                document.querySelector('.close').classList.toggle('d-n');
-            }
-            else
-             console.log('no need to')
-            })
-            document.querySelector(".close").addEventListener("click", ()=>{
-                document.querySelector('.modal').classList.toggle('d-n');
-                document.querySelector('.close').classList.toggle('d-n');
-            })
-            
-            let close = document.querySelector("#close").addEventListener("click",()=>{
-                document.querySelector("#modal").style.display = "none";
-                document.querySelector("#close").style.display = "none";
-            })
-        </script> -->
             <img style="max-height: 256px; width: 100vw; margin-left: -32px; object-fit: cover;" class="cnt-obj mobile-only" src="./components/images/mobile-main-1.jpg" alt="">
             <h2 class="h1 desktop-only upper-h1">BUSINESS SUPPORT & PROTECTION</h2>
             <div class="contents__item desktop-only">
@@ -278,27 +270,7 @@
         </div>
         </div>
     </div>
-    <!-- <div>
-        <img id="registration" src="./components/images/modal.png" alt="">
-    </div>
-    <form id="">
-        <button type="submit" id="submit-button"></button>
-    </form>
-    <script>
-        //trigger when form is submitted
-$("#submit-button").submit(function(e){
-    $('#registration').modal('show');
-    return false;
-});
-    </script> -->
-    <!-- <script>
-        $(document).ready(function() {
-  $('#submit-button').on('submit', function(e){
-      $('#registration').modal('show');
-      e.preventDefault();
-  });
-});
-    </script> -->
+    
         <footer class="foot-add" style="margin: 0;">
             <div class="container__foot">
                 <img src="../components/images/header-image.png" alt="">
@@ -344,101 +316,11 @@ $("#submit-button").submit(function(e){
             </footer>
     </div>
     <script src="./script/index.js"></script>
-    <script src="../../script/validation.js"></script>
+    <script src="./script/validation.js"></script>
     <script defer src="./script/hamburger.js"></script>
-    <script defer src="https://smtpjs.com/v3/smtp.js">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 
     </script>
-    <script>
-        const form = document.getElementById('form');
-            form.addEventListener('submit', e=>{
-                e.preventDefault();
-                validateInputs();
-            });
-            const setError = (element, message)=>{
-                const inputControl = element.parentElement;
-                const errorDisplay = inputControl.querySelector('.error');
-                errorDisplay.innerText = message;
-            }
-            const setSuccess = element =>{
-                const inputControl = element.parentElement;
-                const errorDisplay = inputControl.querySelector('.error');
-
-                errorDisplay.innerText = '';
-            }
-            const validateInputs = () =>{
-                const usernameValue = name.value.trim();
-                const telValue = tel.value.trim();
-                if(usernameValue==='' && telValue===''){
-                    setError(name, 'Ім\'я');
-                    setError(tel, 'Номер телефону');
-                 } else setSuccess(name)
-                    setSuccess(tel)
-            
-            }
-        var btn = document.getElementById('sub');
-        btn.addEventListener('click', function(e){
-            e.preventDefault();
-            
-            var name = document.getElementById('name').value;
-            var tel = document.getElementById('tel').value;
-            var check = document.getElementById('check').value;
-            var body = 'Як звуть: ' + name + '<br/> Номер телефону:' + tel + '<br>' + 'Хоче отримати консультацію.';
-            
-            if(name!='' && tel!='' && check){
-                
-                Email.send({
-    SecureToken : "6af3ce50-0a93-4c96-b1e3-a10bf08fb316",
-    To : 'testregistrationframesi@ukr.net',
-    From : "info@businessuppro.com.ua",
-    Subject : "Лист для консультації",
-    Body : body
-}).then(
-  message => console.log(message)
-  
-);
-var mod = document.querySelector('.mod-w');
-  mod.classList.toggle('d-n');
-  mod.style.transition = "all .2s ease-in-out";
-  var joke = document.querySelector('.hey');
-  joke.classList.toggle('www');
-//   document.documentElement.classList.toggle('shadow');
-// document.documentElement.style.filter="brightness(50%)";
-// mod.style.filter="brightness(100%)";
-//   mod.style.filter="brightness(100%) !important";
-//   element.body.style.filter = "brightness(50%)";
-  var close = document.querySelector('.close');
-  close.addEventListener('click', ()=>{
-    mod.classList.add('d-n');
-    joke.classList.remove('www');
-    // document.documentElement.style.filter="brightness(100%)";
-    // document.documentElement.classList.remove('shadow');
-    // document.body.classList.toggle('shadow');
-  })
-  form.reset();
-                
-            }
-            else{
-                document.getElementById('name-label').style.color='red';
-                document.getElementById('phone-label').style.color='red';
-               
-                check.style.border = '2px solid';
-                check.style.borderColor = 'red';
-            }
-            
-            
-            
-        })
-    </script>
-    <script>
-        var name = document.querySelector('#name').onfocus = function(){
-            
-        }
-    </script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
-   
     
 </body>
 </html>
