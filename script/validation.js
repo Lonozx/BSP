@@ -19,6 +19,8 @@ function nameValidation(nm) {
       nameLabel.style.visibility = 'visible';
       nameLabel.style.color = 'black';
       nameLabel.style.transition = "all .2s ease-in-out";
+      nameLabel.style.visibility = 'hidden';
+      name.placeholder = 'Ім\'я';
  }, 2000);
   } else {
     nameLabel.style.visibility = 'hidden';
@@ -36,6 +38,8 @@ function telValidation() {
       phoneLabel.style.visibility = 'visible';
       phoneLabel.style.color = 'black';
       phoneLabel.style.transition = "all .2s ease-in-out";
+      phoneLabel.style.visibility = 'hidden';
+      tel.placeholder = 'Номер телефону';
  }, 2000);
   }
   else {
