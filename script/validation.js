@@ -14,9 +14,11 @@ function nameValidation(nm) {
     nameLabel.style.visibility = 'visible';
     nameLabel.style.color = 'red';
     name.placeholder = '';
+    nameLabel.style.transition = "all .2s ease-in-out";
     setTimeout(function(){
       nameLabel.style.visibility = 'visible';
       nameLabel.style.color = 'black';
+      nameLabel.style.transition = "all .2s ease-in-out";
  }, 2000);
   } else {
     nameLabel.style.visibility = 'hidden';
@@ -29,9 +31,11 @@ function telValidation() {
     phoneLabel.style.visibility = 'visible';
     phoneLabel.style.color = 'red';
     tel.placeholder = '';
+    phoneLabel.style.transition = "all .2s ease-in-out";
     setTimeout(function(){
       phoneLabel.style.visibility = 'visible';
       phoneLabel.style.color = 'black';
+      phoneLabel.style.transition = "all .2s ease-in-out";
  }, 2000);
   }
   else {
@@ -43,9 +47,11 @@ function checkValidation() {
   if (!check.checked) {
     check.style.border = '2px solid';
     check.style.borderColor = 'red';
+    check.style.transition = "all .2s ease-in-out";
     setTimeout(function(){
       check.style.border = '2px solid';
     check.style.borderColor = '#002F51';
+    check.style.transition = "all .2s ease-in-out";
  }, 2000);
   }
 }
