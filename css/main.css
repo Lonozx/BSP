@@ -656,11 +656,16 @@ input[type=checkbox]:checked {
   display: none;
 }
 
+.mod-w {
+  filter: brightness(100%) !important;
+  transition: all 0.2s ease-in-out;
+}
+
 .modal {
-  top: 50%;
-  left: 40%;
+  top: 45%;
+  left: 35%;
   position: absolute;
-  z-index: 3;
+  z-index: 100;
 }
 
 input:focus {
@@ -941,6 +946,24 @@ input[type=text]:invalid ~ label {
   flex-direction: column;
   min-width: 418px;
   gap: 30px;
+}
+
+.www {
+  width: 100%;
+  height: 1000%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+  z-index: 2;
+  position: absolute;
+}
+
+.non-closed {
+  position: fixed;
+  left: 35%;
+  top: 34%;
+  z-index: 10;
+  filter: brightness(100%);
+  transition: all 0.2s ease-in-out 0s;
 }
 
 .container__header {
@@ -1572,10 +1595,39 @@ button:hover svg path {
   }
 }
 
+html.shadow:not(.mod-w) {
+  filter: brightness(50%);
+}
+
+.frs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  color: white;
+  height: 15px;
+  transform: rotate(45deg);
+  z-index: 20;
+}
+
+.scd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  color: white;
+  height: 15px;
+  z-index: 21;
+  transform: rotate(90deg);
+}
+
+.sh-no {
+  opacity: 1 !important;
+}
+
 .input-control .error {
   color: red;
   font-size: 9px;
-  height: 13px;
 }
 
 .data {

@@ -10,9 +10,11 @@
   }
   html{
     scroll-behavior: smooth;
+    // z-index: 0;
   }
   body{
     overflow-x: hidden;
+    // position: relative;
   }
  
 *{
@@ -551,23 +553,23 @@ img {
   }
 }
 #name-label{
-    // visibility: hidden;
-}
-.vis{
-    visibility: visible !important;
-    color: red;
-}
-.phoneL{
     visibility: hidden;
 }
-input:focus{
-    border: 1px solid grey;
-}
+// .vis{
+//     visibility: visible !important;
+//     color: red;
+// }
+// .phoneL{
+//     visibility: hidden;
+// }
+// input:focus{
+//     border: 1px solid grey;
+// }
 // input#name:hover #name-label{
 //     visibility: visible !important;
 // }
 #phone-label {
-    // visibility: hidden;
+    visibility: hidden;
   }
 
 
@@ -633,12 +635,23 @@ appearance: none;
 .d-n{
     display: none;
 }
+.mod-w{
+//     position: fixed;
+//     top:50%;
+// left: 40%;
+// width: 100%;
+// height: 100vh;
+// background-color: rgba(0, 0, 0, 0.5);
+filter: brightness(100%) !important;
+transition: all .2s ease-in-out;
+}
 .modal{
 //    display: none;
-top:50%;
-left: 40%;
+top:45%;
+
+left: 35%;
    position: absolute;
-   z-index: 3;
+   z-index: 100;
 }
 input:focus {
     outline: none;
@@ -922,6 +935,23 @@ li.service .arrow{
     // margin: 0% 5% 0% 10%;
     min-width: 418px;
     gap: 30px;
+}
+.www{
+    width: 100%;
+height: 1000%;
+background-color: rgba(0, 0, 0, 0.5);
+// filter: brightness(100%) !important;
+transition: all .2s ease-in-out;
+z-index: 2;
+  position: absolute;
+}
+.non-closed{
+    position: fixed;
+  left: 35%;
+  top: 34%;
+  z-index: 10;
+  filter: brightness(100%);
+  transition: all 0.2s ease-in-out 0s;
 }
 .container__header{
     display: flex;
@@ -1463,10 +1493,37 @@ button:hover svg path{
         width: 270px;
     }
 }
+html.shadow:not(.mod-w){
+    filter: brightness(50%);
+}
+   
+.frs{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 15px;
+    color: white;
+    height: 15px;
+    transform: rotate(45deg);
+    z-index: 20;
+}
+.scd{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 15px;
+    color: white;
+    height: 15px;
+    z-index: 21;
+    transform: rotate(90deg);
+}
+.sh-no{
+    opacity: 1 !important;
+}
 .input-control .error{
     color: red;
     font-size: 9px;
-    height: 13px;
+    // height: 13px;
 }
 // .telp{
 //     order: 1;
