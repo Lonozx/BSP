@@ -4,12 +4,13 @@ function sendMail(){
     var namein = document.getElementById('name').value;
     var telin = document.getElementById('tel').value;
     var check = document.getElementById('check');
+    let regexTel = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
 	var tempParams= {
 		name:  namein,
 		tel:  telin
 	};
     
-    if(namein!='' && telin!='' && check.checked==true){
+    if(namein!='' && telin!='' && regexTel.test(telin) && check.checked==true){
         emailjs.init("FnSvVtK_KzxGICsHs");
 	emailjs.send('service_93vs6in', 'template_jcq97tk', tempParams)
     

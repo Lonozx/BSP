@@ -9,16 +9,24 @@ function showNameLabel(){
   
   if(name.value==''){
     nameLabel.style.visibility = 'hidden';
+    name.placeholder = 'Ім\'я';
   } else {nameLabel.style.visibility = 'visible';
           name.placeholder = '';
 }
 }
 function showPhoneLabel(){
-  
+  let regexTel = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
   if(tel.value==''){
     phoneLabel.style.visibility = 'hidden';
-  } else {phoneLabel.style.visibility = 'visible';
-  tel.placeholder = '';
+    tel.placeholder = 'Номер телефону';
+  } 
+  // else if(regexTel.test(tel.value)){
+  //   phoneLabel.style.visibility = 'visible';
+  //   phoneLabel.style.color = 'red';
+  // }
+  
+  else {phoneLabel.style.visibility = 'visible';
+        tel.placeholder = '';
 }
 }
 
@@ -49,7 +57,9 @@ function nameValidation(nm) {
 }
 
 function telValidation() {
-  if (!tel.value) {
+  // && regexTel.test(tel.value)
+  // let regexTel = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+  if (!tel.value ) {
     phoneLabel.style.visibility = 'visible';
     phoneLabel.style.color = 'red';
     tel.placeholder = '';
