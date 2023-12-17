@@ -138,12 +138,12 @@ const phoneLabelMob = document.querySelector('#phone-label-mob');
 //   }
 // }
 
-submitMob.addEventListener('click', e => {
-  e.preventDefault();
-  nameValidationMob();
-  telValidationMob();
-  checkValidationMob();
-});
+// submitMob.addEventListener('click', e => {
+//   e.preventDefault();
+//   nameValidationMob();
+//   telValidationMob();
+//   checkValidationMob();
+// });
 
 function showNameLabelMob(){
   

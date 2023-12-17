@@ -29,15 +29,11 @@ function sendMail(){
 		console.log('success', res.status);
 	})} else console.log('non-fixed')
 }
-
-
-
-        
-            var body = 'Як звуть: ' + name + '<br/> Номер телефону:' + tel + '<br>' + 'Хоче отримати консультацію.';
-            const publicKey = 'FnSvVtK_KzxGICsHs';
-            const serviceID = 'service_93vs6in';
-            const tamplateID = 'template_jcq97tk';
-        var btn = document.getElementById('sub');
+    const publicKey = 'FnSvVtK_KzxGICsHs';
+    const serviceID = 'service_93vs6in';
+    const tamplateID = 'template_jcq97tk';
+    var btn = document.getElementById('sub');
+        // var body = 'Як звуть: ' + name + '<br/> Номер телефону:' + tel + '<br>' + 'Хоче отримати консультацію.';
         // function sendEmail(){
         //     btn.addEventListener('click', e=>{
         //         emailjs.init(publicKey);

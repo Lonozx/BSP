@@ -56,7 +56,7 @@
                     <li class="h3 service dropdown">
                         <div style="display: flex; gap: 5px">
                             <a class="menu menu-header services-menu" href="#">Послуги</a> 
-                            <img class="desktop-only arrow" src="../../components/images/Arrow.svg" alt="">
+                            <img class="desktop-only arrow-m" src="../../components/images/Arrow.svg" alt="">
                         <img class="mobile-only arrow" src="../../components/images/arrow-mob.svg" alt="">
                         </div>
                         <div class="dropdown-content">
@@ -220,7 +220,8 @@
      </script>
      <script>
          document.querySelector(".dropdown").addEventListener('click', ()=>{
-             document.querySelector(".dropdown-content").classList.toggle("d-ctn")
+             document.querySelector(".dropdown-content").classList.toggle("d-ctn");
+             document.querySelector(".arrow-m").classList.toggle("ar-rot");
          })
         </script>
 </body>
