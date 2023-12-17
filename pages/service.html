@@ -237,5 +237,17 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 
     </script>
+    <script>
+        $(document).ready(function(){
+             $('.container__header-burger').click(function(){
+                $('body').toggleClass('overflow-h');
+             });
+        });
+     </script>
+     <script>
+         document.querySelector(".dropdown").addEventListener('click', ()=>{
+             document.querySelector(".dropdown-content").classList.toggle("d-ctn")
+         })
+        </script>
 </body>
 </html>

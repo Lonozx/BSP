@@ -884,7 +884,14 @@ li.service .arrow{
     transition: all .2s ease-in-out;
     
 }
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: block;
+@media (max-width:1170px) {
+    display: none;
+}
+}
+.d-ctn{
+    display: block !important;
+}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 .header-list{

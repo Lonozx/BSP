@@ -47,6 +47,7 @@
                     <span></span>
                     <span></span>
                    </button>
+                   
                    <a class="phone-ham h3 styling-mobile" href="tel:+38(073)60-60-603">+38(073)60-60-603</a>
                 </div>
                 <div class="container__header-list">
@@ -57,7 +58,7 @@
                     </li>
                     <li class="h3 service dropdown">
                         <div style="display: flex; gap: 5px">
-                        <a class="menu menu-header services-menu" href="">Послуги</a> 
+                        <a class="menu menu-header services-menu" href="#">Послуги</a> 
                         <img class="desktop-only arrow" src="./components/images/Arrow.svg" alt="">
                         <img class="mobile-only arrow" src="./components/images/arrow-mob.svg" alt="">
                     </div>
@@ -327,6 +328,11 @@
             });
        });
     </script>
+    <script>
+        document.querySelector(".dropdown").addEventListener('click', ()=>{
+            document.querySelector(".dropdown-content").classList.toggle("d-ctn")
+        })
+       </script>
     
 </body>
 </html>

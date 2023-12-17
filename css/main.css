@@ -891,6 +891,15 @@ input[type=text]:invalid ~ label {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+@media (max-width: 1170px) {
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+}
+
+.d-ctn {
+  display: block !important;
+}
 
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
