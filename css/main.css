@@ -1251,6 +1251,11 @@ a.menu-header:hover {
   color: white;
 }
 
+.header.open .hide-h {
+  background: #002F51;
+  z-index: 100;
+}
+
 .ov {
   padding-bottom: 120px;
   margin: 7% 0;
