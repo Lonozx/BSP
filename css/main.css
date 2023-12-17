@@ -919,6 +919,7 @@ input[type=text]:invalid ~ label {
     justify-content: flex-start;
     margin: 124px 0;
     width: 100vw;
+    height: 100vh;
   }
 }
 @media (max-width: 1280px) {
