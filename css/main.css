@@ -923,6 +923,10 @@ input[type=text]:invalid ~ label {
   }
 }
 
+.header.open .container__header-list body {
+  position: fixed;
+}
+
 .header.open .container__header-list {
   overscroll-behavior: contain;
 }

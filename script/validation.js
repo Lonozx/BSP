@@ -59,7 +59,7 @@ function nameValidation(nm) {
 function telValidation() {
   // && regexTel.test(tel.value)
   let regexTel = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
-  if (!tel.value && !regexTel.test(tel.value)) {
+  if (!tel.value) {
     phoneLabel.style.visibility = 'visible';
     phoneLabel.style.color = 'red';
     tel.placeholder = '';
@@ -78,8 +78,15 @@ function telValidation() {
     phoneLabel.style.color = 'transparent';
     console.log('transparent ph')
   }
+  else if(regexTel.test(tel.value)==false){
+    phoneLabel.style.color= 'red';
+    setTimeout(function(){
+      phoneLabel.style.color= 'black';
+ }, 2000);
+  }
   else {
     phoneLabel.style.visibility = 'visible';
+    phoneLabel.style.color= 'black';
   }
 }
 

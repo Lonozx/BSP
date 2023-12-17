@@ -919,6 +919,9 @@ li.service .arrow{
         // border-bottom: 0;
     }
 }
+.header.open .container__header-list body{
+    position: fixed;
+}
 .header.open .container__header-list{
     overscroll-behavior: contain;
     @media (max-width:1170px) {
