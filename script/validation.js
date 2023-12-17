@@ -38,9 +38,13 @@ function nameValidation(nm) {
       nameLabel.style.visibility = 'hidden';
       name.placeholder = 'Ім\'я';
  }, 2000);
-  } else {
+  } else if(name.value==''){
     nameLabel.style.visibility = 'hidden';
     nameLabel.style.color = 'transparent';
+    console.log('transparent')
+  }
+  else {
+    nameLabel.style.visibility = 'visible';
   }
 }
 
@@ -58,11 +62,18 @@ function telValidation() {
       tel.placeholder = 'Номер телефону';
  }, 2000);
   }
-  else {
+  
+  else if(tel.value==''){
     phoneLabel.style.visibility = 'hidden';
     phoneLabel.style.color = 'transparent';
+    console.log('transparent ph')
+  }
+  else {
+    phoneLabel.style.visibility = 'visible';
   }
 }
+
+
 function checkValidation() {
   if (!check.checked) {
     check.style.border = '2px solid';
