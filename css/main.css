@@ -551,17 +551,13 @@ button.sub-form {
     padding-bottom: 0px;
   }
 }
-@media (max-width: 1290px) {
-  .override {
-    margin: 0% !important;
-  }
-}
 @media (max-width: 1170px) {
   .override {
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    margin: 0 0px !important;
+    margin: 0 auto;
+    width: 296px;
   }
 }
 

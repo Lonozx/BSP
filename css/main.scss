@@ -533,13 +533,15 @@ img {
         }
     }
     @media (max-width:1290px) {
-        margin: 0% !important;
+        // margin: 0% !important;
     }
     @media (max-width:1170px) {
         flex-wrap: wrap;
         display: flex;
         flex-direction: column;
-        margin: 0 0px !important;
+        // margin: 0 0px !important;
+        margin: 0 auto;
+        width: 296px;
     }
 }
 
