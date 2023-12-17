@@ -19,6 +19,10 @@ body {
   box-sizing: border-box;
 }
 
+.overflow-h {
+  overflow: hidden;
+}
+
 .wrapper {
   margin: 0% 375px 0px 375px;
 }
