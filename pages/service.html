@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Переваги</title>
+    <script src="../test-scr.js">
+
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("FnSvVtK_KzxGICsHs");
+   })();
+</script>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+    <div class="hey">
+        <div class="mod-w d-n non-closed " > 
+                <img class="modal " id="modal" src="../components/images/mod-f.png" alt="">
+                <button id="close" class="close close-bt">
+                    
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        </svg>
+        
+                </button>
+            </div>
+        </div>
     <button onclick="topFunction()" id="myBtn" title="Go to top">
         <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M10.9782 6.82688C11.0353 6.88714 11.1025 6.93432 11.176 6.96572C11.2495 6.99712 11.3279 7.01213 11.4066 7.0099C11.4854 7.00766 11.5629 6.98822 11.6349 6.95268C11.7069 6.91715 11.7719 6.86621 11.8262 6.80279C11.8805 6.73936 11.923 6.66469 11.9514 6.58303C11.9797 6.50137 11.9932 6.41433 11.9913 6.32687C11.9893 6.23941 11.9719 6.15325 11.9399 6.0733C11.908 5.99335 11.8621 5.92119 11.8051 5.86093L6.4253 0.183319C6.31432 0.0660695 6.16711 0.000482667 6.0139 2.16138e-05C5.86068 -0.00043944 5.71308 0.0642602 5.60139 0.18084L0.186947 5.82597C0.128265 5.88548 0.0808074 5.95735 0.0473312 6.03739C0.0138549 6.11744 -0.0049726 6.20406 -0.00805858 6.29223C-0.0111446 6.3804 0.00157348 6.46837 0.0293557 6.55101C0.057138 6.63366 0.0994305 6.70934 0.153778 6.77366C0.208126 6.83797 0.273444 6.88965 0.34594 6.92568C0.418435 6.96171 0.496662 6.98137 0.576078 6.98353C0.655493 6.98569 0.734513 6.9703 0.808548 6.93826C0.882583 6.90622 0.950157 6.85816 1.00735 6.79687L6.00913 1.5821L10.9782 6.82688Z" fill="#00182A"/>
@@ -67,17 +91,20 @@
             <a href="../index.html">
                 <img class="logo" src="../components/images/header-image.png" alt="BSP-logo">
             </a>
-            <form style="margin-top: 60px; display: flex; flex-direction: column; gap: 30px" id="form" action="https://getform.io/f/3d32effb-06aa-4cd0-8092-056e975f4283" method="POST">
+            <form class="form-n" style= "display: flex; flex-direction: column; gap: 30px" id="form"  method="POST">
                 <img src="../components/images/upper-form.jpg" alt="">
-                <div>
-                <label for="name" class="h4" id="name-label">Ім'я</label>
-                <input id="name" class="contact-form--input h3" type="text" name="name" placeholder="Ім'я" required>
+                
+                <div class="input-control">
+                <div class="error"></div>
+                <label for="name" class="h4 l-name" id="name-label">Ім'я</label>
+                <input id="name" class="contact-form--input h3 nm" type="text" name="name" placeholder="Ім'я" required>
             </div>
-            <div>
+            <div class="input-control">
+                <div class="error"></div>
                 <label for="name" class="h4" id="phone-label">Номер телефону</label>
-                <input id="tel" class="contact-form--input h3" type="tel" name="tel" placeholder="Номер телефону" required>
+                <input id="tel" class="contact-form--input h3 ph" type="tel" name="tel" placeholder="Номер телефону" required>
             </div>
-                <button type="submit" id="sub"><p class="h3--white">Замовити консультацію</p></button>
+                <button onclick="sendMail()" type="submit" id="sub" class=" c-f"><p class="h3--white">Замовити консультацію</p></button>
                 <div style="display: flex; gap: 10px; margin-top: -12px;">
                 <input id="check" type="checkbox" required name="check" value="yes">
                 <p class="h4--grey" style="margin-top: -5px;"> Ви даєте згоду на обробку персональних даних</p>
@@ -225,5 +252,8 @@
     <script src="../script/index.js"></script>
     <script defer src="../script/validation.js"></script>
     <script defer src="../script/hamburger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+
+    </script>
 </body>
 </html>
