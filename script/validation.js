@@ -5,6 +5,22 @@ const check = document.querySelector('#check');
 const nameLabel = document.querySelector('#name-label');
 const phoneLabel = document.querySelector('#phone-label');
 
+function showNameLabel(){
+  
+  if(name.value==''){
+    nameLabel.style.visibility = 'hidden';
+  } else {nameLabel.style.visibility = 'visible';
+          name.placeholder = '';
+}
+}
+function showPhoneLabel(){
+  
+  if(tel.value==''){
+    phoneLabel.style.visibility = 'hidden';
+  } else {phoneLabel.style.visibility = 'visible';
+  tel.placeholder = '';
+}
+}
 
 function nameValidation(nm) {
   if (!name.value) {

@@ -98,12 +98,12 @@
                 <div class="input-control">
                 <div class="error"></div>
                 <label for="name" class="h4 l-name" id="name-label">Ім'я</label>
-                <input id="name" class="contact-form--input h3 nm" type="text" name="name" placeholder="Ім'я" required>
+                <input id="name" onkeypress="showNameLabel()" class="contact-form--input h3 nm" type="text" name="name" placeholder="Ім'я" required>
             </div>
             <div class="input-control">
                 <div class="error"></div>
                 <label for="name" class="h4" id="phone-label">Номер телефону</label>
-                <input id="tel" class="contact-form--input h3 ph" type="tel" name="tel" placeholder="Номер телефону" required>
+                <input id="tel" onkeypress="showPhoneLabel()" class="contact-form--input h3 ph" type="tel" name="tel" placeholder="Номер телефону" required>
             </div>
                 <button onclick="sendMail()" type="submit" id="sub" class=" c-f"><p class="h3--white">Замовити консультацію</p></button>
                 <div style="display: flex; gap: 10px; margin-top: -12px;">
