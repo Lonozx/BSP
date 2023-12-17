@@ -557,7 +557,7 @@ button.sub-form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 296px;
+    width: 100%;
   }
 }
 
@@ -1484,6 +1484,9 @@ button {
 @media (max-width: 1170px) {
   .anon {
     background-image: url("../components/images/adv-mob-1.png");
+    background-size: 100% 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 

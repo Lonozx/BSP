@@ -541,7 +541,7 @@ img {
         flex-direction: column;
         // margin: 0 0px !important;
         margin: 0 auto;
-        width: 296px;
+        width: 100%;
     }
 }
 
@@ -1335,7 +1335,8 @@ margin-left: 32%;
             justify-content: center;
         }
         &-item{
-           
+        //    width: 100%;
+        //    height: auto;
             width: 270px;
             height: 404px;
             display: flex;
@@ -1412,6 +1413,8 @@ button{
     object-fit: cover;
     @media (max-width:1170px) {
         background-image: url('../components/images/adv-mob-1.png');
+        background-size: 100% 100%;
+        object-fit: cover;
     }
 }
 .cval{
