@@ -35,7 +35,6 @@ body {
   .wrapper-st {
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
     width: 100%;
   }
 }
@@ -543,8 +542,10 @@ button.sub-form {
   }
 }
 
-.override:last-child {
-  padding-bottom: 120px;
+@media (max-width: 1170px) {
+  .override:last-child {
+    padding-bottom: 0px;
+  }
 }
 @media (max-width: 1290px) {
   .override {
@@ -583,7 +584,22 @@ button.sub-form {
   visibility: hidden;
 }
 
+@media (max-width: 1170px) {
+  .order-mob {
+    order: 2;
+    margin-bottom: 40px;
+  }
+}
+
 #phone-label {
+  visibility: hidden;
+}
+
+#name-label-mob {
+  visibility: hidden;
+}
+
+#phone-label-mob {
   visibility: hidden;
 }
 
@@ -670,7 +686,7 @@ input[type=checkbox]:checked {
 @media (max-width: 1170px) {
   .modal {
     width: 360px;
-    height: 200px;
+    height: 287px;
   }
 }
 
@@ -710,6 +726,11 @@ input:focus {
 }
 .contents__item:last-child {
   margin-bottom: 120px;
+}
+@media (max-width: 1170px) {
+  .contents__item:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 li.service:hover .arrow {
@@ -974,8 +995,8 @@ input[type=text]:invalid ~ label {
 }
 @media (max-width: 1170px) {
   .close-bt {
-    left: 340px;
-    top: 47px;
+    left: 304px;
+    top: 73px;
   }
 }
 
@@ -989,7 +1010,7 @@ input[type=text]:invalid ~ label {
 }
 @media (max-width: 1170px) {
   .non-closed {
-    left: 9%;
+    left: 2%;
     top: 34%;
   }
 }

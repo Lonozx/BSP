@@ -22,7 +22,8 @@
 <body>
     <div class="hey">
         <div class="mod-w d-n non-closed " > 
-                <img class="modal " id="modal" src="../../components/images/mod-f.png" alt="">
+            <img class="modal desktop-only" id="modal" src="../../components/images/mod-f.png" alt="">
+            <img class="modal mobile-only" id="modal" src="../../components/images/mob-form-ver.png" alt="">
                 <button id="close" class="close close-bt">
                     
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,31 +87,31 @@
             <img class="desktop-only" style="margin-left: 27%; margin-bottom: 30px;" src="../../components/images/row-blue.png" alt="">
         </header>
         
-        <aside class="aside-form aside-form--cont desktop-only">
-        <div class="container__header-logo">
-            <a href="../../index.html">
-                <img class="logo" src="../../components/images/header-image.png" alt="BSP-logo">
-            </a>
-            <form class="form-n" style= "display: flex; flex-direction: column; gap: 30px" id="form"  method="POST">
-                <img src="../../components/images/upper-form.jpg" alt="">
-                
+        <aside class="aside-form aside-form--cont order-mob">
+            <div class="container__header-logo">
+                <a href="../../index.html" class="desktop-only">
+                    <img class="logo" src="../../components/images/header-image.png" alt="BSP-logo">
+                </a>
+                <form class="form-n" style= "display: flex; flex-direction: column; gap: 30px" id="form"  method="POST">
+                    <img src="../../components/images/upper-form.jpg" alt="">
+                    
+                    <div class="input-control">
+                    <div class="error"></div>
+                    <label for="name" class="h4 l-name" id="name-label">Ім'я</label>
+                    <input id="name" onkeypress="showNameLabel()" class="contact-form--input h3 nm" type="text" name="name" placeholder="Ім'я" required>
+                </div>
                 <div class="input-control">
-                <div class="error"></div>
-                <label for="name" class="h4 l-name" id="name-label">Ім'я</label>
-                <input id="name" onkeypress="showNameLabel()" class="contact-form--input h3 nm" type="text" name="name" placeholder="Ім'я" required>
-            </div>
-            <div class="input-control">
-                <div class="error"></div>
-                <label for="name" class="h4" id="phone-label">Номер телефону</label>
-                <input id="tel" onkeypress="showPhoneLabel()" class="contact-form--input h3 ph" type="tel" name="tel" placeholder="Номер телефону" required>
-            </div>
-                <button onclick="sendMail()" type="submit" id="sub" class=" c-f"><p class="h3--white">Замовити консультацію</p></button>
-                <div style="display: flex; gap: 10px; margin-top: -12px;">
-                <input id="check" type="checkbox" required name="check" value="yes">
-                <p class="h4--grey" style="margin-top: -5px;"> Ви даєте згоду на обробку персональних даних</p>
-            </div>
-            </form>
-           </div>
+                    <div class="error"></div>
+                    <label for="name" class="h4" id="phone-label">Номер телефону</label>
+                    <input id="tel" onkeypress="showPhoneLabel()" class="contact-form--input h3 ph" type="tel" name="tel" placeholder="Номер телефону" required>
+                </div>
+                    <button onclick="sendMail()" type="submit" id="sub" class=" c-f"><p class="h3--white">Замовити консультацію</p></button>
+                    <div style="display: flex; gap: 10px; margin-top: -12px;">
+                    <input id="check" type="checkbox" required name="check" value="yes">
+                    <p class="h4--grey" style="margin-top: -5px;"> Ви даєте згоду на обробку персональних даних</p>
+                </div>
+                </form>
+               </div>
         </aside>
           
         <div class="contents">
@@ -131,14 +132,14 @@
                 <p class="h3 rep-art">Ділова репутація партнерів є важливим аспектом бізнесу, і наша команда забезпечить ефективну та справедливу перевірку цього показника!</p>
                 <p class="h3 rep-art">Замовляйте якісну перевірку від наших експертів!</p>
             </div>
-            <div class="contents__item" style="margin-top: 10px;">
+            <div class="contents__item desktop-only" style="margin-top: 10px;">
                 <div class="separated" style="margin: 0 0;">
                     <img class="desktop-only" src="../../components/images/rep-left.jpg" alt="">
                     <img class="desktop-only" src="../../components/images/rep-right.jpg" alt="">
                 </div>
             </div>
             </div>
-            <div class="contents__item mobile-only ds-m" style="justify-content: center;">
+            <!-- <div class="contents__item mobile-only ds-m" style="justify-content: center;">
                 <form action="send-quote" class="mobile-only" >
                     <div class="contact-form dis">
                     <img class="form-img" src="../../components/images/upper-form.jpg" alt="">
@@ -158,7 +159,7 @@
                 </div>
             </div>
                 </form>
-        </div>
+        </div> -->
             </div>
             
     </div>

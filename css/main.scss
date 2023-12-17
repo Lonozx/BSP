@@ -35,7 +35,7 @@
         @media (max-width:1170px) {
             display: flex;
             flex-direction: column;
-            overflow-x: hidden;
+            // overflow-x: hidden;
             width: 100%;
         }
     }
@@ -523,7 +523,10 @@ img {
 }
 .override{
     &:last-child{
-        padding-bottom: 120px;
+        // padding-bottom: 120px;
+        @media (max-width:1170px) {
+            padding-bottom: 0px;
+        }
     }
     @media (max-width:1290px) {
         margin: 0% !important;
@@ -568,7 +571,19 @@ img {
 // input#name:hover #name-label{
 //     visibility: visible !important;
 // }
+.order-mob{
+    @media (max-width: 1170px) {
+        order: 2;
+        margin-bottom: 40px;
+    }
+}
 #phone-label {
+    visibility: hidden;
+  }
+  #name-label-mob{
+    visibility: hidden;
+  }
+  #phone-label-mob{
     visibility: hidden;
   }
 
@@ -655,7 +670,7 @@ left: 35%;
    @media (max-width:1170px) {
     
     width: 360px;
-    height: 200px;
+    height: 287px;
    }
 }
 input:focus {
@@ -696,6 +711,9 @@ input:focus {
         }
         &:last-child{
             margin-bottom: 120px;
+            @media (max-width:1170px) {
+                margin-bottom: 0px;
+            }
         }
     }
 }
@@ -827,6 +845,7 @@ li.service .arrow{
     
   }
   .form-n{
+    
     margin-top: 60px;
     @media (max-width:1170px) {
         margin-top: 30px;
@@ -959,8 +978,8 @@ z-index: 2;
     left: 735px; 
     top: 79px;
     @media (max-width:1170px) {
-        left: 340px;
-        top: 47px;
+        left: 304px;
+        top: 73px;
     }
 }
 .non-closed{
@@ -971,7 +990,7 @@ z-index: 2;
   filter: brightness(100%);
   transition: all 0.2s ease-in-out 0s;
   @media (max-width:1170px) {
-    left: 9%;
+    left: 2%;
   top: 34%;
   }
 }

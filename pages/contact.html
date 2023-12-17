@@ -23,7 +23,8 @@
 <body>
     <div class="hey">
         <div class="mod-w d-n non-closed " > 
-                <img class="modal " id="modal" src="../components/images/mod-f.png" alt="">
+            <img class="modal desktop-only" id="modal" src="../components/images/mod-f.png" alt="">
+            <img class="modal mobile-only" id="modal" src="../components/images/mob-form-ver.png" alt="">
                 <button id="close" class="close close-bt">
                     
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,39 +88,31 @@
             <img class="desktop-only" style="margin-left: 27%; margin-bottom: 30px;" src="../components/images/row-blue.png" alt="">
         </header>
         
-        <aside class="aside-form aside-form--cont desktop-only">
+        <aside class="aside-form aside-form--cont order-mob">
             <div class="container__header-logo">
-                <a href="#">
+                <a href="../index.html" class="desktop-only">
                     <img class="logo" src="../components/images/header-image.png" alt="BSP-logo">
                 </a>
-                <div class="mobile-only">
-                    <h2 class="h1 just-centered-m" style="margin-top: 30px; text-transform: uppercase; display: flex; justify-content: flex-start;">BUSINESS SUPPORT & PROTECTION</h2>
-                    <div class="contents__item" style="margin-bottom: 0;">
-                        <p class="h3 just-centered-m" style="margin-left: -10px;
-                        margin-right: -10px; max-width: 388px; margin-top: 30px;">Експерти з підтримки та безпеки бізнесу, повернення боргів, кредитування фізичних та юридичних осіб</p>
-                    </div>
-               </div>
-                     <!-- action="https://getform.io/f/3d32effb-06aa-4cd0-8092-056e975f4283" -->
-                <form class="form-n " style= "display: flex; flex-direction: column; gap: 30px" id="form"  method="POST">
+                <form class="form-n" style= "display: flex; flex-direction: column; gap: 30px" id="form"  method="POST">
                     <img src="../components/images/upper-form.jpg" alt="">
                     
-                    <div>
-                    <label for="name" class="h4" id="name-label">Ім'я</label>
+                    <div class="input-control">
+                    <div class="error"></div>
+                    <label for="name" class="h4 l-name" id="name-label">Ім'я</label>
                     <input id="name" onkeypress="showNameLabel()" class="contact-form--input h3 nm" type="text" name="name" placeholder="Ім'я" required>
                 </div>
-                <div>
+                <div class="input-control">
+                    <div class="error"></div>
                     <label for="name" class="h4" id="phone-label">Номер телефону</label>
                     <input id="tel" onkeypress="showPhoneLabel()" class="contact-form--input h3 ph" type="tel" name="tel" placeholder="Номер телефону" required>
                 </div>
-                    <button type="submit" id="sub"><p class="h3--white">Замовити консультацію</p></button>
+                    <button style="margin-top: 5px;" onclick="sendMail()" type="submit" id="sub" class=" c-f"><p class="h3--white">Замовити консультацію</p></button>
                     <div style="display: flex; gap: 10px; margin-top: -12px;">
                     <input id="check" type="checkbox" required name="check" value="yes">
                     <p class="h4--grey" style="margin-top: -5px;"> Ви даєте згоду на обробку персональних даних</p>
                 </div>
                 </form>
-            </div>
-           
-            
+               </div>
             </aside>
           
         <div class="contents art-img" style="width: 100%; margin: 0 auto">
@@ -179,27 +172,7 @@
             </div>
             </div>
               <iframe style=" border: 0px;margin-bottom: 120px; margin-top: 30px; min-width: 870px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.2798215397165!2d30.513945276897005!3d50.45451378707072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5b388ce8bb%3A0xaa7b52365ebaf564!2z0YPQuy4g0JLQu9Cw0LTQuNC80LjRgNGB0LrQsNGPLCAxOCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1702332275308!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <div class="contents__item mobile-only" style="justify-content: center; margin-top: 60px;">
-                <form class="form-n" style= "display: flex; flex-direction: column; gap: 30px" id="form"  method="POST">
-                    <img src="../components/images/upper-form.jpg" alt="">
-                    
-                    <div class="input-control">
-                    <div class="error"></div>
-                    <label for="name" class="h4 l-name" id="name-label">Ім'я</label>
-                    <input id="name" class="contact-form--input h3 nm" type="text" name="name" placeholder="Ім'я" required>
-                </div>
-                <div class="input-control">
-                    <div class="error"></div>
-                    <label for="name" class="h4" id="phone-label">Номер телефону</label>
-                    <input id="tel" class="contact-form--input h3 ph" type="tel" name="tel" placeholder="Номер телефону" required>
-                </div>
-                    <button onclick="sendMail()" type="submit" id="sub" class=" c-f"><p class="h3--white">Замовити консультацію</p></button>
-                    <div style="display: flex; gap: 10px; margin-top: -12px;">
-                    <input id="check" type="checkbox" required name="check" value="yes">
-                    <p class="h4--grey" style="margin-top: -5px;"> Ви даєте згоду на обробку персональних даних</p>
-                </div>
-                </form>
-        </div>  
+              
             </div>
 
               

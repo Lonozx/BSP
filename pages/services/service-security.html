@@ -24,7 +24,8 @@
 <body>
     <div class="hey">
         <div class="mod-w d-n non-closed " > 
-                <img class="modal " id="modal" src="../../components/images/mod-f.png" alt="">
+                <img class="modal desktop-only" id="modal" src="../../components/images/mod-f.png" alt="">
+                <img class="modal mobile-only" id="modal" src="../../components/images/mob-form-ver.png" alt="">
                 <button id="close" class="close close-bt">
                     
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,10 +88,10 @@
             
             <img class="desktop-only" style="margin-left: 27%; margin-bottom: 30px;" src="../../components/images/row-blue.png" alt="">
         </header>
-        
-        <aside class="aside-form aside-form--cont desktop-only">
+        <!-- desktop-only -->
+        <aside class="aside-form aside-form--cont order-mob">
         <div class="container__header-logo">
-            <a href="../../index.html">
+            <a href="../../index.html" class="desktop-only">
                 <img class="logo" src="../../components/images/header-image.png" alt="BSP-logo">
             </a>
             <form class="form-n" style= "display: flex; flex-direction: column; gap: 30px" id="form"  method="POST">
@@ -144,19 +145,20 @@
                 </div>       
                 </div>
                 </div>
-                <div class="contents__item mobile-only" style="justify-content: center; margin-top: 120px;">
-                    <form action="send-quote" class="mobile-only" style="margin: 0 auto;">
+                <!-- <div class="contents__item mobile-only" style="justify-content: center; margin-top: 120px;">
+
+                    <form action="send-quote" id="form" class="mobile-only" style="margin: 0 auto;">
                         <div class="contact-form dis">
                         <img class="form-img" src="../../components/images/upper-form.jpg" alt="">
                         <div class="dir-col">
                         <label class="h4" for="name" id="name-label-mob">Ім'я</label>
-                        <input class="contact-form--input h3" id="name-mob" type="text" >
+                        <input id="name-mob" onkeypress="showNameLabelMob()" class="contact-form--input h3 nm" type="text" name="name" placeholder="Ім'я" required>
                     </div>
                     <div class="dir-col">
                         <label class="h4" for="name" id="phone-label-mob">Номер телефону</label>
-                        <input class="contact-form--input h3" id="tel-mob" type="tel" >
+                        <input id="tel-mob" onkeypress="showPhoneLabelMob()" class="contact-form--input h3 ph" type="tel" name="tel" placeholder="Номер телефону" required>
                     </div>
-                        <button class="h3--white sub-form" id="submit-mob" type="submit">Замовити консультацію</button>
+                        <button class="h3--white sub-form" onclick="sendMail()" id="submit-mob" type="submit">Замовити консультацію</button>
                         <div class="check h4--grey">
                         <input class="check--box" id="check-mob" type="checkbox">
                         <p class="h4--grey">Ви даєте згоду на обробку персональних даних</p>
@@ -164,7 +166,7 @@
                     </div>
                 </div>
                     </form>
-            </div>
+            </div> -->
             </div>
         </div>
                 <footer class="foot-add foot-str">
