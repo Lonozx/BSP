@@ -1354,6 +1354,12 @@ margin-left: 32%;
                 // width: 296px;
                 width: 100%;
             }
+            &--main{
+                @media (max-width:1170px) {
+                    width: 296px !important;
+                }
+                
+            }
         }
     }
 }

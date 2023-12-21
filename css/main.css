@@ -1413,6 +1413,11 @@ a.menu-header:hover {
     width: 100%;
   }
 }
+@media (max-width: 1170px) {
+  .advantage__content-item--main {
+    width: 296px !important;
+  }
+}
 
 .adv-sep {
   margin-top: 60px !important;
